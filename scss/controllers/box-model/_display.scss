@@ -1,0 +1,14 @@
+$display: (
+  "none": none,
+  "inline": inline,
+  "block": block,
+  "inline-block": inline-block,
+  "flex": flex,
+  "grid": grid,
+);
+
+@each $display, $value in $display {
+  .display-#{$display} {
+    display: #{$value};
+  }
+}

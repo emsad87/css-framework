@@ -1,0 +1,52 @@
+@use "../design/colors";
+
+// BUTTON
+.btn {
+  display: inline-block;
+
+  padding: 0.375rem 0.75rem;
+
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+
+  color: #212529;
+  background-color: transparent;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+@each $name, $color in colors.$theme-colors {
+  @if $name == "light" {
+    .btn-#{$name} {
+      background-color: $color;
+      color: black;
+    }
+  } @else if $name == "muted" {
+    .btn-#{$name} {
+      background-color: $color;
+      color: white;
+      cursor: not-allowed !important;
+    }
+  } @else {
+    .btn-#{$name} {
+      background-color: $color;
+      color: white;
+    }
+  }
+}
+
+// HTML CODE FOR BUTTONS
+// <div class="btn btn-primary">Button</div>
+// <div class="btn btn-secondary">Button</div>
+// <div class="btn btn-success">Button</div>
+// <div class="btn btn-danger">Button</div>
+// <div class="btn btn-warning">Button</div>
+// <div class="btn btn-info">Button</div>
+// <div class="btn btn-light">Button</div>
+// <div class="btn btn-dark">Button</div>
+// <div class="btn btn-muted">Button</div>

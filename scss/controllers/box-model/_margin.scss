@@ -1,0 +1,31 @@
+$min-margin: 5;
+$max-margin: 50;
+$unit: "px";
+$increment: 5;
+
+@while $min-margin <= $max-margin {
+  .margin- {
+    &#{$min-margin} {
+      margin: #{$min-margin}#{$unit};
+    }
+    &#{$min-margin}-top {
+      margin: #{$min-margin}#{$unit} 0 0 0;
+    }
+    &#{$min-margin}-right {
+      margin: 0 #{$min-margin}#{$unit} 0 0;
+    }
+    &#{$min-margin}-bottom {
+      margin: 0 0 #{$min-margin}#{$unit} 0;
+    }
+    &#{$min-margin}-left {
+      margin: 0 0 0 #{$min-margin}#{$unit};
+    }
+    &#{$min-margin}-side {
+      margin: 0 #{$min-margin}#{$unit};
+    }
+    &#{$min-margin}-top-bottom {
+      margin: #{$min-margin}#{$unit} 0;
+    }
+  }
+  $min-margin: $min-margin + $increment;
+}

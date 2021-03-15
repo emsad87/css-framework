@@ -1,0 +1,31 @@
+@use "../controllers/visual/animations";
+
+/* Loader */
+.loading-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: blue;
+
+  /* spinner */
+  .loader {
+    width: 120px;
+    height: 120px;
+    border: 10px solid transparent;
+    border-radius: 50%;
+    border-top-color: red;
+    border-bottom-color: red;
+    filter: drop-shadow(0 0 5px red);
+  }
+}
+
+// HTML CODE FOR LOADER
+// <div class="loading-screen">
+//     <div class="loader"></div>
+// </div>

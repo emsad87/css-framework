@@ -1,0 +1,56 @@
+$justify: (
+  "start": flex-start,
+  "end": flex-end,
+  "center": center,
+  "between": space-between,
+  "around": space-around,
+  "evenly": space-evenly,
+);
+
+$align: (
+  "center": center,
+  "start": flex-start,
+  "end": flex-end,
+  "bl": baseline,
+);
+
+@each $justify, $value in $justify {
+  .justify- {
+    &#{$justify} {
+      justify-content: #{$value};
+    }
+
+    &#{$justify} {
+      justify-content: #{$value};
+    }
+
+    &#{$justify} {
+      justify-content: #{$value};
+    }
+  }
+}
+
+@each $align, $value in $align {
+  .align- {
+    &itm- {
+      &#{$align} {
+        align-items: #{$value};
+      }
+    }
+    &cnt- {
+      &#{$align} {
+        align-content: #{$value};
+      }
+    }
+    &slf- {
+      &#{$align} {
+        align-self: #{$value};
+      }
+    }
+  }
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,32 @@
+$min-radius: 5;
+$max-radius: 50;
+$unit: "px";
+$increment: 5;
+
+@while $min-radius <= $max-radius {
+  .rounded- {
+    &#{$min-radius} {
+      border-radius: #{$min-radius}#{$unit};
+    }
+    &#{$min-radius}-top {
+      border-radius: #{$min-radius}#{$unit} 0 0 0;
+    }
+    &#{$min-radius}-bottom {
+      border-radius: 0 #{$min-radius}#{$unit} 0 0;
+    }
+    &#{$min-radius}-x {
+      border-radius: 0 0 #{$min-radius}#{$unit} 0;
+    }
+    &#{$min-radius}-y {
+      border-radius: 0 0 0 #{$min-radius}#{$unit};
+    }
+  }
+  $min-radius: $min-radius + $increment;
+}
+
+.round50 {
+  border-radius: 50%;
+}
+.round100 {
+  border-radius: 100%;
+}

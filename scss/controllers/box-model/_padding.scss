@@ -1,0 +1,32 @@
+$min-padding: 5;
+$max-padding: 50;
+$unit: "px";
+$increment: 5;
+
+@while $min-padding <= $max-padding {
+  .padding- {
+    &#{$min-padding} {
+      padding: #{$min-padding}#{$unit};
+    }
+    &#{$min-padding}-top {
+      padding: #{$min-padding}#{$unit} 0 0 0;
+    }
+    &#{$min-padding}-right {
+      padding: 0 #{$min-padding}#{$unit} 0 0;
+    }
+    &#{$min-padding}-bottom {
+      padding: 0 0 #{$min-padding}#{$unit} 0;
+    }
+    &#{$min-padding}-left {
+      padding: 0 0 0 #{$min-padding}#{$unit};
+    }
+    &#{$min-padding}-side {
+      padding: 0 #{$min-padding}#{$unit};
+    }
+    &#{$min-padding}-top-bottom {
+      padding: #{$min-padding}#{$unit} 0;
+    }
+  }
+
+  $min-padding: $min-padding + $increment;
+}

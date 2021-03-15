@@ -1,0 +1,31 @@
+$theme-colors: (
+  "primary": #626ed4,
+  "secondary": #343549,
+  "success": #2aa39a,
+  "danger": #ec4561,
+  "warning": #f8b425,
+  "info": #38a5f8,
+  "light": #f8f8fa,
+  "dark": #575c62,
+  "muted": #edecf1,
+);
+
+@each $name, $color in $theme-colors {
+  @if $name == "light" {
+    .bg-#{$name} {
+      background-color: $color;
+      color: black;
+    }
+  } @else if $name == "muted" {
+    .bg-#{$name} {
+      background-color: $color;
+      color: white;
+      cursor: not-allowed !important;
+    }
+  } @else {
+    .bg-#{$name} {
+      background-color: $color;
+      color: white;
+    }
+  }
+}

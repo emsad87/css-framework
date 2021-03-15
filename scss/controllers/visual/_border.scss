@@ -1,0 +1,21 @@
+@use "../../design/colors";
+
+$borders: (
+  "1": 1px,
+  "5": 5px,
+  "10": 10px,
+  "15": 15px,
+  "20": 20px,
+);
+
+@each $name, $width in $borders {
+  .border-#{$name} {
+    border: #{$width} solid currentColor;
+  }
+}
+
+@each $name, $color in colors.$theme-colors {
+  .border-#{$name} {
+    border-color: $color;
+  }
+}
