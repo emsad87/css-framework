@@ -1,5 +1,7 @@
 .nav {
+  display: flex;
   width: 100%;
+  z-index: 99;
 
   .logo {
     width: 20%;
@@ -33,6 +35,11 @@
   left: 0;
 }
 
+.nav-sticky {
+  position: sticky;
+  top: 0;
+  left: 0;
+}
 // HTML CODE FOR NAVBAR
 // <nav class="bg-primary shadow-sharp">
 //     <ul>

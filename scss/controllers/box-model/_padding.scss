@@ -4,26 +4,25 @@ $unit: "px";
 $increment: 5;
 
 @while $min-padding <= $max-padding {
-  .padding- {
-    &#{$min-padding} {
-      padding: #{$min-padding}#{$unit};
-    }
-    &#{$min-padding}-top {
+  .padding-#{$min-padding} {
+    padding: #{$min-padding}#{$unit};
+
+    &-top {
       padding: #{$min-padding}#{$unit} 0 0 0;
     }
-    &#{$min-padding}-right {
+    &-right {
       padding: 0 #{$min-padding}#{$unit} 0 0;
     }
-    &#{$min-padding}-bottom {
+    &-bottom {
       padding: 0 0 #{$min-padding}#{$unit} 0;
     }
-    &#{$min-padding}-left {
+    &-left {
       padding: 0 0 0 #{$min-padding}#{$unit};
     }
-    &#{$min-padding}-side {
+    &-side {
       padding: 0 #{$min-padding}#{$unit};
     }
-    &#{$min-padding}-top-bottom {
+    &-top-bottom {
       padding: #{$min-padding}#{$unit} 0;
     }
   }

@@ -4,20 +4,19 @@ $unit: "px";
 $increment: 5;
 
 @while $min-radius <= $max-radius {
-  .rounded- {
-    &#{$min-radius} {
-      border-radius: #{$min-radius}#{$unit};
-    }
-    &#{$min-radius}-top {
+  .rounded-#{$min-radius} {
+    border-radius: #{$min-radius}#{$unit};
+
+    &-top {
       border-radius: #{$min-radius}#{$unit} 0 0 0;
     }
-    &#{$min-radius}-bottom {
+    &-bottom {
       border-radius: 0 #{$min-radius}#{$unit} 0 0;
     }
-    &#{$min-radius}-x {
+    &-x {
       border-radius: 0 0 #{$min-radius}#{$unit} 0;
     }
-    &#{$min-radius}-y {
+    &-y {
       border-radius: 0 0 0 #{$min-radius}#{$unit};
     }
   }

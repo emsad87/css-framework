@@ -596,7 +596,9 @@ th {
 }
 
 .nav {
+  display: flex;
   width: 100%;
+  z-index: 99;
 }
 .nav .logo {
   width: 20%;
@@ -623,6 +625,61 @@ th {
   position: fixed;
   top: 0;
   left: 0;
+}
+
+.nav-sticky {
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  gap: 25px;
+  color: white;
+}
+.hero .hero__content,
+.hero aside {
+  width: 40%;
+  z-index: 2;
+}
+.hero .hero__bg img {
+  /* Set up positioning */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+.hero .hero__bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.hero .hero__content {
+  z-index: 2;
+}
+@media screen and (max-width: 1024px) {
+  .hero img {
+    left: 50%;
+    margin-left: -512px;
+    /* 50% */
+  }
 }
 
 .container {
@@ -1111,7 +1168,7 @@ th {
 .margin-5-left {
   margin: 0 0 0 5px;
 }
-.margin-5-side {
+.margin-5-sides {
   margin: 0 5px;
 }
 .margin-5-top-bottom {
@@ -1133,7 +1190,7 @@ th {
 .margin-10-left {
   margin: 0 0 0 10px;
 }
-.margin-10-side {
+.margin-10-sides {
   margin: 0 10px;
 }
 .margin-10-top-bottom {
@@ -1155,7 +1212,7 @@ th {
 .margin-15-left {
   margin: 0 0 0 15px;
 }
-.margin-15-side {
+.margin-15-sides {
   margin: 0 15px;
 }
 .margin-15-top-bottom {
@@ -1177,7 +1234,7 @@ th {
 .margin-20-left {
   margin: 0 0 0 20px;
 }
-.margin-20-side {
+.margin-20-sides {
   margin: 0 20px;
 }
 .margin-20-top-bottom {
@@ -1199,7 +1256,7 @@ th {
 .margin-25-left {
   margin: 0 0 0 25px;
 }
-.margin-25-side {
+.margin-25-sides {
   margin: 0 25px;
 }
 .margin-25-top-bottom {
@@ -1221,7 +1278,7 @@ th {
 .margin-30-left {
   margin: 0 0 0 30px;
 }
-.margin-30-side {
+.margin-30-sides {
   margin: 0 30px;
 }
 .margin-30-top-bottom {
@@ -1243,7 +1300,7 @@ th {
 .margin-35-left {
   margin: 0 0 0 35px;
 }
-.margin-35-side {
+.margin-35-sides {
   margin: 0 35px;
 }
 .margin-35-top-bottom {
@@ -1265,7 +1322,7 @@ th {
 .margin-40-left {
   margin: 0 0 0 40px;
 }
-.margin-40-side {
+.margin-40-sides {
   margin: 0 40px;
 }
 .margin-40-top-bottom {
@@ -1287,7 +1344,7 @@ th {
 .margin-45-left {
   margin: 0 0 0 45px;
 }
-.margin-45-side {
+.margin-45-sides {
   margin: 0 45px;
 }
 .margin-45-top-bottom {
@@ -1309,11 +1366,15 @@ th {
 .margin-50-left {
   margin: 0 0 0 50px;
 }
-.margin-50-side {
+.margin-50-sides {
   margin: 0 50px;
 }
 .margin-50-top-bottom {
   margin: 50px 0;
+}
+
+.margin-center {
+  margin: 0 auto;
 }
 
 .padding-5 {
@@ -1539,21 +1600,481 @@ th {
 .border-1 {
   border: 1px solid currentColor;
 }
+.border-1-top {
+  border-style: solid;
+  border-width: 1px 0 0 0;
+  border-color: currentColor;
+}
+.border-1-right {
+  border-style: solid;
+  border-width: 0 1px 0 0;
+  border-color: currentColor;
+}
+.border-1-bottom {
+  border-style: solid;
+  border-width: 0 0 1px 0;
+  border-color: currentColor;
+}
+.border-1-left {
+  border-style: solid;
+  border-width: 0 0 0 1px;
+  border-color: currentColor;
+}
+
+.border-2 {
+  border: 2px solid currentColor;
+}
+.border-2-top {
+  border-style: solid;
+  border-width: 2px 0 0 0;
+  border-color: currentColor;
+}
+.border-2-right {
+  border-style: solid;
+  border-width: 0 2px 0 0;
+  border-color: currentColor;
+}
+.border-2-bottom {
+  border-style: solid;
+  border-width: 0 0 2px 0;
+  border-color: currentColor;
+}
+.border-2-left {
+  border-style: solid;
+  border-width: 0 0 0 2px;
+  border-color: currentColor;
+}
+
+.border-3 {
+  border: 3px solid currentColor;
+}
+.border-3-top {
+  border-style: solid;
+  border-width: 3px 0 0 0;
+  border-color: currentColor;
+}
+.border-3-right {
+  border-style: solid;
+  border-width: 0 3px 0 0;
+  border-color: currentColor;
+}
+.border-3-bottom {
+  border-style: solid;
+  border-width: 0 0 3px 0;
+  border-color: currentColor;
+}
+.border-3-left {
+  border-style: solid;
+  border-width: 0 0 0 3px;
+  border-color: currentColor;
+}
+
+.border-4 {
+  border: 4px solid currentColor;
+}
+.border-4-top {
+  border-style: solid;
+  border-width: 4px 0 0 0;
+  border-color: currentColor;
+}
+.border-4-right {
+  border-style: solid;
+  border-width: 0 4px 0 0;
+  border-color: currentColor;
+}
+.border-4-bottom {
+  border-style: solid;
+  border-width: 0 0 4px 0;
+  border-color: currentColor;
+}
+.border-4-left {
+  border-style: solid;
+  border-width: 0 0 0 4px;
+  border-color: currentColor;
+}
 
 .border-5 {
   border: 5px solid currentColor;
+}
+.border-5-top {
+  border-style: solid;
+  border-width: 5px 0 0 0;
+  border-color: currentColor;
+}
+.border-5-right {
+  border-style: solid;
+  border-width: 0 5px 0 0;
+  border-color: currentColor;
+}
+.border-5-bottom {
+  border-style: solid;
+  border-width: 0 0 5px 0;
+  border-color: currentColor;
+}
+.border-5-left {
+  border-style: solid;
+  border-width: 0 0 0 5px;
+  border-color: currentColor;
+}
+
+.border-6 {
+  border: 6px solid currentColor;
+}
+.border-6-top {
+  border-style: solid;
+  border-width: 6px 0 0 0;
+  border-color: currentColor;
+}
+.border-6-right {
+  border-style: solid;
+  border-width: 0 6px 0 0;
+  border-color: currentColor;
+}
+.border-6-bottom {
+  border-style: solid;
+  border-width: 0 0 6px 0;
+  border-color: currentColor;
+}
+.border-6-left {
+  border-style: solid;
+  border-width: 0 0 0 6px;
+  border-color: currentColor;
+}
+
+.border-7 {
+  border: 7px solid currentColor;
+}
+.border-7-top {
+  border-style: solid;
+  border-width: 7px 0 0 0;
+  border-color: currentColor;
+}
+.border-7-right {
+  border-style: solid;
+  border-width: 0 7px 0 0;
+  border-color: currentColor;
+}
+.border-7-bottom {
+  border-style: solid;
+  border-width: 0 0 7px 0;
+  border-color: currentColor;
+}
+.border-7-left {
+  border-style: solid;
+  border-width: 0 0 0 7px;
+  border-color: currentColor;
+}
+
+.border-8 {
+  border: 8px solid currentColor;
+}
+.border-8-top {
+  border-style: solid;
+  border-width: 8px 0 0 0;
+  border-color: currentColor;
+}
+.border-8-right {
+  border-style: solid;
+  border-width: 0 8px 0 0;
+  border-color: currentColor;
+}
+.border-8-bottom {
+  border-style: solid;
+  border-width: 0 0 8px 0;
+  border-color: currentColor;
+}
+.border-8-left {
+  border-style: solid;
+  border-width: 0 0 0 8px;
+  border-color: currentColor;
+}
+
+.border-9 {
+  border: 9px solid currentColor;
+}
+.border-9-top {
+  border-style: solid;
+  border-width: 9px 0 0 0;
+  border-color: currentColor;
+}
+.border-9-right {
+  border-style: solid;
+  border-width: 0 9px 0 0;
+  border-color: currentColor;
+}
+.border-9-bottom {
+  border-style: solid;
+  border-width: 0 0 9px 0;
+  border-color: currentColor;
+}
+.border-9-left {
+  border-style: solid;
+  border-width: 0 0 0 9px;
+  border-color: currentColor;
 }
 
 .border-10 {
   border: 10px solid currentColor;
 }
+.border-10-top {
+  border-style: solid;
+  border-width: 10px 0 0 0;
+  border-color: currentColor;
+}
+.border-10-right {
+  border-style: solid;
+  border-width: 0 10px 0 0;
+  border-color: currentColor;
+}
+.border-10-bottom {
+  border-style: solid;
+  border-width: 0 0 10px 0;
+  border-color: currentColor;
+}
+.border-10-left {
+  border-style: solid;
+  border-width: 0 0 0 10px;
+  border-color: currentColor;
+}
+
+.border-11 {
+  border: 11px solid currentColor;
+}
+.border-11-top {
+  border-style: solid;
+  border-width: 11px 0 0 0;
+  border-color: currentColor;
+}
+.border-11-right {
+  border-style: solid;
+  border-width: 0 11px 0 0;
+  border-color: currentColor;
+}
+.border-11-bottom {
+  border-style: solid;
+  border-width: 0 0 11px 0;
+  border-color: currentColor;
+}
+.border-11-left {
+  border-style: solid;
+  border-width: 0 0 0 11px;
+  border-color: currentColor;
+}
+
+.border-12 {
+  border: 12px solid currentColor;
+}
+.border-12-top {
+  border-style: solid;
+  border-width: 12px 0 0 0;
+  border-color: currentColor;
+}
+.border-12-right {
+  border-style: solid;
+  border-width: 0 12px 0 0;
+  border-color: currentColor;
+}
+.border-12-bottom {
+  border-style: solid;
+  border-width: 0 0 12px 0;
+  border-color: currentColor;
+}
+.border-12-left {
+  border-style: solid;
+  border-width: 0 0 0 12px;
+  border-color: currentColor;
+}
+
+.border-13 {
+  border: 13px solid currentColor;
+}
+.border-13-top {
+  border-style: solid;
+  border-width: 13px 0 0 0;
+  border-color: currentColor;
+}
+.border-13-right {
+  border-style: solid;
+  border-width: 0 13px 0 0;
+  border-color: currentColor;
+}
+.border-13-bottom {
+  border-style: solid;
+  border-width: 0 0 13px 0;
+  border-color: currentColor;
+}
+.border-13-left {
+  border-style: solid;
+  border-width: 0 0 0 13px;
+  border-color: currentColor;
+}
+
+.border-14 {
+  border: 14px solid currentColor;
+}
+.border-14-top {
+  border-style: solid;
+  border-width: 14px 0 0 0;
+  border-color: currentColor;
+}
+.border-14-right {
+  border-style: solid;
+  border-width: 0 14px 0 0;
+  border-color: currentColor;
+}
+.border-14-bottom {
+  border-style: solid;
+  border-width: 0 0 14px 0;
+  border-color: currentColor;
+}
+.border-14-left {
+  border-style: solid;
+  border-width: 0 0 0 14px;
+  border-color: currentColor;
+}
 
 .border-15 {
   border: 15px solid currentColor;
 }
+.border-15-top {
+  border-style: solid;
+  border-width: 15px 0 0 0;
+  border-color: currentColor;
+}
+.border-15-right {
+  border-style: solid;
+  border-width: 0 15px 0 0;
+  border-color: currentColor;
+}
+.border-15-bottom {
+  border-style: solid;
+  border-width: 0 0 15px 0;
+  border-color: currentColor;
+}
+.border-15-left {
+  border-style: solid;
+  border-width: 0 0 0 15px;
+  border-color: currentColor;
+}
+
+.border-16 {
+  border: 16px solid currentColor;
+}
+.border-16-top {
+  border-style: solid;
+  border-width: 16px 0 0 0;
+  border-color: currentColor;
+}
+.border-16-right {
+  border-style: solid;
+  border-width: 0 16px 0 0;
+  border-color: currentColor;
+}
+.border-16-bottom {
+  border-style: solid;
+  border-width: 0 0 16px 0;
+  border-color: currentColor;
+}
+.border-16-left {
+  border-style: solid;
+  border-width: 0 0 0 16px;
+  border-color: currentColor;
+}
+
+.border-17 {
+  border: 17px solid currentColor;
+}
+.border-17-top {
+  border-style: solid;
+  border-width: 17px 0 0 0;
+  border-color: currentColor;
+}
+.border-17-right {
+  border-style: solid;
+  border-width: 0 17px 0 0;
+  border-color: currentColor;
+}
+.border-17-bottom {
+  border-style: solid;
+  border-width: 0 0 17px 0;
+  border-color: currentColor;
+}
+.border-17-left {
+  border-style: solid;
+  border-width: 0 0 0 17px;
+  border-color: currentColor;
+}
+
+.border-18 {
+  border: 18px solid currentColor;
+}
+.border-18-top {
+  border-style: solid;
+  border-width: 18px 0 0 0;
+  border-color: currentColor;
+}
+.border-18-right {
+  border-style: solid;
+  border-width: 0 18px 0 0;
+  border-color: currentColor;
+}
+.border-18-bottom {
+  border-style: solid;
+  border-width: 0 0 18px 0;
+  border-color: currentColor;
+}
+.border-18-left {
+  border-style: solid;
+  border-width: 0 0 0 18px;
+  border-color: currentColor;
+}
+
+.border-19 {
+  border: 19px solid currentColor;
+}
+.border-19-top {
+  border-style: solid;
+  border-width: 19px 0 0 0;
+  border-color: currentColor;
+}
+.border-19-right {
+  border-style: solid;
+  border-width: 0 19px 0 0;
+  border-color: currentColor;
+}
+.border-19-bottom {
+  border-style: solid;
+  border-width: 0 0 19px 0;
+  border-color: currentColor;
+}
+.border-19-left {
+  border-style: solid;
+  border-width: 0 0 0 19px;
+  border-color: currentColor;
+}
 
 .border-20 {
   border: 20px solid currentColor;
+}
+.border-20-top {
+  border-style: solid;
+  border-width: 20px 0 0 0;
+  border-color: currentColor;
+}
+.border-20-right {
+  border-style: solid;
+  border-width: 0 20px 0 0;
+  border-color: currentColor;
+}
+.border-20-bottom {
+  border-style: solid;
+  border-width: 0 0 20px 0;
+  border-color: currentColor;
+}
+.border-20-left {
+  border-style: solid;
+  border-width: 0 0 0 20px;
+  border-color: currentColor;
 }
 
 .border-primary {
@@ -1802,4 +2323,28 @@ th {
 
 .shadow-longer {
   box-shadow: 0 2px 1px rgba(0, 0, 0, 0.09), 0 4px 2px rgba(0, 0, 0, 0.09), 0 8px 4px rgba(0, 0, 0, 0.09), 0 16px 8px rgba(0, 0, 0, 0.09), 0 32px 16px rgba(0, 0, 0, 0.09);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.65rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
+h6 {
+  font-size: 1.25rem;
 }

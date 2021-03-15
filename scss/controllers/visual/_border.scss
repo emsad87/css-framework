@@ -1,17 +1,36 @@
 @use "../../design/colors";
 
-$borders: (
-  "1": 1px,
-  "5": 5px,
-  "10": 10px,
-  "15": 15px,
-  "20": 20px,
-);
+$min-border: 1;
+$max-border: 20;
+$unit: "px";
+$increment: 1;
 
-@each $name, $width in $borders {
-  .border-#{$name} {
-    border: #{$width} solid currentColor;
+@while $min-border <= $max-border {
+  .border-#{$min-border} {
+    border: #{$min-border}#{$unit} solid currentColor;
+
+    &-top {
+      border-style: solid;
+      border-width: #{$min-border}#{$unit} 0 0 0;
+      border-color: currentColor;
+    }
+    &-right {
+      border-style: solid;
+      border-width: 0 #{$min-border}#{$unit} 0 0;
+      border-color: currentColor;
+    }
+    &-bottom {
+      border-style: solid;
+      border-width: 0 0 #{$min-border}#{$unit} 0;
+      border-color: currentColor;
+    }
+    &-left {
+      border-style: solid;
+      border-width: 0 0 0#{$min-border}#{$unit};
+      border-color: currentColor;
+    }
   }
+  $min-border: $min-border + $increment;
 }
 
 @each $name, $color in colors.$theme-colors {
