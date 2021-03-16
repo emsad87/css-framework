@@ -1,14 +1,6 @@
+@use "../design/breakpoints";
 // GRID
 $no-of-columns: 12;
-
-$breakpoints: (
-  "sm": 576px,
-  "md": 768px,
-  "lg": 992px,
-  "xl": 1200px,
-);
-
-$extra-small-screen-width-breakpoint: map-get($breakpoints, "sm");
 
 .container {
   display: block;
@@ -35,7 +27,7 @@ $extra-small-screen-width-breakpoint: map-get($breakpoints, "sm");
   width: 100%;
 }
 
-@media only screen and (max-width: $extra-small-screen-width-breakpoint) {
+@media only screen and (max-width: breakpoints.$extra-small-screen-width-breakpoint) {
   // RESPONSIVE COLUMN CODE .....
   @for $i from 1 through $no-of-columns {
     .col-#{$i} {
@@ -45,7 +37,7 @@ $extra-small-screen-width-breakpoint: map-get($breakpoints, "sm");
   }
 }
 
-@each $breakpoint, $value in $breakpoints {
+@each $breakpoint, $value in breakpoints.$breakpoints {
   // MEDIA QUERY
   @media only screen and (min-width: $value) {
     // RESPONSIVE COLUMN CODE .....
