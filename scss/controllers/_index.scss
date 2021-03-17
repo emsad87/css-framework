@@ -1,8 +1,5 @@
 @use "./positioning/position";
-@use "./box-model/display";
-@use "./box-model/flex";
-@use "./box-model/margin";
-@use "./box-model/padding";
+@use "./box-model";
 @use "./visual/border";
 @use "./visual/radius";
 @use "./visual/shadows";

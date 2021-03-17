@@ -1,50 +1,84 @@
-.nav {
+@use "../design/breakpoints";
+
+.navbar {
+  position: relative;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
   width: 100%;
   z-index: 99;
+}
 
-  .logo {
-    width: 20%;
-  }
+.navbar__links {
+  list-style-type: none;
+  display: none;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
 
-  .links {
-    width: 80%;
-  }
+.navbar__link,
+.navbar__logo {
+  text-decoration: none;
+  color: currentColor;
+}
 
-  ul {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-  }
+.navbar__links li {
+  text-align: center;
+  list-style: none;
+}
 
-  li {
-    list-style: none;
-  }
+.navbar__logo {
+  display: inline-block;
+  font-size: 2rem;
+}
 
-  a {
-    display: inline-block;
-    text-decoration: none;
-    color: currentColor;
+.navbar__toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  color: currentColor;
+
+  span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 3px solid currentColor;
   }
 }
 
-.nav-fixed {
+.active {
+  display: flex;
+}
+
+@media screen and (min-width: map-get(breakpoints.$breakpoints, "md")) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .navbar__links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .navbar__toggle {
+    display: none;
+  }
+}
+
+.navbar-fixed {
   position: fixed;
   top: 0;
   left: 0;
 }
 
-.nav-sticky {
+.navbar-sticky {
   position: sticky;
   top: 0;
   left: 0;
 }
-// HTML CODE FOR NAVBAR
-// <nav class="bg-primary shadow-sharp">
-//     <ul>
-//         <li><a href="#">Link 1</a></li>
-//         <li><a href="#">Link 2</a></li>
-//         <li><a href="#">Link 3</a></li>
-//     </ul>
-// </nav>

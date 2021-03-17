@@ -12,19 +12,27 @@
 </head>
 
 <body>
-
-    <nav class="nav nav-fixed bg-primary padding-25 shadow-sharp">
-        <div class="logo display-flex center">
-            CSS Framework
+    <nav class="navbar bg-primary navbar-fixed shadow-sharp">
+        <div class="navbar__toggle" id="js-navbar-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-        <div class="links">
-            <ul>
-                <li><a class="btn" href="#">Home</a></li>
-                <li><a class="btn" href="#">Docs</a></li>
-                <li><a class="btn" href="#">Examples</a></li>
-                <li><a class="btn btn-secondary shadow-sharp" href="#">Github</a></li>
-            </ul>
-        </div>
+        <a href="#" class="navbar__logo">CSS Framework</a>
+        <ul class="navbar__links" id="js-menu">
+            <li>
+                <a href="#" class="navbar__link">Home</a>
+            </li>
+            <li>
+                <a href="#" class="navbar__link">Docs</a>
+            </li>
+            <li>
+                <a href="#" class="navbar__link">Examples</a>
+            </li>
+            <li>
+                <a href="#" class="navbar__link btn btn-secondary shadow-sharp">Github</a>
+            </li>
+        </ul>
     </nav>
 
     <div class="hero shadow-sharp">
@@ -48,7 +56,48 @@
             magni quis possimus officia non sunt, impedit voluptatibus distinctio, repudiandae et perferendis
             perspiciatis voluptates aut? Dignissimos, corrupti!
         </p>
+
+        <textarea name="code" class="code padding-25 bg-secondary">
+            <nav class="navbar bg-primary navbar-fixed">
+                <span class="navbar__toggle" id="js-navbar-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+                <a href="#" class="navbar__logo">CSS Framework</a>
+                <ul class="navbar__links" id="js-menu">
+                    <li>
+                        <a href="#" class="navbar__link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="navbar__link">Docs</a>
+                    </li>
+                    <li>
+                        <a href="#" class="navbar__link">Examples</a>
+                    </li>
+                    <li>
+                        <a href="#" class="navbar__link">Github</a>
+                    </li>
+                </ul>
+            </nav>
+        </textarea>
     </main>
+
+    <script>
+        let mainNav = document.querySelector('#js-menu');
+        let navBarToggle = document.querySelector('#js-navbar-toggle');
+
+        navBarToggle.addEventListener('click', function () {
+            mainNav.classList.toggle('active');
+        });
+    </script>
+
+    <script>
+        let codebox = document.querySelector(".code");
+        codebox.style.height = "1px";
+        codebox.style.height = (codebox.scrollHeight) + "px";
+        codebox.readOnly = true;
+    </script>
 
 </body>
 
