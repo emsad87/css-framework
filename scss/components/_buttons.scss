@@ -1,25 +1,16 @@
 @use "../design/colors";
 
-// BUTTON
+// BASE BUTTON STRUCTURE
 .btn {
   display: inline-block;
-
-  padding: 0.375rem 0.75rem;
-
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.5;
-
-  border: 1px solid transparent;
-  border-radius: 0.25rem;
-
-  color: #212529;
-  background-color: transparent;
-  &:hover {
-    cursor: pointer;
-  }
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
 }
 
+// BUTTON COLORS
 @each $name, $color in colors.$theme-colors {
   @if $name == "light" {
     .btn-#{$name} {

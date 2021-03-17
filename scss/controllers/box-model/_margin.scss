@@ -1,10 +1,11 @@
+// MARGIN FROM 5px TO 50px WITH 5px INCREMENT - NAMED m-5, m-10-top, m-15 etc...
 $min-margin: 5;
 $max-margin: 50;
 $unit: "px";
 $increment: 5;
 
 @while $min-margin <= $max-margin {
-  .margin-#{$min-margin} {
+  .m-#{$min-margin} {
     margin: #{$min-margin}#{$unit};
 
     &-top {
@@ -29,6 +30,6 @@ $increment: 5;
   $min-margin: $min-margin + $increment;
 }
 
-.margin-center {
+.m-auto {
   margin: 0 auto;
 }

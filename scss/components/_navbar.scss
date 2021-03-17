@@ -3,82 +3,90 @@
 .navbar {
   position: relative;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 10px;
   width: 100%;
   z-index: 99;
-}
+  font-size: 1.2rem;
 
-.navbar__links {
-  list-style-type: none;
-  display: none;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar__link,
-.navbar__logo {
-  text-decoration: none;
-  color: currentColor;
-}
-
-.navbar__links li {
-  text-align: center;
-  list-style: none;
-}
-
-.navbar__logo {
-  display: inline-block;
-  font-size: 2rem;
-}
-
-.navbar__toggle {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  cursor: pointer;
-  color: currentColor;
-
-  span {
-    display: block;
-    width: 25px;
-    height: 10px;
-    border-top: 3px solid currentColor;
-  }
-}
-
-.active {
-  display: flex;
-}
-
-@media screen and (min-width: map-get(breakpoints.$breakpoints, "md")) {
-  .navbar {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .navbar__links {
+  &__inner {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    gap: 15px;
+    padding: 15px 0;
   }
 
-  .navbar__toggle {
+  &__links {
+    list-style-type: none;
     display: none;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0;
+    padding: 15px 0;
   }
-}
 
-.navbar-fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-}
+  &__link,
+  &__logo {
+    text-decoration: none;
+    color: currentColor;
+  }
 
-.navbar-sticky {
-  position: sticky;
-  top: 0;
-  left: 0;
+  &__links li {
+    text-align: center;
+    list-style: none;
+  }
+
+  &__logo {
+    display: inline-block;
+    font-size: 2rem;
+  }
+
+  &__toggle {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    cursor: pointer;
+    color: currentColor;
+
+    span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 3px solid currentColor;
+    }
+  }
+
+  .active {
+    display: flex;
+  }
+
+  @media screen and (min-width: map-get(breakpoints.$breakpoints, "md")) {
+    &__inner {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 80%;
+    }
+
+    &__links {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    &__toggle {
+      display: none;
+    }
+  }
+
+  &-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  &-sticky {
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
 }

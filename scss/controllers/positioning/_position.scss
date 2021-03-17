@@ -6,7 +6,47 @@ $position: (
 );
 
 @each $position, $value in $position {
-  .position-#{$position} {
+  .#{$position} {
     position: #{$value};
+  }
+}
+
+// Position FROM 5% TO 50% WITH 5% INCREMENT - NAMED top-5, right-10, bottom-15 etc...
+$min-position: 0;
+$max-position: 50;
+$unit: "%";
+$increment: 5;
+
+@while $min-position <= $max-position {
+  .top-#{$min-position} {
+    top: #{$min-position}#{$unit};
+    transform: translateY(-#{$min-position}#{$unit});
+  }
+  .right-#{$min-position} {
+    right: #{$min-position}#{$unit};
+    transform: translateX(#{$min-position}#{$unit});
+  }
+  .bottom-#{$min-position} {
+    bottom: #{$min-position}#{$unit};
+    transform: translateY(#{$min-position}#{$unit});
+  }
+  .left-#{$min-position} {
+    left: #{$min-position}#{$unit};
+    transform: translateX(-#{$min-position}#{$unit});
+  }
+
+  $min-position: $min-position + $increment;
+}
+
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@for $i from -1 to 99 {
+  .z-#{$i} {
+    z-index: #{$i};
   }
 }

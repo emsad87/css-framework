@@ -18,3 +18,40 @@ h5 {
 h6 {
   font-size: 1.25rem;
 }
+
+// List style
+$list-style: (
+  "none": none,
+  "square": square,
+  "circle": circle,
+  "disc": disc,
+  "decimal": decimal,
+  "georgian": georgian,
+);
+
+@each $name, $list-style in $list-style {
+  .list-#{$name} {
+    list-style: #{$list-style};
+  }
+}
+
+// Font size
+$min-font: 1;
+$max-font: 20;
+$unit: "rem";
+$increment: 1;
+
+@while $min-font <= $max-font {
+  .fsize-#{$min-font} {
+    font-size: #{$min-font}#{$unit};
+  }
+
+  $min-font: $min-font + $increment;
+}
+
+.no-deco {
+  a {
+    text-decoration: none;
+    color: currentColor;
+  }
+}

@@ -1,3 +1,4 @@
+// Display Property
 $display: (
   "none": none,
   "inline": inline,
@@ -8,7 +9,11 @@ $display: (
 );
 
 @each $display, $value in $display {
-  .display-#{$display} {
+  .#{$display} {
     display: #{$value};
   }
+}
+
+.overX-hidden {
+  overflow-x: hidden;
 }

@@ -1,3 +1,4 @@
+// Justify and Align Property
 $justify: (
   "start": flex-start,
   "end": flex-end,
@@ -15,42 +16,26 @@ $align: (
 );
 
 @each $justify, $value in $justify {
-  .justify- {
-    &#{$justify} {
-      justify-content: #{$value};
-    }
-
-    &#{$justify} {
-      justify-content: #{$value};
-    }
-
-    &#{$justify} {
-      justify-content: #{$value};
-    }
+  .j-#{$justify} {
+    justify-content: #{$value};
   }
 }
 
 @each $align, $value in $align {
-  .align- {
-    &itm- {
-      &#{$align} {
-        align-items: #{$value};
-      }
-    }
-    &cnt- {
-      &#{$align} {
-        align-content: #{$value};
-      }
-    }
-    &slf- {
-      &#{$align} {
-        align-self: #{$value};
-      }
-    }
+  .a-#{$align} {
+    align-items: #{$value};
   }
 }
 
 .center {
   justify-content: center;
   align-items: center;
+}
+
+.f-col {
+  flex-direction: column;
+}
+
+.f-row {
+  flex-direction: row;
 }

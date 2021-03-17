@@ -1,10 +1,11 @@
+// BORDER RADIUS FROM 5px TO 50px WITH 5px INCREMENT - NAMED r-5, r-10-top, r-15 etc...
 $min-radius: 5;
 $max-radius: 50;
 $unit: "px";
 $increment: 5;
 
 @while $min-radius <= $max-radius {
-  .rounded-#{$min-radius} {
+  .r-#{$min-radius} {
     border-radius: #{$min-radius}#{$unit};
 
     &-top {
@@ -23,9 +24,9 @@ $increment: 5;
   $min-radius: $min-radius + $increment;
 }
 
-.round50 {
+.r50 {
   border-radius: 50%;
 }
-.round100 {
+.r100 {
   border-radius: 100%;
 }

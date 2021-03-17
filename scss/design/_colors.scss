@@ -10,22 +10,34 @@ $theme-colors: (
   "muted": #edecf1,
 );
 
-@each $name, $color in $theme-colors {
-  @if $name == "light" {
-    .bg-#{$name} {
-      background-color: $color;
-      color: black;
-    }
-  } @else if $name == "muted" {
-    .bg-#{$name} {
-      background-color: $color;
-      color: white;
-      cursor: not-allowed !important;
-    }
-  } @else {
-    .bg-#{$name} {
-      background-color: $color;
-      color: white;
-    }
+$colors: (
+  "black": #000000,
+  "white": #ffffff,
+  "indigo": #4b0082,
+  "purple": #8e35ef,
+  "pearl": #fdeef4,
+  "crimson": #e238ec,
+  "magenta": #ff00ff,
+  "red": #ff0000,
+  "wood": #966f33,
+  "orange": #f88017,
+  "blue": #0000ff,
+  "green": #00ff00,
+  "yellow": #ffff00,
+  "steel": #4863a0,
+  "night": #0c090a,
+);
+
+// Background colors named bg-primary, bg-secondary etc...
+@each $name, $color in $colors {
+  .bg-#{$name} {
+    background-color: $color;
+  }
+}
+
+// Color for color atribute named c-primary, c-secondary etc...
+@each $name, $color in $colors {
+  .c-#{$name} {
+    color: $color;
   }
 }
