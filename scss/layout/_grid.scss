@@ -6,16 +6,13 @@ $no-of-columns: 12;
   display: block;
   width: 100%;
   max-width: 1170px;
-
   padding: 0px 1rem;
   margin: 0px auto;
 
   &-fluid {
     display: flex;
     flex-direction: column;
-
     width: 100%;
-
     padding: 1rem 0px;
   }
 }
@@ -28,7 +25,6 @@ $no-of-columns: 12;
 }
 
 @media only screen and (max-width: breakpoints.$extra-small-screen-width-breakpoint) {
-  // RESPONSIVE COLUMN CODE .....
   @for $i from 1 through $no-of-columns {
     .col-#{$i} {
       width: (100% / ($no-of-columns / $i));
@@ -38,9 +34,7 @@ $no-of-columns: 12;
 }
 
 @each $breakpoint, $value in breakpoints.$breakpoints {
-  // MEDIA QUERY
   @media only screen and (min-width: $value) {
-    // RESPONSIVE COLUMN CODE .....
     @for $i from 1 through $no-of-columns {
       .col-#{$breakpoint}-#{$i} {
         width: (100% / ($no-of-columns / $i));
