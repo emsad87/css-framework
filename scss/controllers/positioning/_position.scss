@@ -45,7 +45,7 @@ $increment: 5;
   transform: translate(-50%, -50%);
 }
 
-@for $i from -1 to 99 {
+@for $i from -1 through 99 {
   .z-#{$i} {
     z-index: #{$i};
   }

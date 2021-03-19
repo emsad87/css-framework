@@ -1,3 +1,5 @@
+@use "../../design/breakpoints";
+
 // Justify and Align Property
 $justify: (
   "start": flex-start,
@@ -36,6 +38,18 @@ $align: (
   flex-direction: column;
 }
 
+@media screen and (min-width: map-get(breakpoints.$breakpoints, "md")) {
+  .md-f-col {
+    flex-direction: column;
+  }
+}
+
 .f-row {
   flex-direction: row;
+}
+
+@media screen and (min-width: map-get(breakpoints.$breakpoints, "md")) {
+  .md-f-row {
+    flex-direction: row;
+  }
 }

@@ -3,6 +3,11 @@ let navBarToggle = document.querySelector("#js-navbar-toggle");
 
 let codebox = document.querySelectorAll(".code");
 
+navBarToggle.innerHTML = `
+  <span></span>
+                <span></span>
+                <span></span>`;
+
 navBarToggle.addEventListener("click", function () {
   mainNav.classList.toggle("active");
 });

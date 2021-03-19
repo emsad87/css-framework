@@ -1,3 +1,5 @@
+@use "../../design/breakpoints";
+
 // Display Property
 $display: (
   "none": none,
@@ -11,6 +13,11 @@ $display: (
 @each $display, $value in $display {
   .#{$display} {
     display: #{$value};
+  }
+  @media screen and (min-width: map-get(breakpoints.$breakpoints, "md")) {
+    .md-#{$display} {
+      display: #{$value};
+    }
   }
 }
 

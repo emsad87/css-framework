@@ -1,3 +1,4 @@
+// Font size for "h" elements
 h1 {
   font-size: 3rem;
 }
@@ -49,6 +50,7 @@ $increment: 1;
   $min-font: $min-font + $increment;
 }
 
+// Setting child anchor text decoration to none and color to parent current color
 .no-deco {
   a {
     text-decoration: none;
@@ -56,10 +58,17 @@ $increment: 1;
   }
 }
 
+// Setting anchor element text decoration to none and color to parent current color
+.a-no-deco {
+  text-decoration: none;
+  color: currentColor;
+}
+
 .text-center {
   text-align: center;
 }
 
+// Settin margin-bottom to all "H" and "p" elements
 h1,
 h2,
 h3,
