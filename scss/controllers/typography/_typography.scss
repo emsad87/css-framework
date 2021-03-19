@@ -1,3 +1,5 @@
+@use "../../design/breakpoints";
+
 // Font size for "h" elements
 h1 {
   font-size: 3rem;
@@ -66,6 +68,12 @@ $increment: 1;
 
 .text-center {
   text-align: center;
+}
+
+@media screen and (max-width: map-get(breakpoints.$breakpoints, "sm")) {
+  .sm-text-center {
+    text-align: center;
+  }
 }
 
 // Settin margin-bottom to all "H" and "p" elements

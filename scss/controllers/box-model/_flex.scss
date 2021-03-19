@@ -21,11 +21,21 @@ $align: (
   .j-#{$justify} {
     justify-content: #{$value};
   }
+  @media screen and (min-width: map-get(breakpoints.$breakpoints, "md")) {
+    .md-j-#{$justify} {
+      flex-direction: #{$value};
+    }
+  }
 }
 
 @each $align, $value in $align {
   .a-#{$align} {
     align-items: #{$value};
+  }
+  @media screen and (min-width: map-get(breakpoints.$breakpoints, "md")) {
+    .md-a-#{$align} {
+      flex-direction: #{$value};
+    }
   }
 }
 
