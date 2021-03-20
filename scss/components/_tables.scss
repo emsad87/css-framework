@@ -1,0 +1,10 @@
+table {
+  margin: 15px;
+  empty-cells: hide;
+}
+td,
+th {
+  padding: 15px;
+  border: 1px solid currentColor;
+  white-space: nowrap;
+}

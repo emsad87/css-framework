@@ -71,18 +71,19 @@
 }
 
 .hero__bg {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-height: 110%;
-  min-width: 1024px;
-  width: 101%;
+  // position: fixed;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+  // min-height: 110%;
+  // min-width: 1024px;
+  // width: 101%;
 
   z-index: -1;
 
   img {
     display: block;
     width: 100%;
+    object-fit: cover;
   }
 }

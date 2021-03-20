@@ -12,6 +12,10 @@
   box-sizing: border-box;
 }
 
+.list-nop .li {
+  margin-left: 0;
+}
+
 html {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   /* 1 */
@@ -461,6 +465,42 @@ th {
   background-color: #0c090a;
 }
 
+.bg-primary {
+  background-color: #626ed4;
+}
+
+.bg-secondary {
+  background-color: #343549;
+}
+
+.bg-success {
+  background-color: #2aa39a;
+}
+
+.bg-danger {
+  background-color: #ec4561;
+}
+
+.bg-warning {
+  background-color: #f8b425;
+}
+
+.bg-info {
+  background-color: #38a5f8;
+}
+
+.bg-light {
+  background-color: #f8f8fa;
+}
+
+.bg-dark {
+  background-color: #575c62;
+}
+
+.bg-muted {
+  background-color: #edecf1;
+}
+
 .c-black {
   color: #000000;
 }
@@ -519,6 +559,42 @@ th {
 
 .c-night {
   color: #0c090a;
+}
+
+.c-primary {
+  color: #626ed4;
+}
+
+.c-secondary {
+  color: #343549;
+}
+
+.c-success {
+  color: #2aa39a;
+}
+
+.c-danger {
+  color: #ec4561;
+}
+
+.c-warning {
+  color: #f8b425;
+}
+
+.c-info {
+  color: #38a5f8;
+}
+
+.c-light {
+  color: #f8f8fa;
+}
+
+.c-dark {
+  color: #575c62;
+}
+
+.c-muted {
+  color: #edecf1;
 }
 
 .c-cc {
@@ -767,18 +843,12 @@ th {
 }
 
 .hero__bg {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-height: 110%;
-  min-width: 1024px;
-  width: 101%;
   z-index: -1;
 }
 .hero__bg img {
   display: block;
   width: 100%;
+  object-fit: cover;
 }
 
 .code {
@@ -790,11 +860,22 @@ th {
   white-space: pre;
 }
 
+table {
+  margin: 15px;
+  empty-cells: hide;
+}
+
+td,
+th {
+  padding: 15px;
+  border: 1px solid currentColor;
+  white-space: nowrap;
+}
+
 .container {
   display: block;
   width: 100%;
   max-width: 1170px;
-  padding: 0px 1rem;
   margin: 0px auto;
 }
 .container-fluid {
@@ -1820,804 +1901,1612 @@ th {
   overflow-x: hidden;
 }
 
+.overY-hidden {
+  overflow-y: hidden;
+}
+
+.over-auto {
+  overflow: auto;
+}
+
 .w-1 {
   width: 1%;
+}
+
+.vw-1 {
+  min-height: 1vw;
 }
 
 .w-2 {
   width: 2%;
 }
 
+.vw-2 {
+  min-height: 2vw;
+}
+
 .w-3 {
   width: 3%;
+}
+
+.vw-3 {
+  min-height: 3vw;
 }
 
 .w-4 {
   width: 4%;
 }
 
+.vw-4 {
+  min-height: 4vw;
+}
+
 .w-5 {
   width: 5%;
+}
+
+.vw-5 {
+  min-height: 5vw;
 }
 
 .w-6 {
   width: 6%;
 }
 
+.vw-6 {
+  min-height: 6vw;
+}
+
 .w-7 {
   width: 7%;
+}
+
+.vw-7 {
+  min-height: 7vw;
 }
 
 .w-8 {
   width: 8%;
 }
 
+.vw-8 {
+  min-height: 8vw;
+}
+
 .w-9 {
   width: 9%;
+}
+
+.vw-9 {
+  min-height: 9vw;
 }
 
 .w-10 {
   width: 10%;
 }
 
+.vw-10 {
+  min-height: 10vw;
+}
+
 .w-11 {
   width: 11%;
+}
+
+.vw-11 {
+  min-height: 11vw;
 }
 
 .w-12 {
   width: 12%;
 }
 
+.vw-12 {
+  min-height: 12vw;
+}
+
 .w-13 {
   width: 13%;
+}
+
+.vw-13 {
+  min-height: 13vw;
 }
 
 .w-14 {
   width: 14%;
 }
 
+.vw-14 {
+  min-height: 14vw;
+}
+
 .w-15 {
   width: 15%;
+}
+
+.vw-15 {
+  min-height: 15vw;
 }
 
 .w-16 {
   width: 16%;
 }
 
+.vw-16 {
+  min-height: 16vw;
+}
+
 .w-17 {
   width: 17%;
+}
+
+.vw-17 {
+  min-height: 17vw;
 }
 
 .w-18 {
   width: 18%;
 }
 
+.vw-18 {
+  min-height: 18vw;
+}
+
 .w-19 {
   width: 19%;
+}
+
+.vw-19 {
+  min-height: 19vw;
 }
 
 .w-20 {
   width: 20%;
 }
 
+.vw-20 {
+  min-height: 20vw;
+}
+
 .w-21 {
   width: 21%;
+}
+
+.vw-21 {
+  min-height: 21vw;
 }
 
 .w-22 {
   width: 22%;
 }
 
+.vw-22 {
+  min-height: 22vw;
+}
+
 .w-23 {
   width: 23%;
+}
+
+.vw-23 {
+  min-height: 23vw;
 }
 
 .w-24 {
   width: 24%;
 }
 
+.vw-24 {
+  min-height: 24vw;
+}
+
 .w-25 {
   width: 25%;
+}
+
+.vw-25 {
+  min-height: 25vw;
 }
 
 .w-26 {
   width: 26%;
 }
 
+.vw-26 {
+  min-height: 26vw;
+}
+
 .w-27 {
   width: 27%;
+}
+
+.vw-27 {
+  min-height: 27vw;
 }
 
 .w-28 {
   width: 28%;
 }
 
+.vw-28 {
+  min-height: 28vw;
+}
+
 .w-29 {
   width: 29%;
+}
+
+.vw-29 {
+  min-height: 29vw;
 }
 
 .w-30 {
   width: 30%;
 }
 
+.vw-30 {
+  min-height: 30vw;
+}
+
 .w-31 {
   width: 31%;
+}
+
+.vw-31 {
+  min-height: 31vw;
 }
 
 .w-32 {
   width: 32%;
 }
 
+.vw-32 {
+  min-height: 32vw;
+}
+
 .w-33 {
   width: 33%;
+}
+
+.vw-33 {
+  min-height: 33vw;
 }
 
 .w-34 {
   width: 34%;
 }
 
+.vw-34 {
+  min-height: 34vw;
+}
+
 .w-35 {
   width: 35%;
+}
+
+.vw-35 {
+  min-height: 35vw;
 }
 
 .w-36 {
   width: 36%;
 }
 
+.vw-36 {
+  min-height: 36vw;
+}
+
 .w-37 {
   width: 37%;
+}
+
+.vw-37 {
+  min-height: 37vw;
 }
 
 .w-38 {
   width: 38%;
 }
 
+.vw-38 {
+  min-height: 38vw;
+}
+
 .w-39 {
   width: 39%;
+}
+
+.vw-39 {
+  min-height: 39vw;
 }
 
 .w-40 {
   width: 40%;
 }
 
+.vw-40 {
+  min-height: 40vw;
+}
+
 .w-41 {
   width: 41%;
+}
+
+.vw-41 {
+  min-height: 41vw;
 }
 
 .w-42 {
   width: 42%;
 }
 
+.vw-42 {
+  min-height: 42vw;
+}
+
 .w-43 {
   width: 43%;
+}
+
+.vw-43 {
+  min-height: 43vw;
 }
 
 .w-44 {
   width: 44%;
 }
 
+.vw-44 {
+  min-height: 44vw;
+}
+
 .w-45 {
   width: 45%;
+}
+
+.vw-45 {
+  min-height: 45vw;
 }
 
 .w-46 {
   width: 46%;
 }
 
+.vw-46 {
+  min-height: 46vw;
+}
+
 .w-47 {
   width: 47%;
+}
+
+.vw-47 {
+  min-height: 47vw;
 }
 
 .w-48 {
   width: 48%;
 }
 
+.vw-48 {
+  min-height: 48vw;
+}
+
 .w-49 {
   width: 49%;
+}
+
+.vw-49 {
+  min-height: 49vw;
 }
 
 .w-50 {
   width: 50%;
 }
 
+.vw-50 {
+  min-height: 50vw;
+}
+
 .w-51 {
   width: 51%;
+}
+
+.vw-51 {
+  min-height: 51vw;
 }
 
 .w-52 {
   width: 52%;
 }
 
+.vw-52 {
+  min-height: 52vw;
+}
+
 .w-53 {
   width: 53%;
+}
+
+.vw-53 {
+  min-height: 53vw;
 }
 
 .w-54 {
   width: 54%;
 }
 
+.vw-54 {
+  min-height: 54vw;
+}
+
 .w-55 {
   width: 55%;
+}
+
+.vw-55 {
+  min-height: 55vw;
 }
 
 .w-56 {
   width: 56%;
 }
 
+.vw-56 {
+  min-height: 56vw;
+}
+
 .w-57 {
   width: 57%;
+}
+
+.vw-57 {
+  min-height: 57vw;
 }
 
 .w-58 {
   width: 58%;
 }
 
+.vw-58 {
+  min-height: 58vw;
+}
+
 .w-59 {
   width: 59%;
+}
+
+.vw-59 {
+  min-height: 59vw;
 }
 
 .w-60 {
   width: 60%;
 }
 
+.vw-60 {
+  min-height: 60vw;
+}
+
 .w-61 {
   width: 61%;
+}
+
+.vw-61 {
+  min-height: 61vw;
 }
 
 .w-62 {
   width: 62%;
 }
 
+.vw-62 {
+  min-height: 62vw;
+}
+
 .w-63 {
   width: 63%;
+}
+
+.vw-63 {
+  min-height: 63vw;
 }
 
 .w-64 {
   width: 64%;
 }
 
+.vw-64 {
+  min-height: 64vw;
+}
+
 .w-65 {
   width: 65%;
+}
+
+.vw-65 {
+  min-height: 65vw;
 }
 
 .w-66 {
   width: 66%;
 }
 
+.vw-66 {
+  min-height: 66vw;
+}
+
 .w-67 {
   width: 67%;
+}
+
+.vw-67 {
+  min-height: 67vw;
 }
 
 .w-68 {
   width: 68%;
 }
 
+.vw-68 {
+  min-height: 68vw;
+}
+
 .w-69 {
   width: 69%;
+}
+
+.vw-69 {
+  min-height: 69vw;
 }
 
 .w-70 {
   width: 70%;
 }
 
+.vw-70 {
+  min-height: 70vw;
+}
+
 .w-71 {
   width: 71%;
+}
+
+.vw-71 {
+  min-height: 71vw;
 }
 
 .w-72 {
   width: 72%;
 }
 
+.vw-72 {
+  min-height: 72vw;
+}
+
 .w-73 {
   width: 73%;
+}
+
+.vw-73 {
+  min-height: 73vw;
 }
 
 .w-74 {
   width: 74%;
 }
 
+.vw-74 {
+  min-height: 74vw;
+}
+
 .w-75 {
   width: 75%;
+}
+
+.vw-75 {
+  min-height: 75vw;
 }
 
 .w-76 {
   width: 76%;
 }
 
+.vw-76 {
+  min-height: 76vw;
+}
+
 .w-77 {
   width: 77%;
+}
+
+.vw-77 {
+  min-height: 77vw;
 }
 
 .w-78 {
   width: 78%;
 }
 
+.vw-78 {
+  min-height: 78vw;
+}
+
 .w-79 {
   width: 79%;
+}
+
+.vw-79 {
+  min-height: 79vw;
 }
 
 .w-80 {
   width: 80%;
 }
 
+.vw-80 {
+  min-height: 80vw;
+}
+
 .w-81 {
   width: 81%;
+}
+
+.vw-81 {
+  min-height: 81vw;
 }
 
 .w-82 {
   width: 82%;
 }
 
+.vw-82 {
+  min-height: 82vw;
+}
+
 .w-83 {
   width: 83%;
+}
+
+.vw-83 {
+  min-height: 83vw;
 }
 
 .w-84 {
   width: 84%;
 }
 
+.vw-84 {
+  min-height: 84vw;
+}
+
 .w-85 {
   width: 85%;
+}
+
+.vw-85 {
+  min-height: 85vw;
 }
 
 .w-86 {
   width: 86%;
 }
 
+.vw-86 {
+  min-height: 86vw;
+}
+
 .w-87 {
   width: 87%;
+}
+
+.vw-87 {
+  min-height: 87vw;
 }
 
 .w-88 {
   width: 88%;
 }
 
+.vw-88 {
+  min-height: 88vw;
+}
+
 .w-89 {
   width: 89%;
+}
+
+.vw-89 {
+  min-height: 89vw;
 }
 
 .w-90 {
   width: 90%;
 }
 
+.vw-90 {
+  min-height: 90vw;
+}
+
 .w-91 {
   width: 91%;
+}
+
+.vw-91 {
+  min-height: 91vw;
 }
 
 .w-92 {
   width: 92%;
 }
 
+.vw-92 {
+  min-height: 92vw;
+}
+
 .w-93 {
   width: 93%;
+}
+
+.vw-93 {
+  min-height: 93vw;
 }
 
 .w-94 {
   width: 94%;
 }
 
+.vw-94 {
+  min-height: 94vw;
+}
+
 .w-95 {
   width: 95%;
+}
+
+.vw-95 {
+  min-height: 95vw;
 }
 
 .w-96 {
   width: 96%;
 }
 
+.vw-96 {
+  min-height: 96vw;
+}
+
 .w-97 {
   width: 97%;
+}
+
+.vw-97 {
+  min-height: 97vw;
 }
 
 .w-98 {
   width: 98%;
 }
 
+.vw-98 {
+  min-height: 98vw;
+}
+
 .w-99 {
   width: 99%;
+}
+
+.vw-99 {
+  min-height: 99vw;
 }
 
 .w-100 {
   width: 100%;
 }
 
+.vw-100 {
+  min-height: 100vw;
+}
+
 .h-1 {
   height: 1%;
+}
+
+.vh-1 {
+  min-height: 1vh;
 }
 
 .h-2 {
   height: 2%;
 }
 
+.vh-2 {
+  min-height: 2vh;
+}
+
 .h-3 {
   height: 3%;
+}
+
+.vh-3 {
+  min-height: 3vh;
 }
 
 .h-4 {
   height: 4%;
 }
 
+.vh-4 {
+  min-height: 4vh;
+}
+
 .h-5 {
   height: 5%;
+}
+
+.vh-5 {
+  min-height: 5vh;
 }
 
 .h-6 {
   height: 6%;
 }
 
+.vh-6 {
+  min-height: 6vh;
+}
+
 .h-7 {
   height: 7%;
+}
+
+.vh-7 {
+  min-height: 7vh;
 }
 
 .h-8 {
   height: 8%;
 }
 
+.vh-8 {
+  min-height: 8vh;
+}
+
 .h-9 {
   height: 9%;
+}
+
+.vh-9 {
+  min-height: 9vh;
 }
 
 .h-10 {
   height: 10%;
 }
 
+.vh-10 {
+  min-height: 10vh;
+}
+
 .h-11 {
   height: 11%;
+}
+
+.vh-11 {
+  min-height: 11vh;
 }
 
 .h-12 {
   height: 12%;
 }
 
+.vh-12 {
+  min-height: 12vh;
+}
+
 .h-13 {
   height: 13%;
+}
+
+.vh-13 {
+  min-height: 13vh;
 }
 
 .h-14 {
   height: 14%;
 }
 
+.vh-14 {
+  min-height: 14vh;
+}
+
 .h-15 {
   height: 15%;
+}
+
+.vh-15 {
+  min-height: 15vh;
 }
 
 .h-16 {
   height: 16%;
 }
 
+.vh-16 {
+  min-height: 16vh;
+}
+
 .h-17 {
   height: 17%;
+}
+
+.vh-17 {
+  min-height: 17vh;
 }
 
 .h-18 {
   height: 18%;
 }
 
+.vh-18 {
+  min-height: 18vh;
+}
+
 .h-19 {
   height: 19%;
+}
+
+.vh-19 {
+  min-height: 19vh;
 }
 
 .h-20 {
   height: 20%;
 }
 
+.vh-20 {
+  min-height: 20vh;
+}
+
 .h-21 {
   height: 21%;
+}
+
+.vh-21 {
+  min-height: 21vh;
 }
 
 .h-22 {
   height: 22%;
 }
 
+.vh-22 {
+  min-height: 22vh;
+}
+
 .h-23 {
   height: 23%;
+}
+
+.vh-23 {
+  min-height: 23vh;
 }
 
 .h-24 {
   height: 24%;
 }
 
+.vh-24 {
+  min-height: 24vh;
+}
+
 .h-25 {
   height: 25%;
+}
+
+.vh-25 {
+  min-height: 25vh;
 }
 
 .h-26 {
   height: 26%;
 }
 
+.vh-26 {
+  min-height: 26vh;
+}
+
 .h-27 {
   height: 27%;
+}
+
+.vh-27 {
+  min-height: 27vh;
 }
 
 .h-28 {
   height: 28%;
 }
 
+.vh-28 {
+  min-height: 28vh;
+}
+
 .h-29 {
   height: 29%;
+}
+
+.vh-29 {
+  min-height: 29vh;
 }
 
 .h-30 {
   height: 30%;
 }
 
+.vh-30 {
+  min-height: 30vh;
+}
+
 .h-31 {
   height: 31%;
+}
+
+.vh-31 {
+  min-height: 31vh;
 }
 
 .h-32 {
   height: 32%;
 }
 
+.vh-32 {
+  min-height: 32vh;
+}
+
 .h-33 {
   height: 33%;
+}
+
+.vh-33 {
+  min-height: 33vh;
 }
 
 .h-34 {
   height: 34%;
 }
 
+.vh-34 {
+  min-height: 34vh;
+}
+
 .h-35 {
   height: 35%;
+}
+
+.vh-35 {
+  min-height: 35vh;
 }
 
 .h-36 {
   height: 36%;
 }
 
+.vh-36 {
+  min-height: 36vh;
+}
+
 .h-37 {
   height: 37%;
+}
+
+.vh-37 {
+  min-height: 37vh;
 }
 
 .h-38 {
   height: 38%;
 }
 
+.vh-38 {
+  min-height: 38vh;
+}
+
 .h-39 {
   height: 39%;
+}
+
+.vh-39 {
+  min-height: 39vh;
 }
 
 .h-40 {
   height: 40%;
 }
 
+.vh-40 {
+  min-height: 40vh;
+}
+
 .h-41 {
   height: 41%;
+}
+
+.vh-41 {
+  min-height: 41vh;
 }
 
 .h-42 {
   height: 42%;
 }
 
+.vh-42 {
+  min-height: 42vh;
+}
+
 .h-43 {
   height: 43%;
+}
+
+.vh-43 {
+  min-height: 43vh;
 }
 
 .h-44 {
   height: 44%;
 }
 
+.vh-44 {
+  min-height: 44vh;
+}
+
 .h-45 {
   height: 45%;
+}
+
+.vh-45 {
+  min-height: 45vh;
 }
 
 .h-46 {
   height: 46%;
 }
 
+.vh-46 {
+  min-height: 46vh;
+}
+
 .h-47 {
   height: 47%;
+}
+
+.vh-47 {
+  min-height: 47vh;
 }
 
 .h-48 {
   height: 48%;
 }
 
+.vh-48 {
+  min-height: 48vh;
+}
+
 .h-49 {
   height: 49%;
+}
+
+.vh-49 {
+  min-height: 49vh;
 }
 
 .h-50 {
   height: 50%;
 }
 
+.vh-50 {
+  min-height: 50vh;
+}
+
 .h-51 {
   height: 51%;
+}
+
+.vh-51 {
+  min-height: 51vh;
 }
 
 .h-52 {
   height: 52%;
 }
 
+.vh-52 {
+  min-height: 52vh;
+}
+
 .h-53 {
   height: 53%;
+}
+
+.vh-53 {
+  min-height: 53vh;
 }
 
 .h-54 {
   height: 54%;
 }
 
+.vh-54 {
+  min-height: 54vh;
+}
+
 .h-55 {
   height: 55%;
+}
+
+.vh-55 {
+  min-height: 55vh;
 }
 
 .h-56 {
   height: 56%;
 }
 
+.vh-56 {
+  min-height: 56vh;
+}
+
 .h-57 {
   height: 57%;
+}
+
+.vh-57 {
+  min-height: 57vh;
 }
 
 .h-58 {
   height: 58%;
 }
 
+.vh-58 {
+  min-height: 58vh;
+}
+
 .h-59 {
   height: 59%;
+}
+
+.vh-59 {
+  min-height: 59vh;
 }
 
 .h-60 {
   height: 60%;
 }
 
+.vh-60 {
+  min-height: 60vh;
+}
+
 .h-61 {
   height: 61%;
+}
+
+.vh-61 {
+  min-height: 61vh;
 }
 
 .h-62 {
   height: 62%;
 }
 
+.vh-62 {
+  min-height: 62vh;
+}
+
 .h-63 {
   height: 63%;
+}
+
+.vh-63 {
+  min-height: 63vh;
 }
 
 .h-64 {
   height: 64%;
 }
 
+.vh-64 {
+  min-height: 64vh;
+}
+
 .h-65 {
   height: 65%;
+}
+
+.vh-65 {
+  min-height: 65vh;
 }
 
 .h-66 {
   height: 66%;
 }
 
+.vh-66 {
+  min-height: 66vh;
+}
+
 .h-67 {
   height: 67%;
+}
+
+.vh-67 {
+  min-height: 67vh;
 }
 
 .h-68 {
   height: 68%;
 }
 
+.vh-68 {
+  min-height: 68vh;
+}
+
 .h-69 {
   height: 69%;
+}
+
+.vh-69 {
+  min-height: 69vh;
 }
 
 .h-70 {
   height: 70%;
 }
 
+.vh-70 {
+  min-height: 70vh;
+}
+
 .h-71 {
   height: 71%;
+}
+
+.vh-71 {
+  min-height: 71vh;
 }
 
 .h-72 {
   height: 72%;
 }
 
+.vh-72 {
+  min-height: 72vh;
+}
+
 .h-73 {
   height: 73%;
+}
+
+.vh-73 {
+  min-height: 73vh;
 }
 
 .h-74 {
   height: 74%;
 }
 
+.vh-74 {
+  min-height: 74vh;
+}
+
 .h-75 {
   height: 75%;
+}
+
+.vh-75 {
+  min-height: 75vh;
 }
 
 .h-76 {
   height: 76%;
 }
 
+.vh-76 {
+  min-height: 76vh;
+}
+
 .h-77 {
   height: 77%;
+}
+
+.vh-77 {
+  min-height: 77vh;
 }
 
 .h-78 {
   height: 78%;
 }
 
+.vh-78 {
+  min-height: 78vh;
+}
+
 .h-79 {
   height: 79%;
+}
+
+.vh-79 {
+  min-height: 79vh;
 }
 
 .h-80 {
   height: 80%;
 }
 
+.vh-80 {
+  min-height: 80vh;
+}
+
 .h-81 {
   height: 81%;
+}
+
+.vh-81 {
+  min-height: 81vh;
 }
 
 .h-82 {
   height: 82%;
 }
 
+.vh-82 {
+  min-height: 82vh;
+}
+
 .h-83 {
   height: 83%;
+}
+
+.vh-83 {
+  min-height: 83vh;
 }
 
 .h-84 {
   height: 84%;
 }
 
+.vh-84 {
+  min-height: 84vh;
+}
+
 .h-85 {
   height: 85%;
+}
+
+.vh-85 {
+  min-height: 85vh;
 }
 
 .h-86 {
   height: 86%;
 }
 
+.vh-86 {
+  min-height: 86vh;
+}
+
 .h-87 {
   height: 87%;
+}
+
+.vh-87 {
+  min-height: 87vh;
 }
 
 .h-88 {
   height: 88%;
 }
 
+.vh-88 {
+  min-height: 88vh;
+}
+
 .h-89 {
   height: 89%;
+}
+
+.vh-89 {
+  min-height: 89vh;
 }
 
 .h-90 {
   height: 90%;
 }
 
+.vh-90 {
+  min-height: 90vh;
+}
+
 .h-91 {
   height: 91%;
+}
+
+.vh-91 {
+  min-height: 91vh;
 }
 
 .h-92 {
   height: 92%;
 }
 
+.vh-92 {
+  min-height: 92vh;
+}
+
 .h-93 {
   height: 93%;
+}
+
+.vh-93 {
+  min-height: 93vh;
 }
 
 .h-94 {
   height: 94%;
 }
 
+.vh-94 {
+  min-height: 94vh;
+}
+
 .h-95 {
   height: 95%;
+}
+
+.vh-95 {
+  min-height: 95vh;
 }
 
 .h-96 {
   height: 96%;
 }
 
+.vh-96 {
+  min-height: 96vh;
+}
+
 .h-97 {
   height: 97%;
+}
+
+.vh-97 {
+  min-height: 97vh;
 }
 
 .h-98 {
   height: 98%;
 }
 
+.vh-98 {
+  min-height: 98vh;
+}
+
 .h-99 {
   height: 99%;
 }
 
+.vh-99 {
+  min-height: 99vh;
+}
+
 .h-100 {
   height: 100%;
+}
+
+.vh-100 {
+  min-height: 100vh;
 }
 
 .full {
@@ -2753,10 +3642,10 @@ th {
 .m-5-left {
   margin: 0 0 0 5px;
 }
-.m-5-sides {
+.m-5-x {
   margin: 0 5px;
 }
-.m-5-top-bottom {
+.m-5-y {
   margin: 5px 0;
 }
 
@@ -2775,10 +3664,10 @@ th {
 .m-10-left {
   margin: 0 0 0 10px;
 }
-.m-10-sides {
+.m-10-x {
   margin: 0 10px;
 }
-.m-10-top-bottom {
+.m-10-y {
   margin: 10px 0;
 }
 
@@ -2797,10 +3686,10 @@ th {
 .m-15-left {
   margin: 0 0 0 15px;
 }
-.m-15-sides {
+.m-15-x {
   margin: 0 15px;
 }
-.m-15-top-bottom {
+.m-15-y {
   margin: 15px 0;
 }
 
@@ -2819,10 +3708,10 @@ th {
 .m-20-left {
   margin: 0 0 0 20px;
 }
-.m-20-sides {
+.m-20-x {
   margin: 0 20px;
 }
-.m-20-top-bottom {
+.m-20-y {
   margin: 20px 0;
 }
 
@@ -2841,10 +3730,10 @@ th {
 .m-25-left {
   margin: 0 0 0 25px;
 }
-.m-25-sides {
+.m-25-x {
   margin: 0 25px;
 }
-.m-25-top-bottom {
+.m-25-y {
   margin: 25px 0;
 }
 
@@ -2863,10 +3752,10 @@ th {
 .m-30-left {
   margin: 0 0 0 30px;
 }
-.m-30-sides {
+.m-30-x {
   margin: 0 30px;
 }
-.m-30-top-bottom {
+.m-30-y {
   margin: 30px 0;
 }
 
@@ -2885,10 +3774,10 @@ th {
 .m-35-left {
   margin: 0 0 0 35px;
 }
-.m-35-sides {
+.m-35-x {
   margin: 0 35px;
 }
-.m-35-top-bottom {
+.m-35-y {
   margin: 35px 0;
 }
 
@@ -2907,10 +3796,10 @@ th {
 .m-40-left {
   margin: 0 0 0 40px;
 }
-.m-40-sides {
+.m-40-x {
   margin: 0 40px;
 }
-.m-40-top-bottom {
+.m-40-y {
   margin: 40px 0;
 }
 
@@ -2929,10 +3818,10 @@ th {
 .m-45-left {
   margin: 0 0 0 45px;
 }
-.m-45-sides {
+.m-45-x {
   margin: 0 45px;
 }
-.m-45-top-bottom {
+.m-45-y {
   margin: 45px 0;
 }
 
@@ -2951,11 +3840,231 @@ th {
 .m-50-left {
   margin: 0 0 0 50px;
 }
-.m-50-sides {
+.m-50-x {
   margin: 0 50px;
 }
-.m-50-top-bottom {
+.m-50-y {
   margin: 50px 0;
+}
+
+.m-55 {
+  margin: 55px;
+}
+.m-55-top {
+  margin: 55px 0 0 0;
+}
+.m-55-right {
+  margin: 0 55px 0 0;
+}
+.m-55-bottom {
+  margin: 0 0 55px 0;
+}
+.m-55-left {
+  margin: 0 0 0 55px;
+}
+.m-55-x {
+  margin: 0 55px;
+}
+.m-55-y {
+  margin: 55px 0;
+}
+
+.m-60 {
+  margin: 60px;
+}
+.m-60-top {
+  margin: 60px 0 0 0;
+}
+.m-60-right {
+  margin: 0 60px 0 0;
+}
+.m-60-bottom {
+  margin: 0 0 60px 0;
+}
+.m-60-left {
+  margin: 0 0 0 60px;
+}
+.m-60-x {
+  margin: 0 60px;
+}
+.m-60-y {
+  margin: 60px 0;
+}
+
+.m-65 {
+  margin: 65px;
+}
+.m-65-top {
+  margin: 65px 0 0 0;
+}
+.m-65-right {
+  margin: 0 65px 0 0;
+}
+.m-65-bottom {
+  margin: 0 0 65px 0;
+}
+.m-65-left {
+  margin: 0 0 0 65px;
+}
+.m-65-x {
+  margin: 0 65px;
+}
+.m-65-y {
+  margin: 65px 0;
+}
+
+.m-70 {
+  margin: 70px;
+}
+.m-70-top {
+  margin: 70px 0 0 0;
+}
+.m-70-right {
+  margin: 0 70px 0 0;
+}
+.m-70-bottom {
+  margin: 0 0 70px 0;
+}
+.m-70-left {
+  margin: 0 0 0 70px;
+}
+.m-70-x {
+  margin: 0 70px;
+}
+.m-70-y {
+  margin: 70px 0;
+}
+
+.m-75 {
+  margin: 75px;
+}
+.m-75-top {
+  margin: 75px 0 0 0;
+}
+.m-75-right {
+  margin: 0 75px 0 0;
+}
+.m-75-bottom {
+  margin: 0 0 75px 0;
+}
+.m-75-left {
+  margin: 0 0 0 75px;
+}
+.m-75-x {
+  margin: 0 75px;
+}
+.m-75-y {
+  margin: 75px 0;
+}
+
+.m-80 {
+  margin: 80px;
+}
+.m-80-top {
+  margin: 80px 0 0 0;
+}
+.m-80-right {
+  margin: 0 80px 0 0;
+}
+.m-80-bottom {
+  margin: 0 0 80px 0;
+}
+.m-80-left {
+  margin: 0 0 0 80px;
+}
+.m-80-x {
+  margin: 0 80px;
+}
+.m-80-y {
+  margin: 80px 0;
+}
+
+.m-85 {
+  margin: 85px;
+}
+.m-85-top {
+  margin: 85px 0 0 0;
+}
+.m-85-right {
+  margin: 0 85px 0 0;
+}
+.m-85-bottom {
+  margin: 0 0 85px 0;
+}
+.m-85-left {
+  margin: 0 0 0 85px;
+}
+.m-85-x {
+  margin: 0 85px;
+}
+.m-85-y {
+  margin: 85px 0;
+}
+
+.m-90 {
+  margin: 90px;
+}
+.m-90-top {
+  margin: 90px 0 0 0;
+}
+.m-90-right {
+  margin: 0 90px 0 0;
+}
+.m-90-bottom {
+  margin: 0 0 90px 0;
+}
+.m-90-left {
+  margin: 0 0 0 90px;
+}
+.m-90-x {
+  margin: 0 90px;
+}
+.m-90-y {
+  margin: 90px 0;
+}
+
+.m-95 {
+  margin: 95px;
+}
+.m-95-top {
+  margin: 95px 0 0 0;
+}
+.m-95-right {
+  margin: 0 95px 0 0;
+}
+.m-95-bottom {
+  margin: 0 0 95px 0;
+}
+.m-95-left {
+  margin: 0 0 0 95px;
+}
+.m-95-x {
+  margin: 0 95px;
+}
+.m-95-y {
+  margin: 95px 0;
+}
+
+.m-100 {
+  margin: 100px;
+}
+.m-100-top {
+  margin: 100px 0 0 0;
+}
+.m-100-right {
+  margin: 0 100px 0 0;
+}
+.m-100-bottom {
+  margin: 0 0 100px 0;
+}
+.m-100-left {
+  margin: 0 0 0 100px;
+}
+.m-100-x {
+  margin: 0 100px;
+}
+.m-100-y {
+  margin: 100px 0;
 }
 
 .m-auto {
@@ -2980,7 +4089,10 @@ th {
 .p-5-side {
   padding: 0 5px;
 }
-.p-5-top-bottom {
+.p-5-x {
+  padding: 0 5px;
+}
+.p-5-y {
   padding: 5px 0;
 }
 
@@ -3002,7 +4114,10 @@ th {
 .p-10-side {
   padding: 0 10px;
 }
-.p-10-top-bottom {
+.p-10-x {
+  padding: 0 10px;
+}
+.p-10-y {
   padding: 10px 0;
 }
 
@@ -3024,7 +4139,10 @@ th {
 .p-15-side {
   padding: 0 15px;
 }
-.p-15-top-bottom {
+.p-15-x {
+  padding: 0 15px;
+}
+.p-15-y {
   padding: 15px 0;
 }
 
@@ -3046,7 +4164,10 @@ th {
 .p-20-side {
   padding: 0 20px;
 }
-.p-20-top-bottom {
+.p-20-x {
+  padding: 0 20px;
+}
+.p-20-y {
   padding: 20px 0;
 }
 
@@ -3068,7 +4189,10 @@ th {
 .p-25-side {
   padding: 0 25px;
 }
-.p-25-top-bottom {
+.p-25-x {
+  padding: 0 25px;
+}
+.p-25-y {
   padding: 25px 0;
 }
 
@@ -3090,7 +4214,10 @@ th {
 .p-30-side {
   padding: 0 30px;
 }
-.p-30-top-bottom {
+.p-30-x {
+  padding: 0 30px;
+}
+.p-30-y {
   padding: 30px 0;
 }
 
@@ -3112,7 +4239,10 @@ th {
 .p-35-side {
   padding: 0 35px;
 }
-.p-35-top-bottom {
+.p-35-x {
+  padding: 0 35px;
+}
+.p-35-y {
   padding: 35px 0;
 }
 
@@ -3134,7 +4264,10 @@ th {
 .p-40-side {
   padding: 0 40px;
 }
-.p-40-top-bottom {
+.p-40-x {
+  padding: 0 40px;
+}
+.p-40-y {
   padding: 40px 0;
 }
 
@@ -3156,7 +4289,10 @@ th {
 .p-45-side {
   padding: 0 45px;
 }
-.p-45-top-bottom {
+.p-45-x {
+  padding: 0 45px;
+}
+.p-45-y {
   padding: 45px 0;
 }
 
@@ -3178,50 +4314,403 @@ th {
 .p-50-side {
   padding: 0 50px;
 }
-.p-50-top-bottom {
+.p-50-x {
+  padding: 0 50px;
+}
+.p-50-y {
   padding: 50px 0;
+}
+
+.p-55 {
+  padding: 55px;
+}
+.p-55-top {
+  padding: 55px 0 0 0;
+}
+.p-55-right {
+  padding: 0 55px 0 0;
+}
+.p-55-bottom {
+  padding: 0 0 55px 0;
+}
+.p-55-left {
+  padding: 0 0 0 55px;
+}
+.p-55-side {
+  padding: 0 55px;
+}
+.p-55-x {
+  padding: 0 55px;
+}
+.p-55-y {
+  padding: 55px 0;
+}
+
+.p-60 {
+  padding: 60px;
+}
+.p-60-top {
+  padding: 60px 0 0 0;
+}
+.p-60-right {
+  padding: 0 60px 0 0;
+}
+.p-60-bottom {
+  padding: 0 0 60px 0;
+}
+.p-60-left {
+  padding: 0 0 0 60px;
+}
+.p-60-side {
+  padding: 0 60px;
+}
+.p-60-x {
+  padding: 0 60px;
+}
+.p-60-y {
+  padding: 60px 0;
+}
+
+.p-65 {
+  padding: 65px;
+}
+.p-65-top {
+  padding: 65px 0 0 0;
+}
+.p-65-right {
+  padding: 0 65px 0 0;
+}
+.p-65-bottom {
+  padding: 0 0 65px 0;
+}
+.p-65-left {
+  padding: 0 0 0 65px;
+}
+.p-65-side {
+  padding: 0 65px;
+}
+.p-65-x {
+  padding: 0 65px;
+}
+.p-65-y {
+  padding: 65px 0;
+}
+
+.p-70 {
+  padding: 70px;
+}
+.p-70-top {
+  padding: 70px 0 0 0;
+}
+.p-70-right {
+  padding: 0 70px 0 0;
+}
+.p-70-bottom {
+  padding: 0 0 70px 0;
+}
+.p-70-left {
+  padding: 0 0 0 70px;
+}
+.p-70-side {
+  padding: 0 70px;
+}
+.p-70-x {
+  padding: 0 70px;
+}
+.p-70-y {
+  padding: 70px 0;
+}
+
+.p-75 {
+  padding: 75px;
+}
+.p-75-top {
+  padding: 75px 0 0 0;
+}
+.p-75-right {
+  padding: 0 75px 0 0;
+}
+.p-75-bottom {
+  padding: 0 0 75px 0;
+}
+.p-75-left {
+  padding: 0 0 0 75px;
+}
+.p-75-side {
+  padding: 0 75px;
+}
+.p-75-x {
+  padding: 0 75px;
+}
+.p-75-y {
+  padding: 75px 0;
+}
+
+.p-80 {
+  padding: 80px;
+}
+.p-80-top {
+  padding: 80px 0 0 0;
+}
+.p-80-right {
+  padding: 0 80px 0 0;
+}
+.p-80-bottom {
+  padding: 0 0 80px 0;
+}
+.p-80-left {
+  padding: 0 0 0 80px;
+}
+.p-80-side {
+  padding: 0 80px;
+}
+.p-80-x {
+  padding: 0 80px;
+}
+.p-80-y {
+  padding: 80px 0;
+}
+
+.p-85 {
+  padding: 85px;
+}
+.p-85-top {
+  padding: 85px 0 0 0;
+}
+.p-85-right {
+  padding: 0 85px 0 0;
+}
+.p-85-bottom {
+  padding: 0 0 85px 0;
+}
+.p-85-left {
+  padding: 0 0 0 85px;
+}
+.p-85-side {
+  padding: 0 85px;
+}
+.p-85-x {
+  padding: 0 85px;
+}
+.p-85-y {
+  padding: 85px 0;
+}
+
+.p-90 {
+  padding: 90px;
+}
+.p-90-top {
+  padding: 90px 0 0 0;
+}
+.p-90-right {
+  padding: 0 90px 0 0;
+}
+.p-90-bottom {
+  padding: 0 0 90px 0;
+}
+.p-90-left {
+  padding: 0 0 0 90px;
+}
+.p-90-side {
+  padding: 0 90px;
+}
+.p-90-x {
+  padding: 0 90px;
+}
+.p-90-y {
+  padding: 90px 0;
+}
+
+.p-95 {
+  padding: 95px;
+}
+.p-95-top {
+  padding: 95px 0 0 0;
+}
+.p-95-right {
+  padding: 0 95px 0 0;
+}
+.p-95-bottom {
+  padding: 0 0 95px 0;
+}
+.p-95-left {
+  padding: 0 0 0 95px;
+}
+.p-95-side {
+  padding: 0 95px;
+}
+.p-95-x {
+  padding: 0 95px;
+}
+.p-95-y {
+  padding: 95px 0;
+}
+
+.p-100 {
+  padding: 100px;
+}
+.p-100-top {
+  padding: 100px 0 0 0;
+}
+.p-100-right {
+  padding: 0 100px 0 0;
+}
+.p-100-bottom {
+  padding: 0 0 100px 0;
+}
+.p-100-left {
+  padding: 0 0 0 100px;
+}
+.p-100-side {
+  padding: 0 100px;
+}
+.p-100-x {
+  padding: 0 100px;
+}
+.p-100-y {
+  padding: 100px 0;
 }
 
 .gap-5 {
   gap: 5px;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-gap-5 {
+    gap: 5px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .md-gap-5 {
+    gap: 5px;
+  }
+}
 .gap-10 {
   gap: 10px;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-gap-10 {
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .md-gap-10 {
+    gap: 10px;
+  }
+}
 .gap-15 {
   gap: 15px;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-gap-15 {
+    gap: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .md-gap-15 {
+    gap: 15px;
+  }
+}
 .gap-20 {
   gap: 20px;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-gap-20 {
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .md-gap-20 {
+    gap: 20px;
+  }
+}
 .gap-25 {
   gap: 25px;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-gap-25 {
+    gap: 25px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .md-gap-25 {
+    gap: 25px;
+  }
+}
 .gap-30 {
   gap: 30px;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-gap-30 {
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .md-gap-30 {
+    gap: 30px;
+  }
+}
 .gap-35 {
   gap: 35px;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-gap-35 {
+    gap: 35px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .md-gap-35 {
+    gap: 35px;
+  }
+}
 .gap-40 {
   gap: 40px;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-gap-40 {
+    gap: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .md-gap-40 {
+    gap: 40px;
+  }
+}
 .gap-45 {
   gap: 45px;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-gap-45 {
+    gap: 45px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .md-gap-45 {
+    gap: 45px;
+  }
+}
 .gap-50 {
   gap: 50px;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-gap-50 {
+    gap: 50px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .md-gap-50 {
+    gap: 50px;
+  }
+}
 .b-1 {
   border: 1px solid currentColor;
 }
@@ -3243,6 +4732,16 @@ th {
 .b-1-left {
   border-style: solid;
   border-width: 0 0 0 1px;
+  border-color: currentColor;
+}
+.b-1-x {
+  border-style: solid;
+  border-width: 0 1px 0 1px;
+  border-color: currentColor;
+}
+.b-1-y {
+  border-style: solid;
+  border-width: 1px 0 1px 0;
   border-color: currentColor;
 }
 
@@ -3269,6 +4768,16 @@ th {
   border-width: 0 0 0 2px;
   border-color: currentColor;
 }
+.b-2-x {
+  border-style: solid;
+  border-width: 0 2px 0 2px;
+  border-color: currentColor;
+}
+.b-2-y {
+  border-style: solid;
+  border-width: 2px 0 2px 0;
+  border-color: currentColor;
+}
 
 .b-3 {
   border: 3px solid currentColor;
@@ -3291,6 +4800,16 @@ th {
 .b-3-left {
   border-style: solid;
   border-width: 0 0 0 3px;
+  border-color: currentColor;
+}
+.b-3-x {
+  border-style: solid;
+  border-width: 0 3px 0 3px;
+  border-color: currentColor;
+}
+.b-3-y {
+  border-style: solid;
+  border-width: 3px 0 3px 0;
   border-color: currentColor;
 }
 
@@ -3317,6 +4836,16 @@ th {
   border-width: 0 0 0 4px;
   border-color: currentColor;
 }
+.b-4-x {
+  border-style: solid;
+  border-width: 0 4px 0 4px;
+  border-color: currentColor;
+}
+.b-4-y {
+  border-style: solid;
+  border-width: 4px 0 4px 0;
+  border-color: currentColor;
+}
 
 .b-5 {
   border: 5px solid currentColor;
@@ -3339,6 +4868,16 @@ th {
 .b-5-left {
   border-style: solid;
   border-width: 0 0 0 5px;
+  border-color: currentColor;
+}
+.b-5-x {
+  border-style: solid;
+  border-width: 0 5px 0 5px;
+  border-color: currentColor;
+}
+.b-5-y {
+  border-style: solid;
+  border-width: 5px 0 5px 0;
   border-color: currentColor;
 }
 
@@ -3365,6 +4904,16 @@ th {
   border-width: 0 0 0 6px;
   border-color: currentColor;
 }
+.b-6-x {
+  border-style: solid;
+  border-width: 0 6px 0 6px;
+  border-color: currentColor;
+}
+.b-6-y {
+  border-style: solid;
+  border-width: 6px 0 6px 0;
+  border-color: currentColor;
+}
 
 .b-7 {
   border: 7px solid currentColor;
@@ -3387,6 +4936,16 @@ th {
 .b-7-left {
   border-style: solid;
   border-width: 0 0 0 7px;
+  border-color: currentColor;
+}
+.b-7-x {
+  border-style: solid;
+  border-width: 0 7px 0 7px;
+  border-color: currentColor;
+}
+.b-7-y {
+  border-style: solid;
+  border-width: 7px 0 7px 0;
   border-color: currentColor;
 }
 
@@ -3413,6 +4972,16 @@ th {
   border-width: 0 0 0 8px;
   border-color: currentColor;
 }
+.b-8-x {
+  border-style: solid;
+  border-width: 0 8px 0 8px;
+  border-color: currentColor;
+}
+.b-8-y {
+  border-style: solid;
+  border-width: 8px 0 8px 0;
+  border-color: currentColor;
+}
 
 .b-9 {
   border: 9px solid currentColor;
@@ -3435,6 +5004,16 @@ th {
 .b-9-left {
   border-style: solid;
   border-width: 0 0 0 9px;
+  border-color: currentColor;
+}
+.b-9-x {
+  border-style: solid;
+  border-width: 0 9px 0 9px;
+  border-color: currentColor;
+}
+.b-9-y {
+  border-style: solid;
+  border-width: 9px 0 9px 0;
   border-color: currentColor;
 }
 
@@ -3461,6 +5040,16 @@ th {
   border-width: 0 0 0 10px;
   border-color: currentColor;
 }
+.b-10-x {
+  border-style: solid;
+  border-width: 0 10px 0 10px;
+  border-color: currentColor;
+}
+.b-10-y {
+  border-style: solid;
+  border-width: 10px 0 10px 0;
+  border-color: currentColor;
+}
 
 .b-11 {
   border: 11px solid currentColor;
@@ -3483,6 +5072,16 @@ th {
 .b-11-left {
   border-style: solid;
   border-width: 0 0 0 11px;
+  border-color: currentColor;
+}
+.b-11-x {
+  border-style: solid;
+  border-width: 0 11px 0 11px;
+  border-color: currentColor;
+}
+.b-11-y {
+  border-style: solid;
+  border-width: 11px 0 11px 0;
   border-color: currentColor;
 }
 
@@ -3509,6 +5108,16 @@ th {
   border-width: 0 0 0 12px;
   border-color: currentColor;
 }
+.b-12-x {
+  border-style: solid;
+  border-width: 0 12px 0 12px;
+  border-color: currentColor;
+}
+.b-12-y {
+  border-style: solid;
+  border-width: 12px 0 12px 0;
+  border-color: currentColor;
+}
 
 .b-13 {
   border: 13px solid currentColor;
@@ -3531,6 +5140,16 @@ th {
 .b-13-left {
   border-style: solid;
   border-width: 0 0 0 13px;
+  border-color: currentColor;
+}
+.b-13-x {
+  border-style: solid;
+  border-width: 0 13px 0 13px;
+  border-color: currentColor;
+}
+.b-13-y {
+  border-style: solid;
+  border-width: 13px 0 13px 0;
   border-color: currentColor;
 }
 
@@ -3557,6 +5176,16 @@ th {
   border-width: 0 0 0 14px;
   border-color: currentColor;
 }
+.b-14-x {
+  border-style: solid;
+  border-width: 0 14px 0 14px;
+  border-color: currentColor;
+}
+.b-14-y {
+  border-style: solid;
+  border-width: 14px 0 14px 0;
+  border-color: currentColor;
+}
 
 .b-15 {
   border: 15px solid currentColor;
@@ -3579,6 +5208,16 @@ th {
 .b-15-left {
   border-style: solid;
   border-width: 0 0 0 15px;
+  border-color: currentColor;
+}
+.b-15-x {
+  border-style: solid;
+  border-width: 0 15px 0 15px;
+  border-color: currentColor;
+}
+.b-15-y {
+  border-style: solid;
+  border-width: 15px 0 15px 0;
   border-color: currentColor;
 }
 
@@ -3605,6 +5244,16 @@ th {
   border-width: 0 0 0 16px;
   border-color: currentColor;
 }
+.b-16-x {
+  border-style: solid;
+  border-width: 0 16px 0 16px;
+  border-color: currentColor;
+}
+.b-16-y {
+  border-style: solid;
+  border-width: 16px 0 16px 0;
+  border-color: currentColor;
+}
 
 .b-17 {
   border: 17px solid currentColor;
@@ -3627,6 +5276,16 @@ th {
 .b-17-left {
   border-style: solid;
   border-width: 0 0 0 17px;
+  border-color: currentColor;
+}
+.b-17-x {
+  border-style: solid;
+  border-width: 0 17px 0 17px;
+  border-color: currentColor;
+}
+.b-17-y {
+  border-style: solid;
+  border-width: 17px 0 17px 0;
   border-color: currentColor;
 }
 
@@ -3653,6 +5312,16 @@ th {
   border-width: 0 0 0 18px;
   border-color: currentColor;
 }
+.b-18-x {
+  border-style: solid;
+  border-width: 0 18px 0 18px;
+  border-color: currentColor;
+}
+.b-18-y {
+  border-style: solid;
+  border-width: 18px 0 18px 0;
+  border-color: currentColor;
+}
 
 .b-19 {
   border: 19px solid currentColor;
@@ -3675,6 +5344,16 @@ th {
 .b-19-left {
   border-style: solid;
   border-width: 0 0 0 19px;
+  border-color: currentColor;
+}
+.b-19-x {
+  border-style: solid;
+  border-width: 0 19px 0 19px;
+  border-color: currentColor;
+}
+.b-19-y {
+  border-style: solid;
+  border-width: 19px 0 19px 0;
   border-color: currentColor;
 }
 
@@ -3700,6 +5379,76 @@ th {
   border-style: solid;
   border-width: 0 0 0 20px;
   border-color: currentColor;
+}
+.b-20-x {
+  border-style: solid;
+  border-width: 0 20px 0 20px;
+  border-color: currentColor;
+}
+.b-20-y {
+  border-style: solid;
+  border-width: 20px 0 20px 0;
+  border-color: currentColor;
+}
+
+.b-black {
+  border-color: #000000;
+}
+
+.b-white {
+  border-color: #ffffff;
+}
+
+.b-indigo {
+  border-color: #4b0082;
+}
+
+.b-purple {
+  border-color: #8e35ef;
+}
+
+.b-pearl {
+  border-color: #fdeef4;
+}
+
+.b-crimson {
+  border-color: #e238ec;
+}
+
+.b-magenta {
+  border-color: #ff00ff;
+}
+
+.b-red {
+  border-color: #ff0000;
+}
+
+.b-wood {
+  border-color: #966f33;
+}
+
+.b-orange {
+  border-color: #f88017;
+}
+
+.b-blue {
+  border-color: #0000ff;
+}
+
+.b-green {
+  border-color: #00ff00;
+}
+
+.b-yellow {
+  border-color: #ffff00;
+}
+
+.b-steel {
+  border-color: #4863a0;
+}
+
+.b-night {
+  border-color: #0c090a;
 }
 
 .b-primary {
@@ -4002,4002 +5751,9002 @@ h6 {
   font-size: 1%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-1 {
+    font-size: 1%;
+  }
+}
 .fsize-2 {
   font-size: 2%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-2 {
+    font-size: 2%;
+  }
+}
 .fsize-3 {
   font-size: 3%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-3 {
+    font-size: 3%;
+  }
+}
 .fsize-4 {
   font-size: 4%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-4 {
+    font-size: 4%;
+  }
+}
 .fsize-5 {
   font-size: 5%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-5 {
+    font-size: 5%;
+  }
+}
 .fsize-6 {
   font-size: 6%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-6 {
+    font-size: 6%;
+  }
+}
 .fsize-7 {
   font-size: 7%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-7 {
+    font-size: 7%;
+  }
+}
 .fsize-8 {
   font-size: 8%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-8 {
+    font-size: 8%;
+  }
+}
 .fsize-9 {
   font-size: 9%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-9 {
+    font-size: 9%;
+  }
+}
 .fsize-10 {
   font-size: 10%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-10 {
+    font-size: 10%;
+  }
+}
 .fsize-11 {
   font-size: 11%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-11 {
+    font-size: 11%;
+  }
+}
 .fsize-12 {
   font-size: 12%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-12 {
+    font-size: 12%;
+  }
+}
 .fsize-13 {
   font-size: 13%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-13 {
+    font-size: 13%;
+  }
+}
 .fsize-14 {
   font-size: 14%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-14 {
+    font-size: 14%;
+  }
+}
 .fsize-15 {
   font-size: 15%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-15 {
+    font-size: 15%;
+  }
+}
 .fsize-16 {
   font-size: 16%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-16 {
+    font-size: 16%;
+  }
+}
 .fsize-17 {
   font-size: 17%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-17 {
+    font-size: 17%;
+  }
+}
 .fsize-18 {
   font-size: 18%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-18 {
+    font-size: 18%;
+  }
+}
 .fsize-19 {
   font-size: 19%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-19 {
+    font-size: 19%;
+  }
+}
 .fsize-20 {
   font-size: 20%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-20 {
+    font-size: 20%;
+  }
+}
 .fsize-21 {
   font-size: 21%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-21 {
+    font-size: 21%;
+  }
+}
 .fsize-22 {
   font-size: 22%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-22 {
+    font-size: 22%;
+  }
+}
 .fsize-23 {
   font-size: 23%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-23 {
+    font-size: 23%;
+  }
+}
 .fsize-24 {
   font-size: 24%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-24 {
+    font-size: 24%;
+  }
+}
 .fsize-25 {
   font-size: 25%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-25 {
+    font-size: 25%;
+  }
+}
 .fsize-26 {
   font-size: 26%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-26 {
+    font-size: 26%;
+  }
+}
 .fsize-27 {
   font-size: 27%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-27 {
+    font-size: 27%;
+  }
+}
 .fsize-28 {
   font-size: 28%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-28 {
+    font-size: 28%;
+  }
+}
 .fsize-29 {
   font-size: 29%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-29 {
+    font-size: 29%;
+  }
+}
 .fsize-30 {
   font-size: 30%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-30 {
+    font-size: 30%;
+  }
+}
 .fsize-31 {
   font-size: 31%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-31 {
+    font-size: 31%;
+  }
+}
 .fsize-32 {
   font-size: 32%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-32 {
+    font-size: 32%;
+  }
+}
 .fsize-33 {
   font-size: 33%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-33 {
+    font-size: 33%;
+  }
+}
 .fsize-34 {
   font-size: 34%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-34 {
+    font-size: 34%;
+  }
+}
 .fsize-35 {
   font-size: 35%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-35 {
+    font-size: 35%;
+  }
+}
 .fsize-36 {
   font-size: 36%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-36 {
+    font-size: 36%;
+  }
+}
 .fsize-37 {
   font-size: 37%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-37 {
+    font-size: 37%;
+  }
+}
 .fsize-38 {
   font-size: 38%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-38 {
+    font-size: 38%;
+  }
+}
 .fsize-39 {
   font-size: 39%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-39 {
+    font-size: 39%;
+  }
+}
 .fsize-40 {
   font-size: 40%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-40 {
+    font-size: 40%;
+  }
+}
 .fsize-41 {
   font-size: 41%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-41 {
+    font-size: 41%;
+  }
+}
 .fsize-42 {
   font-size: 42%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-42 {
+    font-size: 42%;
+  }
+}
 .fsize-43 {
   font-size: 43%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-43 {
+    font-size: 43%;
+  }
+}
 .fsize-44 {
   font-size: 44%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-44 {
+    font-size: 44%;
+  }
+}
 .fsize-45 {
   font-size: 45%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-45 {
+    font-size: 45%;
+  }
+}
 .fsize-46 {
   font-size: 46%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-46 {
+    font-size: 46%;
+  }
+}
 .fsize-47 {
   font-size: 47%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-47 {
+    font-size: 47%;
+  }
+}
 .fsize-48 {
   font-size: 48%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-48 {
+    font-size: 48%;
+  }
+}
 .fsize-49 {
   font-size: 49%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-49 {
+    font-size: 49%;
+  }
+}
 .fsize-50 {
   font-size: 50%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-50 {
+    font-size: 50%;
+  }
+}
 .fsize-51 {
   font-size: 51%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-51 {
+    font-size: 51%;
+  }
+}
 .fsize-52 {
   font-size: 52%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-52 {
+    font-size: 52%;
+  }
+}
 .fsize-53 {
   font-size: 53%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-53 {
+    font-size: 53%;
+  }
+}
 .fsize-54 {
   font-size: 54%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-54 {
+    font-size: 54%;
+  }
+}
 .fsize-55 {
   font-size: 55%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-55 {
+    font-size: 55%;
+  }
+}
 .fsize-56 {
   font-size: 56%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-56 {
+    font-size: 56%;
+  }
+}
 .fsize-57 {
   font-size: 57%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-57 {
+    font-size: 57%;
+  }
+}
 .fsize-58 {
   font-size: 58%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-58 {
+    font-size: 58%;
+  }
+}
 .fsize-59 {
   font-size: 59%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-59 {
+    font-size: 59%;
+  }
+}
 .fsize-60 {
   font-size: 60%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-60 {
+    font-size: 60%;
+  }
+}
 .fsize-61 {
   font-size: 61%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-61 {
+    font-size: 61%;
+  }
+}
 .fsize-62 {
   font-size: 62%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-62 {
+    font-size: 62%;
+  }
+}
 .fsize-63 {
   font-size: 63%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-63 {
+    font-size: 63%;
+  }
+}
 .fsize-64 {
   font-size: 64%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-64 {
+    font-size: 64%;
+  }
+}
 .fsize-65 {
   font-size: 65%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-65 {
+    font-size: 65%;
+  }
+}
 .fsize-66 {
   font-size: 66%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-66 {
+    font-size: 66%;
+  }
+}
 .fsize-67 {
   font-size: 67%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-67 {
+    font-size: 67%;
+  }
+}
 .fsize-68 {
   font-size: 68%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-68 {
+    font-size: 68%;
+  }
+}
 .fsize-69 {
   font-size: 69%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-69 {
+    font-size: 69%;
+  }
+}
 .fsize-70 {
   font-size: 70%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-70 {
+    font-size: 70%;
+  }
+}
 .fsize-71 {
   font-size: 71%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-71 {
+    font-size: 71%;
+  }
+}
 .fsize-72 {
   font-size: 72%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-72 {
+    font-size: 72%;
+  }
+}
 .fsize-73 {
   font-size: 73%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-73 {
+    font-size: 73%;
+  }
+}
 .fsize-74 {
   font-size: 74%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-74 {
+    font-size: 74%;
+  }
+}
 .fsize-75 {
   font-size: 75%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-75 {
+    font-size: 75%;
+  }
+}
 .fsize-76 {
   font-size: 76%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-76 {
+    font-size: 76%;
+  }
+}
 .fsize-77 {
   font-size: 77%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-77 {
+    font-size: 77%;
+  }
+}
 .fsize-78 {
   font-size: 78%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-78 {
+    font-size: 78%;
+  }
+}
 .fsize-79 {
   font-size: 79%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-79 {
+    font-size: 79%;
+  }
+}
 .fsize-80 {
   font-size: 80%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-80 {
+    font-size: 80%;
+  }
+}
 .fsize-81 {
   font-size: 81%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-81 {
+    font-size: 81%;
+  }
+}
 .fsize-82 {
   font-size: 82%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-82 {
+    font-size: 82%;
+  }
+}
 .fsize-83 {
   font-size: 83%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-83 {
+    font-size: 83%;
+  }
+}
 .fsize-84 {
   font-size: 84%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-84 {
+    font-size: 84%;
+  }
+}
 .fsize-85 {
   font-size: 85%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-85 {
+    font-size: 85%;
+  }
+}
 .fsize-86 {
   font-size: 86%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-86 {
+    font-size: 86%;
+  }
+}
 .fsize-87 {
   font-size: 87%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-87 {
+    font-size: 87%;
+  }
+}
 .fsize-88 {
   font-size: 88%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-88 {
+    font-size: 88%;
+  }
+}
 .fsize-89 {
   font-size: 89%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-89 {
+    font-size: 89%;
+  }
+}
 .fsize-90 {
   font-size: 90%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-90 {
+    font-size: 90%;
+  }
+}
 .fsize-91 {
   font-size: 91%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-91 {
+    font-size: 91%;
+  }
+}
 .fsize-92 {
   font-size: 92%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-92 {
+    font-size: 92%;
+  }
+}
 .fsize-93 {
   font-size: 93%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-93 {
+    font-size: 93%;
+  }
+}
 .fsize-94 {
   font-size: 94%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-94 {
+    font-size: 94%;
+  }
+}
 .fsize-95 {
   font-size: 95%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-95 {
+    font-size: 95%;
+  }
+}
 .fsize-96 {
   font-size: 96%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-96 {
+    font-size: 96%;
+  }
+}
 .fsize-97 {
   font-size: 97%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-97 {
+    font-size: 97%;
+  }
+}
 .fsize-98 {
   font-size: 98%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-98 {
+    font-size: 98%;
+  }
+}
 .fsize-99 {
   font-size: 99%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-99 {
+    font-size: 99%;
+  }
+}
 .fsize-100 {
   font-size: 100%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-100 {
+    font-size: 100%;
+  }
+}
 .fsize-101 {
   font-size: 101%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-101 {
+    font-size: 101%;
+  }
+}
 .fsize-102 {
   font-size: 102%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-102 {
+    font-size: 102%;
+  }
+}
 .fsize-103 {
   font-size: 103%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-103 {
+    font-size: 103%;
+  }
+}
 .fsize-104 {
   font-size: 104%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-104 {
+    font-size: 104%;
+  }
+}
 .fsize-105 {
   font-size: 105%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-105 {
+    font-size: 105%;
+  }
+}
 .fsize-106 {
   font-size: 106%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-106 {
+    font-size: 106%;
+  }
+}
 .fsize-107 {
   font-size: 107%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-107 {
+    font-size: 107%;
+  }
+}
 .fsize-108 {
   font-size: 108%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-108 {
+    font-size: 108%;
+  }
+}
 .fsize-109 {
   font-size: 109%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-109 {
+    font-size: 109%;
+  }
+}
 .fsize-110 {
   font-size: 110%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-110 {
+    font-size: 110%;
+  }
+}
 .fsize-111 {
   font-size: 111%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-111 {
+    font-size: 111%;
+  }
+}
 .fsize-112 {
   font-size: 112%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-112 {
+    font-size: 112%;
+  }
+}
 .fsize-113 {
   font-size: 113%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-113 {
+    font-size: 113%;
+  }
+}
 .fsize-114 {
   font-size: 114%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-114 {
+    font-size: 114%;
+  }
+}
 .fsize-115 {
   font-size: 115%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-115 {
+    font-size: 115%;
+  }
+}
 .fsize-116 {
   font-size: 116%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-116 {
+    font-size: 116%;
+  }
+}
 .fsize-117 {
   font-size: 117%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-117 {
+    font-size: 117%;
+  }
+}
 .fsize-118 {
   font-size: 118%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-118 {
+    font-size: 118%;
+  }
+}
 .fsize-119 {
   font-size: 119%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-119 {
+    font-size: 119%;
+  }
+}
 .fsize-120 {
   font-size: 120%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-120 {
+    font-size: 120%;
+  }
+}
 .fsize-121 {
   font-size: 121%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-121 {
+    font-size: 121%;
+  }
+}
 .fsize-122 {
   font-size: 122%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-122 {
+    font-size: 122%;
+  }
+}
 .fsize-123 {
   font-size: 123%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-123 {
+    font-size: 123%;
+  }
+}
 .fsize-124 {
   font-size: 124%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-124 {
+    font-size: 124%;
+  }
+}
 .fsize-125 {
   font-size: 125%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-125 {
+    font-size: 125%;
+  }
+}
 .fsize-126 {
   font-size: 126%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-126 {
+    font-size: 126%;
+  }
+}
 .fsize-127 {
   font-size: 127%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-127 {
+    font-size: 127%;
+  }
+}
 .fsize-128 {
   font-size: 128%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-128 {
+    font-size: 128%;
+  }
+}
 .fsize-129 {
   font-size: 129%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-129 {
+    font-size: 129%;
+  }
+}
 .fsize-130 {
   font-size: 130%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-130 {
+    font-size: 130%;
+  }
+}
 .fsize-131 {
   font-size: 131%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-131 {
+    font-size: 131%;
+  }
+}
 .fsize-132 {
   font-size: 132%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-132 {
+    font-size: 132%;
+  }
+}
 .fsize-133 {
   font-size: 133%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-133 {
+    font-size: 133%;
+  }
+}
 .fsize-134 {
   font-size: 134%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-134 {
+    font-size: 134%;
+  }
+}
 .fsize-135 {
   font-size: 135%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-135 {
+    font-size: 135%;
+  }
+}
 .fsize-136 {
   font-size: 136%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-136 {
+    font-size: 136%;
+  }
+}
 .fsize-137 {
   font-size: 137%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-137 {
+    font-size: 137%;
+  }
+}
 .fsize-138 {
   font-size: 138%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-138 {
+    font-size: 138%;
+  }
+}
 .fsize-139 {
   font-size: 139%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-139 {
+    font-size: 139%;
+  }
+}
 .fsize-140 {
   font-size: 140%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-140 {
+    font-size: 140%;
+  }
+}
 .fsize-141 {
   font-size: 141%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-141 {
+    font-size: 141%;
+  }
+}
 .fsize-142 {
   font-size: 142%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-142 {
+    font-size: 142%;
+  }
+}
 .fsize-143 {
   font-size: 143%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-143 {
+    font-size: 143%;
+  }
+}
 .fsize-144 {
   font-size: 144%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-144 {
+    font-size: 144%;
+  }
+}
 .fsize-145 {
   font-size: 145%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-145 {
+    font-size: 145%;
+  }
+}
 .fsize-146 {
   font-size: 146%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-146 {
+    font-size: 146%;
+  }
+}
 .fsize-147 {
   font-size: 147%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-147 {
+    font-size: 147%;
+  }
+}
 .fsize-148 {
   font-size: 148%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-148 {
+    font-size: 148%;
+  }
+}
 .fsize-149 {
   font-size: 149%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-149 {
+    font-size: 149%;
+  }
+}
 .fsize-150 {
   font-size: 150%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-150 {
+    font-size: 150%;
+  }
+}
 .fsize-151 {
   font-size: 151%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-151 {
+    font-size: 151%;
+  }
+}
 .fsize-152 {
   font-size: 152%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-152 {
+    font-size: 152%;
+  }
+}
 .fsize-153 {
   font-size: 153%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-153 {
+    font-size: 153%;
+  }
+}
 .fsize-154 {
   font-size: 154%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-154 {
+    font-size: 154%;
+  }
+}
 .fsize-155 {
   font-size: 155%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-155 {
+    font-size: 155%;
+  }
+}
 .fsize-156 {
   font-size: 156%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-156 {
+    font-size: 156%;
+  }
+}
 .fsize-157 {
   font-size: 157%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-157 {
+    font-size: 157%;
+  }
+}
 .fsize-158 {
   font-size: 158%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-158 {
+    font-size: 158%;
+  }
+}
 .fsize-159 {
   font-size: 159%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-159 {
+    font-size: 159%;
+  }
+}
 .fsize-160 {
   font-size: 160%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-160 {
+    font-size: 160%;
+  }
+}
 .fsize-161 {
   font-size: 161%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-161 {
+    font-size: 161%;
+  }
+}
 .fsize-162 {
   font-size: 162%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-162 {
+    font-size: 162%;
+  }
+}
 .fsize-163 {
   font-size: 163%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-163 {
+    font-size: 163%;
+  }
+}
 .fsize-164 {
   font-size: 164%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-164 {
+    font-size: 164%;
+  }
+}
 .fsize-165 {
   font-size: 165%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-165 {
+    font-size: 165%;
+  }
+}
 .fsize-166 {
   font-size: 166%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-166 {
+    font-size: 166%;
+  }
+}
 .fsize-167 {
   font-size: 167%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-167 {
+    font-size: 167%;
+  }
+}
 .fsize-168 {
   font-size: 168%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-168 {
+    font-size: 168%;
+  }
+}
 .fsize-169 {
   font-size: 169%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-169 {
+    font-size: 169%;
+  }
+}
 .fsize-170 {
   font-size: 170%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-170 {
+    font-size: 170%;
+  }
+}
 .fsize-171 {
   font-size: 171%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-171 {
+    font-size: 171%;
+  }
+}
 .fsize-172 {
   font-size: 172%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-172 {
+    font-size: 172%;
+  }
+}
 .fsize-173 {
   font-size: 173%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-173 {
+    font-size: 173%;
+  }
+}
 .fsize-174 {
   font-size: 174%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-174 {
+    font-size: 174%;
+  }
+}
 .fsize-175 {
   font-size: 175%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-175 {
+    font-size: 175%;
+  }
+}
 .fsize-176 {
   font-size: 176%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-176 {
+    font-size: 176%;
+  }
+}
 .fsize-177 {
   font-size: 177%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-177 {
+    font-size: 177%;
+  }
+}
 .fsize-178 {
   font-size: 178%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-178 {
+    font-size: 178%;
+  }
+}
 .fsize-179 {
   font-size: 179%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-179 {
+    font-size: 179%;
+  }
+}
 .fsize-180 {
   font-size: 180%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-180 {
+    font-size: 180%;
+  }
+}
 .fsize-181 {
   font-size: 181%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-181 {
+    font-size: 181%;
+  }
+}
 .fsize-182 {
   font-size: 182%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-182 {
+    font-size: 182%;
+  }
+}
 .fsize-183 {
   font-size: 183%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-183 {
+    font-size: 183%;
+  }
+}
 .fsize-184 {
   font-size: 184%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-184 {
+    font-size: 184%;
+  }
+}
 .fsize-185 {
   font-size: 185%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-185 {
+    font-size: 185%;
+  }
+}
 .fsize-186 {
   font-size: 186%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-186 {
+    font-size: 186%;
+  }
+}
 .fsize-187 {
   font-size: 187%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-187 {
+    font-size: 187%;
+  }
+}
 .fsize-188 {
   font-size: 188%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-188 {
+    font-size: 188%;
+  }
+}
 .fsize-189 {
   font-size: 189%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-189 {
+    font-size: 189%;
+  }
+}
 .fsize-190 {
   font-size: 190%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-190 {
+    font-size: 190%;
+  }
+}
 .fsize-191 {
   font-size: 191%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-191 {
+    font-size: 191%;
+  }
+}
 .fsize-192 {
   font-size: 192%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-192 {
+    font-size: 192%;
+  }
+}
 .fsize-193 {
   font-size: 193%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-193 {
+    font-size: 193%;
+  }
+}
 .fsize-194 {
   font-size: 194%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-194 {
+    font-size: 194%;
+  }
+}
 .fsize-195 {
   font-size: 195%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-195 {
+    font-size: 195%;
+  }
+}
 .fsize-196 {
   font-size: 196%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-196 {
+    font-size: 196%;
+  }
+}
 .fsize-197 {
   font-size: 197%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-197 {
+    font-size: 197%;
+  }
+}
 .fsize-198 {
   font-size: 198%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-198 {
+    font-size: 198%;
+  }
+}
 .fsize-199 {
   font-size: 199%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-199 {
+    font-size: 199%;
+  }
+}
 .fsize-200 {
   font-size: 200%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-200 {
+    font-size: 200%;
+  }
+}
 .fsize-201 {
   font-size: 201%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-201 {
+    font-size: 201%;
+  }
+}
 .fsize-202 {
   font-size: 202%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-202 {
+    font-size: 202%;
+  }
+}
 .fsize-203 {
   font-size: 203%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-203 {
+    font-size: 203%;
+  }
+}
 .fsize-204 {
   font-size: 204%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-204 {
+    font-size: 204%;
+  }
+}
 .fsize-205 {
   font-size: 205%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-205 {
+    font-size: 205%;
+  }
+}
 .fsize-206 {
   font-size: 206%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-206 {
+    font-size: 206%;
+  }
+}
 .fsize-207 {
   font-size: 207%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-207 {
+    font-size: 207%;
+  }
+}
 .fsize-208 {
   font-size: 208%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-208 {
+    font-size: 208%;
+  }
+}
 .fsize-209 {
   font-size: 209%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-209 {
+    font-size: 209%;
+  }
+}
 .fsize-210 {
   font-size: 210%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-210 {
+    font-size: 210%;
+  }
+}
 .fsize-211 {
   font-size: 211%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-211 {
+    font-size: 211%;
+  }
+}
 .fsize-212 {
   font-size: 212%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-212 {
+    font-size: 212%;
+  }
+}
 .fsize-213 {
   font-size: 213%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-213 {
+    font-size: 213%;
+  }
+}
 .fsize-214 {
   font-size: 214%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-214 {
+    font-size: 214%;
+  }
+}
 .fsize-215 {
   font-size: 215%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-215 {
+    font-size: 215%;
+  }
+}
 .fsize-216 {
   font-size: 216%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-216 {
+    font-size: 216%;
+  }
+}
 .fsize-217 {
   font-size: 217%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-217 {
+    font-size: 217%;
+  }
+}
 .fsize-218 {
   font-size: 218%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-218 {
+    font-size: 218%;
+  }
+}
 .fsize-219 {
   font-size: 219%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-219 {
+    font-size: 219%;
+  }
+}
 .fsize-220 {
   font-size: 220%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-220 {
+    font-size: 220%;
+  }
+}
 .fsize-221 {
   font-size: 221%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-221 {
+    font-size: 221%;
+  }
+}
 .fsize-222 {
   font-size: 222%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-222 {
+    font-size: 222%;
+  }
+}
 .fsize-223 {
   font-size: 223%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-223 {
+    font-size: 223%;
+  }
+}
 .fsize-224 {
   font-size: 224%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-224 {
+    font-size: 224%;
+  }
+}
 .fsize-225 {
   font-size: 225%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-225 {
+    font-size: 225%;
+  }
+}
 .fsize-226 {
   font-size: 226%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-226 {
+    font-size: 226%;
+  }
+}
 .fsize-227 {
   font-size: 227%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-227 {
+    font-size: 227%;
+  }
+}
 .fsize-228 {
   font-size: 228%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-228 {
+    font-size: 228%;
+  }
+}
 .fsize-229 {
   font-size: 229%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-229 {
+    font-size: 229%;
+  }
+}
 .fsize-230 {
   font-size: 230%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-230 {
+    font-size: 230%;
+  }
+}
 .fsize-231 {
   font-size: 231%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-231 {
+    font-size: 231%;
+  }
+}
 .fsize-232 {
   font-size: 232%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-232 {
+    font-size: 232%;
+  }
+}
 .fsize-233 {
   font-size: 233%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-233 {
+    font-size: 233%;
+  }
+}
 .fsize-234 {
   font-size: 234%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-234 {
+    font-size: 234%;
+  }
+}
 .fsize-235 {
   font-size: 235%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-235 {
+    font-size: 235%;
+  }
+}
 .fsize-236 {
   font-size: 236%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-236 {
+    font-size: 236%;
+  }
+}
 .fsize-237 {
   font-size: 237%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-237 {
+    font-size: 237%;
+  }
+}
 .fsize-238 {
   font-size: 238%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-238 {
+    font-size: 238%;
+  }
+}
 .fsize-239 {
   font-size: 239%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-239 {
+    font-size: 239%;
+  }
+}
 .fsize-240 {
   font-size: 240%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-240 {
+    font-size: 240%;
+  }
+}
 .fsize-241 {
   font-size: 241%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-241 {
+    font-size: 241%;
+  }
+}
 .fsize-242 {
   font-size: 242%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-242 {
+    font-size: 242%;
+  }
+}
 .fsize-243 {
   font-size: 243%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-243 {
+    font-size: 243%;
+  }
+}
 .fsize-244 {
   font-size: 244%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-244 {
+    font-size: 244%;
+  }
+}
 .fsize-245 {
   font-size: 245%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-245 {
+    font-size: 245%;
+  }
+}
 .fsize-246 {
   font-size: 246%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-246 {
+    font-size: 246%;
+  }
+}
 .fsize-247 {
   font-size: 247%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-247 {
+    font-size: 247%;
+  }
+}
 .fsize-248 {
   font-size: 248%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-248 {
+    font-size: 248%;
+  }
+}
 .fsize-249 {
   font-size: 249%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-249 {
+    font-size: 249%;
+  }
+}
 .fsize-250 {
   font-size: 250%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-250 {
+    font-size: 250%;
+  }
+}
 .fsize-251 {
   font-size: 251%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-251 {
+    font-size: 251%;
+  }
+}
 .fsize-252 {
   font-size: 252%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-252 {
+    font-size: 252%;
+  }
+}
 .fsize-253 {
   font-size: 253%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-253 {
+    font-size: 253%;
+  }
+}
 .fsize-254 {
   font-size: 254%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-254 {
+    font-size: 254%;
+  }
+}
 .fsize-255 {
   font-size: 255%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-255 {
+    font-size: 255%;
+  }
+}
 .fsize-256 {
   font-size: 256%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-256 {
+    font-size: 256%;
+  }
+}
 .fsize-257 {
   font-size: 257%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-257 {
+    font-size: 257%;
+  }
+}
 .fsize-258 {
   font-size: 258%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-258 {
+    font-size: 258%;
+  }
+}
 .fsize-259 {
   font-size: 259%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-259 {
+    font-size: 259%;
+  }
+}
 .fsize-260 {
   font-size: 260%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-260 {
+    font-size: 260%;
+  }
+}
 .fsize-261 {
   font-size: 261%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-261 {
+    font-size: 261%;
+  }
+}
 .fsize-262 {
   font-size: 262%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-262 {
+    font-size: 262%;
+  }
+}
 .fsize-263 {
   font-size: 263%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-263 {
+    font-size: 263%;
+  }
+}
 .fsize-264 {
   font-size: 264%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-264 {
+    font-size: 264%;
+  }
+}
 .fsize-265 {
   font-size: 265%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-265 {
+    font-size: 265%;
+  }
+}
 .fsize-266 {
   font-size: 266%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-266 {
+    font-size: 266%;
+  }
+}
 .fsize-267 {
   font-size: 267%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-267 {
+    font-size: 267%;
+  }
+}
 .fsize-268 {
   font-size: 268%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-268 {
+    font-size: 268%;
+  }
+}
 .fsize-269 {
   font-size: 269%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-269 {
+    font-size: 269%;
+  }
+}
 .fsize-270 {
   font-size: 270%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-270 {
+    font-size: 270%;
+  }
+}
 .fsize-271 {
   font-size: 271%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-271 {
+    font-size: 271%;
+  }
+}
 .fsize-272 {
   font-size: 272%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-272 {
+    font-size: 272%;
+  }
+}
 .fsize-273 {
   font-size: 273%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-273 {
+    font-size: 273%;
+  }
+}
 .fsize-274 {
   font-size: 274%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-274 {
+    font-size: 274%;
+  }
+}
 .fsize-275 {
   font-size: 275%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-275 {
+    font-size: 275%;
+  }
+}
 .fsize-276 {
   font-size: 276%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-276 {
+    font-size: 276%;
+  }
+}
 .fsize-277 {
   font-size: 277%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-277 {
+    font-size: 277%;
+  }
+}
 .fsize-278 {
   font-size: 278%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-278 {
+    font-size: 278%;
+  }
+}
 .fsize-279 {
   font-size: 279%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-279 {
+    font-size: 279%;
+  }
+}
 .fsize-280 {
   font-size: 280%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-280 {
+    font-size: 280%;
+  }
+}
 .fsize-281 {
   font-size: 281%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-281 {
+    font-size: 281%;
+  }
+}
 .fsize-282 {
   font-size: 282%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-282 {
+    font-size: 282%;
+  }
+}
 .fsize-283 {
   font-size: 283%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-283 {
+    font-size: 283%;
+  }
+}
 .fsize-284 {
   font-size: 284%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-284 {
+    font-size: 284%;
+  }
+}
 .fsize-285 {
   font-size: 285%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-285 {
+    font-size: 285%;
+  }
+}
 .fsize-286 {
   font-size: 286%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-286 {
+    font-size: 286%;
+  }
+}
 .fsize-287 {
   font-size: 287%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-287 {
+    font-size: 287%;
+  }
+}
 .fsize-288 {
   font-size: 288%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-288 {
+    font-size: 288%;
+  }
+}
 .fsize-289 {
   font-size: 289%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-289 {
+    font-size: 289%;
+  }
+}
 .fsize-290 {
   font-size: 290%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-290 {
+    font-size: 290%;
+  }
+}
 .fsize-291 {
   font-size: 291%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-291 {
+    font-size: 291%;
+  }
+}
 .fsize-292 {
   font-size: 292%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-292 {
+    font-size: 292%;
+  }
+}
 .fsize-293 {
   font-size: 293%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-293 {
+    font-size: 293%;
+  }
+}
 .fsize-294 {
   font-size: 294%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-294 {
+    font-size: 294%;
+  }
+}
 .fsize-295 {
   font-size: 295%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-295 {
+    font-size: 295%;
+  }
+}
 .fsize-296 {
   font-size: 296%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-296 {
+    font-size: 296%;
+  }
+}
 .fsize-297 {
   font-size: 297%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-297 {
+    font-size: 297%;
+  }
+}
 .fsize-298 {
   font-size: 298%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-298 {
+    font-size: 298%;
+  }
+}
 .fsize-299 {
   font-size: 299%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-299 {
+    font-size: 299%;
+  }
+}
 .fsize-300 {
   font-size: 300%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-300 {
+    font-size: 300%;
+  }
+}
 .fsize-301 {
   font-size: 301%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-301 {
+    font-size: 301%;
+  }
+}
 .fsize-302 {
   font-size: 302%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-302 {
+    font-size: 302%;
+  }
+}
 .fsize-303 {
   font-size: 303%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-303 {
+    font-size: 303%;
+  }
+}
 .fsize-304 {
   font-size: 304%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-304 {
+    font-size: 304%;
+  }
+}
 .fsize-305 {
   font-size: 305%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-305 {
+    font-size: 305%;
+  }
+}
 .fsize-306 {
   font-size: 306%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-306 {
+    font-size: 306%;
+  }
+}
 .fsize-307 {
   font-size: 307%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-307 {
+    font-size: 307%;
+  }
+}
 .fsize-308 {
   font-size: 308%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-308 {
+    font-size: 308%;
+  }
+}
 .fsize-309 {
   font-size: 309%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-309 {
+    font-size: 309%;
+  }
+}
 .fsize-310 {
   font-size: 310%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-310 {
+    font-size: 310%;
+  }
+}
 .fsize-311 {
   font-size: 311%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-311 {
+    font-size: 311%;
+  }
+}
 .fsize-312 {
   font-size: 312%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-312 {
+    font-size: 312%;
+  }
+}
 .fsize-313 {
   font-size: 313%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-313 {
+    font-size: 313%;
+  }
+}
 .fsize-314 {
   font-size: 314%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-314 {
+    font-size: 314%;
+  }
+}
 .fsize-315 {
   font-size: 315%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-315 {
+    font-size: 315%;
+  }
+}
 .fsize-316 {
   font-size: 316%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-316 {
+    font-size: 316%;
+  }
+}
 .fsize-317 {
   font-size: 317%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-317 {
+    font-size: 317%;
+  }
+}
 .fsize-318 {
   font-size: 318%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-318 {
+    font-size: 318%;
+  }
+}
 .fsize-319 {
   font-size: 319%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-319 {
+    font-size: 319%;
+  }
+}
 .fsize-320 {
   font-size: 320%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-320 {
+    font-size: 320%;
+  }
+}
 .fsize-321 {
   font-size: 321%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-321 {
+    font-size: 321%;
+  }
+}
 .fsize-322 {
   font-size: 322%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-322 {
+    font-size: 322%;
+  }
+}
 .fsize-323 {
   font-size: 323%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-323 {
+    font-size: 323%;
+  }
+}
 .fsize-324 {
   font-size: 324%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-324 {
+    font-size: 324%;
+  }
+}
 .fsize-325 {
   font-size: 325%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-325 {
+    font-size: 325%;
+  }
+}
 .fsize-326 {
   font-size: 326%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-326 {
+    font-size: 326%;
+  }
+}
 .fsize-327 {
   font-size: 327%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-327 {
+    font-size: 327%;
+  }
+}
 .fsize-328 {
   font-size: 328%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-328 {
+    font-size: 328%;
+  }
+}
 .fsize-329 {
   font-size: 329%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-329 {
+    font-size: 329%;
+  }
+}
 .fsize-330 {
   font-size: 330%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-330 {
+    font-size: 330%;
+  }
+}
 .fsize-331 {
   font-size: 331%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-331 {
+    font-size: 331%;
+  }
+}
 .fsize-332 {
   font-size: 332%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-332 {
+    font-size: 332%;
+  }
+}
 .fsize-333 {
   font-size: 333%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-333 {
+    font-size: 333%;
+  }
+}
 .fsize-334 {
   font-size: 334%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-334 {
+    font-size: 334%;
+  }
+}
 .fsize-335 {
   font-size: 335%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-335 {
+    font-size: 335%;
+  }
+}
 .fsize-336 {
   font-size: 336%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-336 {
+    font-size: 336%;
+  }
+}
 .fsize-337 {
   font-size: 337%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-337 {
+    font-size: 337%;
+  }
+}
 .fsize-338 {
   font-size: 338%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-338 {
+    font-size: 338%;
+  }
+}
 .fsize-339 {
   font-size: 339%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-339 {
+    font-size: 339%;
+  }
+}
 .fsize-340 {
   font-size: 340%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-340 {
+    font-size: 340%;
+  }
+}
 .fsize-341 {
   font-size: 341%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-341 {
+    font-size: 341%;
+  }
+}
 .fsize-342 {
   font-size: 342%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-342 {
+    font-size: 342%;
+  }
+}
 .fsize-343 {
   font-size: 343%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-343 {
+    font-size: 343%;
+  }
+}
 .fsize-344 {
   font-size: 344%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-344 {
+    font-size: 344%;
+  }
+}
 .fsize-345 {
   font-size: 345%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-345 {
+    font-size: 345%;
+  }
+}
 .fsize-346 {
   font-size: 346%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-346 {
+    font-size: 346%;
+  }
+}
 .fsize-347 {
   font-size: 347%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-347 {
+    font-size: 347%;
+  }
+}
 .fsize-348 {
   font-size: 348%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-348 {
+    font-size: 348%;
+  }
+}
 .fsize-349 {
   font-size: 349%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-349 {
+    font-size: 349%;
+  }
+}
 .fsize-350 {
   font-size: 350%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-350 {
+    font-size: 350%;
+  }
+}
 .fsize-351 {
   font-size: 351%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-351 {
+    font-size: 351%;
+  }
+}
 .fsize-352 {
   font-size: 352%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-352 {
+    font-size: 352%;
+  }
+}
 .fsize-353 {
   font-size: 353%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-353 {
+    font-size: 353%;
+  }
+}
 .fsize-354 {
   font-size: 354%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-354 {
+    font-size: 354%;
+  }
+}
 .fsize-355 {
   font-size: 355%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-355 {
+    font-size: 355%;
+  }
+}
 .fsize-356 {
   font-size: 356%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-356 {
+    font-size: 356%;
+  }
+}
 .fsize-357 {
   font-size: 357%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-357 {
+    font-size: 357%;
+  }
+}
 .fsize-358 {
   font-size: 358%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-358 {
+    font-size: 358%;
+  }
+}
 .fsize-359 {
   font-size: 359%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-359 {
+    font-size: 359%;
+  }
+}
 .fsize-360 {
   font-size: 360%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-360 {
+    font-size: 360%;
+  }
+}
 .fsize-361 {
   font-size: 361%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-361 {
+    font-size: 361%;
+  }
+}
 .fsize-362 {
   font-size: 362%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-362 {
+    font-size: 362%;
+  }
+}
 .fsize-363 {
   font-size: 363%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-363 {
+    font-size: 363%;
+  }
+}
 .fsize-364 {
   font-size: 364%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-364 {
+    font-size: 364%;
+  }
+}
 .fsize-365 {
   font-size: 365%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-365 {
+    font-size: 365%;
+  }
+}
 .fsize-366 {
   font-size: 366%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-366 {
+    font-size: 366%;
+  }
+}
 .fsize-367 {
   font-size: 367%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-367 {
+    font-size: 367%;
+  }
+}
 .fsize-368 {
   font-size: 368%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-368 {
+    font-size: 368%;
+  }
+}
 .fsize-369 {
   font-size: 369%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-369 {
+    font-size: 369%;
+  }
+}
 .fsize-370 {
   font-size: 370%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-370 {
+    font-size: 370%;
+  }
+}
 .fsize-371 {
   font-size: 371%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-371 {
+    font-size: 371%;
+  }
+}
 .fsize-372 {
   font-size: 372%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-372 {
+    font-size: 372%;
+  }
+}
 .fsize-373 {
   font-size: 373%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-373 {
+    font-size: 373%;
+  }
+}
 .fsize-374 {
   font-size: 374%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-374 {
+    font-size: 374%;
+  }
+}
 .fsize-375 {
   font-size: 375%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-375 {
+    font-size: 375%;
+  }
+}
 .fsize-376 {
   font-size: 376%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-376 {
+    font-size: 376%;
+  }
+}
 .fsize-377 {
   font-size: 377%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-377 {
+    font-size: 377%;
+  }
+}
 .fsize-378 {
   font-size: 378%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-378 {
+    font-size: 378%;
+  }
+}
 .fsize-379 {
   font-size: 379%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-379 {
+    font-size: 379%;
+  }
+}
 .fsize-380 {
   font-size: 380%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-380 {
+    font-size: 380%;
+  }
+}
 .fsize-381 {
   font-size: 381%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-381 {
+    font-size: 381%;
+  }
+}
 .fsize-382 {
   font-size: 382%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-382 {
+    font-size: 382%;
+  }
+}
 .fsize-383 {
   font-size: 383%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-383 {
+    font-size: 383%;
+  }
+}
 .fsize-384 {
   font-size: 384%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-384 {
+    font-size: 384%;
+  }
+}
 .fsize-385 {
   font-size: 385%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-385 {
+    font-size: 385%;
+  }
+}
 .fsize-386 {
   font-size: 386%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-386 {
+    font-size: 386%;
+  }
+}
 .fsize-387 {
   font-size: 387%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-387 {
+    font-size: 387%;
+  }
+}
 .fsize-388 {
   font-size: 388%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-388 {
+    font-size: 388%;
+  }
+}
 .fsize-389 {
   font-size: 389%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-389 {
+    font-size: 389%;
+  }
+}
 .fsize-390 {
   font-size: 390%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-390 {
+    font-size: 390%;
+  }
+}
 .fsize-391 {
   font-size: 391%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-391 {
+    font-size: 391%;
+  }
+}
 .fsize-392 {
   font-size: 392%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-392 {
+    font-size: 392%;
+  }
+}
 .fsize-393 {
   font-size: 393%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-393 {
+    font-size: 393%;
+  }
+}
 .fsize-394 {
   font-size: 394%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-394 {
+    font-size: 394%;
+  }
+}
 .fsize-395 {
   font-size: 395%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-395 {
+    font-size: 395%;
+  }
+}
 .fsize-396 {
   font-size: 396%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-396 {
+    font-size: 396%;
+  }
+}
 .fsize-397 {
   font-size: 397%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-397 {
+    font-size: 397%;
+  }
+}
 .fsize-398 {
   font-size: 398%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-398 {
+    font-size: 398%;
+  }
+}
 .fsize-399 {
   font-size: 399%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-399 {
+    font-size: 399%;
+  }
+}
 .fsize-400 {
   font-size: 400%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-400 {
+    font-size: 400%;
+  }
+}
 .fsize-401 {
   font-size: 401%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-401 {
+    font-size: 401%;
+  }
+}
 .fsize-402 {
   font-size: 402%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-402 {
+    font-size: 402%;
+  }
+}
 .fsize-403 {
   font-size: 403%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-403 {
+    font-size: 403%;
+  }
+}
 .fsize-404 {
   font-size: 404%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-404 {
+    font-size: 404%;
+  }
+}
 .fsize-405 {
   font-size: 405%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-405 {
+    font-size: 405%;
+  }
+}
 .fsize-406 {
   font-size: 406%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-406 {
+    font-size: 406%;
+  }
+}
 .fsize-407 {
   font-size: 407%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-407 {
+    font-size: 407%;
+  }
+}
 .fsize-408 {
   font-size: 408%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-408 {
+    font-size: 408%;
+  }
+}
 .fsize-409 {
   font-size: 409%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-409 {
+    font-size: 409%;
+  }
+}
 .fsize-410 {
   font-size: 410%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-410 {
+    font-size: 410%;
+  }
+}
 .fsize-411 {
   font-size: 411%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-411 {
+    font-size: 411%;
+  }
+}
 .fsize-412 {
   font-size: 412%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-412 {
+    font-size: 412%;
+  }
+}
 .fsize-413 {
   font-size: 413%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-413 {
+    font-size: 413%;
+  }
+}
 .fsize-414 {
   font-size: 414%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-414 {
+    font-size: 414%;
+  }
+}
 .fsize-415 {
   font-size: 415%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-415 {
+    font-size: 415%;
+  }
+}
 .fsize-416 {
   font-size: 416%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-416 {
+    font-size: 416%;
+  }
+}
 .fsize-417 {
   font-size: 417%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-417 {
+    font-size: 417%;
+  }
+}
 .fsize-418 {
   font-size: 418%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-418 {
+    font-size: 418%;
+  }
+}
 .fsize-419 {
   font-size: 419%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-419 {
+    font-size: 419%;
+  }
+}
 .fsize-420 {
   font-size: 420%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-420 {
+    font-size: 420%;
+  }
+}
 .fsize-421 {
   font-size: 421%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-421 {
+    font-size: 421%;
+  }
+}
 .fsize-422 {
   font-size: 422%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-422 {
+    font-size: 422%;
+  }
+}
 .fsize-423 {
   font-size: 423%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-423 {
+    font-size: 423%;
+  }
+}
 .fsize-424 {
   font-size: 424%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-424 {
+    font-size: 424%;
+  }
+}
 .fsize-425 {
   font-size: 425%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-425 {
+    font-size: 425%;
+  }
+}
 .fsize-426 {
   font-size: 426%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-426 {
+    font-size: 426%;
+  }
+}
 .fsize-427 {
   font-size: 427%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-427 {
+    font-size: 427%;
+  }
+}
 .fsize-428 {
   font-size: 428%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-428 {
+    font-size: 428%;
+  }
+}
 .fsize-429 {
   font-size: 429%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-429 {
+    font-size: 429%;
+  }
+}
 .fsize-430 {
   font-size: 430%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-430 {
+    font-size: 430%;
+  }
+}
 .fsize-431 {
   font-size: 431%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-431 {
+    font-size: 431%;
+  }
+}
 .fsize-432 {
   font-size: 432%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-432 {
+    font-size: 432%;
+  }
+}
 .fsize-433 {
   font-size: 433%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-433 {
+    font-size: 433%;
+  }
+}
 .fsize-434 {
   font-size: 434%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-434 {
+    font-size: 434%;
+  }
+}
 .fsize-435 {
   font-size: 435%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-435 {
+    font-size: 435%;
+  }
+}
 .fsize-436 {
   font-size: 436%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-436 {
+    font-size: 436%;
+  }
+}
 .fsize-437 {
   font-size: 437%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-437 {
+    font-size: 437%;
+  }
+}
 .fsize-438 {
   font-size: 438%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-438 {
+    font-size: 438%;
+  }
+}
 .fsize-439 {
   font-size: 439%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-439 {
+    font-size: 439%;
+  }
+}
 .fsize-440 {
   font-size: 440%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-440 {
+    font-size: 440%;
+  }
+}
 .fsize-441 {
   font-size: 441%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-441 {
+    font-size: 441%;
+  }
+}
 .fsize-442 {
   font-size: 442%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-442 {
+    font-size: 442%;
+  }
+}
 .fsize-443 {
   font-size: 443%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-443 {
+    font-size: 443%;
+  }
+}
 .fsize-444 {
   font-size: 444%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-444 {
+    font-size: 444%;
+  }
+}
 .fsize-445 {
   font-size: 445%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-445 {
+    font-size: 445%;
+  }
+}
 .fsize-446 {
   font-size: 446%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-446 {
+    font-size: 446%;
+  }
+}
 .fsize-447 {
   font-size: 447%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-447 {
+    font-size: 447%;
+  }
+}
 .fsize-448 {
   font-size: 448%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-448 {
+    font-size: 448%;
+  }
+}
 .fsize-449 {
   font-size: 449%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-449 {
+    font-size: 449%;
+  }
+}
 .fsize-450 {
   font-size: 450%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-450 {
+    font-size: 450%;
+  }
+}
 .fsize-451 {
   font-size: 451%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-451 {
+    font-size: 451%;
+  }
+}
 .fsize-452 {
   font-size: 452%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-452 {
+    font-size: 452%;
+  }
+}
 .fsize-453 {
   font-size: 453%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-453 {
+    font-size: 453%;
+  }
+}
 .fsize-454 {
   font-size: 454%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-454 {
+    font-size: 454%;
+  }
+}
 .fsize-455 {
   font-size: 455%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-455 {
+    font-size: 455%;
+  }
+}
 .fsize-456 {
   font-size: 456%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-456 {
+    font-size: 456%;
+  }
+}
 .fsize-457 {
   font-size: 457%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-457 {
+    font-size: 457%;
+  }
+}
 .fsize-458 {
   font-size: 458%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-458 {
+    font-size: 458%;
+  }
+}
 .fsize-459 {
   font-size: 459%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-459 {
+    font-size: 459%;
+  }
+}
 .fsize-460 {
   font-size: 460%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-460 {
+    font-size: 460%;
+  }
+}
 .fsize-461 {
   font-size: 461%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-461 {
+    font-size: 461%;
+  }
+}
 .fsize-462 {
   font-size: 462%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-462 {
+    font-size: 462%;
+  }
+}
 .fsize-463 {
   font-size: 463%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-463 {
+    font-size: 463%;
+  }
+}
 .fsize-464 {
   font-size: 464%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-464 {
+    font-size: 464%;
+  }
+}
 .fsize-465 {
   font-size: 465%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-465 {
+    font-size: 465%;
+  }
+}
 .fsize-466 {
   font-size: 466%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-466 {
+    font-size: 466%;
+  }
+}
 .fsize-467 {
   font-size: 467%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-467 {
+    font-size: 467%;
+  }
+}
 .fsize-468 {
   font-size: 468%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-468 {
+    font-size: 468%;
+  }
+}
 .fsize-469 {
   font-size: 469%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-469 {
+    font-size: 469%;
+  }
+}
 .fsize-470 {
   font-size: 470%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-470 {
+    font-size: 470%;
+  }
+}
 .fsize-471 {
   font-size: 471%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-471 {
+    font-size: 471%;
+  }
+}
 .fsize-472 {
   font-size: 472%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-472 {
+    font-size: 472%;
+  }
+}
 .fsize-473 {
   font-size: 473%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-473 {
+    font-size: 473%;
+  }
+}
 .fsize-474 {
   font-size: 474%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-474 {
+    font-size: 474%;
+  }
+}
 .fsize-475 {
   font-size: 475%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-475 {
+    font-size: 475%;
+  }
+}
 .fsize-476 {
   font-size: 476%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-476 {
+    font-size: 476%;
+  }
+}
 .fsize-477 {
   font-size: 477%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-477 {
+    font-size: 477%;
+  }
+}
 .fsize-478 {
   font-size: 478%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-478 {
+    font-size: 478%;
+  }
+}
 .fsize-479 {
   font-size: 479%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-479 {
+    font-size: 479%;
+  }
+}
 .fsize-480 {
   font-size: 480%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-480 {
+    font-size: 480%;
+  }
+}
 .fsize-481 {
   font-size: 481%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-481 {
+    font-size: 481%;
+  }
+}
 .fsize-482 {
   font-size: 482%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-482 {
+    font-size: 482%;
+  }
+}
 .fsize-483 {
   font-size: 483%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-483 {
+    font-size: 483%;
+  }
+}
 .fsize-484 {
   font-size: 484%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-484 {
+    font-size: 484%;
+  }
+}
 .fsize-485 {
   font-size: 485%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-485 {
+    font-size: 485%;
+  }
+}
 .fsize-486 {
   font-size: 486%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-486 {
+    font-size: 486%;
+  }
+}
 .fsize-487 {
   font-size: 487%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-487 {
+    font-size: 487%;
+  }
+}
 .fsize-488 {
   font-size: 488%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-488 {
+    font-size: 488%;
+  }
+}
 .fsize-489 {
   font-size: 489%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-489 {
+    font-size: 489%;
+  }
+}
 .fsize-490 {
   font-size: 490%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-490 {
+    font-size: 490%;
+  }
+}
 .fsize-491 {
   font-size: 491%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-491 {
+    font-size: 491%;
+  }
+}
 .fsize-492 {
   font-size: 492%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-492 {
+    font-size: 492%;
+  }
+}
 .fsize-493 {
   font-size: 493%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-493 {
+    font-size: 493%;
+  }
+}
 .fsize-494 {
   font-size: 494%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-494 {
+    font-size: 494%;
+  }
+}
 .fsize-495 {
   font-size: 495%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-495 {
+    font-size: 495%;
+  }
+}
 .fsize-496 {
   font-size: 496%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-496 {
+    font-size: 496%;
+  }
+}
 .fsize-497 {
   font-size: 497%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-497 {
+    font-size: 497%;
+  }
+}
 .fsize-498 {
   font-size: 498%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-498 {
+    font-size: 498%;
+  }
+}
 .fsize-499 {
   font-size: 499%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-499 {
+    font-size: 499%;
+  }
+}
 .fsize-500 {
   font-size: 500%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-500 {
+    font-size: 500%;
+  }
+}
 .fsize-501 {
   font-size: 501%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-501 {
+    font-size: 501%;
+  }
+}
 .fsize-502 {
   font-size: 502%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-502 {
+    font-size: 502%;
+  }
+}
 .fsize-503 {
   font-size: 503%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-503 {
+    font-size: 503%;
+  }
+}
 .fsize-504 {
   font-size: 504%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-504 {
+    font-size: 504%;
+  }
+}
 .fsize-505 {
   font-size: 505%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-505 {
+    font-size: 505%;
+  }
+}
 .fsize-506 {
   font-size: 506%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-506 {
+    font-size: 506%;
+  }
+}
 .fsize-507 {
   font-size: 507%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-507 {
+    font-size: 507%;
+  }
+}
 .fsize-508 {
   font-size: 508%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-508 {
+    font-size: 508%;
+  }
+}
 .fsize-509 {
   font-size: 509%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-509 {
+    font-size: 509%;
+  }
+}
 .fsize-510 {
   font-size: 510%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-510 {
+    font-size: 510%;
+  }
+}
 .fsize-511 {
   font-size: 511%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-511 {
+    font-size: 511%;
+  }
+}
 .fsize-512 {
   font-size: 512%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-512 {
+    font-size: 512%;
+  }
+}
 .fsize-513 {
   font-size: 513%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-513 {
+    font-size: 513%;
+  }
+}
 .fsize-514 {
   font-size: 514%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-514 {
+    font-size: 514%;
+  }
+}
 .fsize-515 {
   font-size: 515%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-515 {
+    font-size: 515%;
+  }
+}
 .fsize-516 {
   font-size: 516%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-516 {
+    font-size: 516%;
+  }
+}
 .fsize-517 {
   font-size: 517%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-517 {
+    font-size: 517%;
+  }
+}
 .fsize-518 {
   font-size: 518%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-518 {
+    font-size: 518%;
+  }
+}
 .fsize-519 {
   font-size: 519%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-519 {
+    font-size: 519%;
+  }
+}
 .fsize-520 {
   font-size: 520%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-520 {
+    font-size: 520%;
+  }
+}
 .fsize-521 {
   font-size: 521%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-521 {
+    font-size: 521%;
+  }
+}
 .fsize-522 {
   font-size: 522%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-522 {
+    font-size: 522%;
+  }
+}
 .fsize-523 {
   font-size: 523%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-523 {
+    font-size: 523%;
+  }
+}
 .fsize-524 {
   font-size: 524%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-524 {
+    font-size: 524%;
+  }
+}
 .fsize-525 {
   font-size: 525%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-525 {
+    font-size: 525%;
+  }
+}
 .fsize-526 {
   font-size: 526%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-526 {
+    font-size: 526%;
+  }
+}
 .fsize-527 {
   font-size: 527%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-527 {
+    font-size: 527%;
+  }
+}
 .fsize-528 {
   font-size: 528%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-528 {
+    font-size: 528%;
+  }
+}
 .fsize-529 {
   font-size: 529%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-529 {
+    font-size: 529%;
+  }
+}
 .fsize-530 {
   font-size: 530%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-530 {
+    font-size: 530%;
+  }
+}
 .fsize-531 {
   font-size: 531%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-531 {
+    font-size: 531%;
+  }
+}
 .fsize-532 {
   font-size: 532%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-532 {
+    font-size: 532%;
+  }
+}
 .fsize-533 {
   font-size: 533%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-533 {
+    font-size: 533%;
+  }
+}
 .fsize-534 {
   font-size: 534%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-534 {
+    font-size: 534%;
+  }
+}
 .fsize-535 {
   font-size: 535%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-535 {
+    font-size: 535%;
+  }
+}
 .fsize-536 {
   font-size: 536%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-536 {
+    font-size: 536%;
+  }
+}
 .fsize-537 {
   font-size: 537%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-537 {
+    font-size: 537%;
+  }
+}
 .fsize-538 {
   font-size: 538%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-538 {
+    font-size: 538%;
+  }
+}
 .fsize-539 {
   font-size: 539%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-539 {
+    font-size: 539%;
+  }
+}
 .fsize-540 {
   font-size: 540%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-540 {
+    font-size: 540%;
+  }
+}
 .fsize-541 {
   font-size: 541%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-541 {
+    font-size: 541%;
+  }
+}
 .fsize-542 {
   font-size: 542%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-542 {
+    font-size: 542%;
+  }
+}
 .fsize-543 {
   font-size: 543%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-543 {
+    font-size: 543%;
+  }
+}
 .fsize-544 {
   font-size: 544%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-544 {
+    font-size: 544%;
+  }
+}
 .fsize-545 {
   font-size: 545%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-545 {
+    font-size: 545%;
+  }
+}
 .fsize-546 {
   font-size: 546%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-546 {
+    font-size: 546%;
+  }
+}
 .fsize-547 {
   font-size: 547%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-547 {
+    font-size: 547%;
+  }
+}
 .fsize-548 {
   font-size: 548%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-548 {
+    font-size: 548%;
+  }
+}
 .fsize-549 {
   font-size: 549%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-549 {
+    font-size: 549%;
+  }
+}
 .fsize-550 {
   font-size: 550%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-550 {
+    font-size: 550%;
+  }
+}
 .fsize-551 {
   font-size: 551%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-551 {
+    font-size: 551%;
+  }
+}
 .fsize-552 {
   font-size: 552%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-552 {
+    font-size: 552%;
+  }
+}
 .fsize-553 {
   font-size: 553%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-553 {
+    font-size: 553%;
+  }
+}
 .fsize-554 {
   font-size: 554%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-554 {
+    font-size: 554%;
+  }
+}
 .fsize-555 {
   font-size: 555%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-555 {
+    font-size: 555%;
+  }
+}
 .fsize-556 {
   font-size: 556%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-556 {
+    font-size: 556%;
+  }
+}
 .fsize-557 {
   font-size: 557%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-557 {
+    font-size: 557%;
+  }
+}
 .fsize-558 {
   font-size: 558%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-558 {
+    font-size: 558%;
+  }
+}
 .fsize-559 {
   font-size: 559%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-559 {
+    font-size: 559%;
+  }
+}
 .fsize-560 {
   font-size: 560%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-560 {
+    font-size: 560%;
+  }
+}
 .fsize-561 {
   font-size: 561%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-561 {
+    font-size: 561%;
+  }
+}
 .fsize-562 {
   font-size: 562%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-562 {
+    font-size: 562%;
+  }
+}
 .fsize-563 {
   font-size: 563%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-563 {
+    font-size: 563%;
+  }
+}
 .fsize-564 {
   font-size: 564%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-564 {
+    font-size: 564%;
+  }
+}
 .fsize-565 {
   font-size: 565%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-565 {
+    font-size: 565%;
+  }
+}
 .fsize-566 {
   font-size: 566%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-566 {
+    font-size: 566%;
+  }
+}
 .fsize-567 {
   font-size: 567%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-567 {
+    font-size: 567%;
+  }
+}
 .fsize-568 {
   font-size: 568%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-568 {
+    font-size: 568%;
+  }
+}
 .fsize-569 {
   font-size: 569%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-569 {
+    font-size: 569%;
+  }
+}
 .fsize-570 {
   font-size: 570%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-570 {
+    font-size: 570%;
+  }
+}
 .fsize-571 {
   font-size: 571%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-571 {
+    font-size: 571%;
+  }
+}
 .fsize-572 {
   font-size: 572%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-572 {
+    font-size: 572%;
+  }
+}
 .fsize-573 {
   font-size: 573%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-573 {
+    font-size: 573%;
+  }
+}
 .fsize-574 {
   font-size: 574%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-574 {
+    font-size: 574%;
+  }
+}
 .fsize-575 {
   font-size: 575%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-575 {
+    font-size: 575%;
+  }
+}
 .fsize-576 {
   font-size: 576%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-576 {
+    font-size: 576%;
+  }
+}
 .fsize-577 {
   font-size: 577%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-577 {
+    font-size: 577%;
+  }
+}
 .fsize-578 {
   font-size: 578%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-578 {
+    font-size: 578%;
+  }
+}
 .fsize-579 {
   font-size: 579%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-579 {
+    font-size: 579%;
+  }
+}
 .fsize-580 {
   font-size: 580%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-580 {
+    font-size: 580%;
+  }
+}
 .fsize-581 {
   font-size: 581%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-581 {
+    font-size: 581%;
+  }
+}
 .fsize-582 {
   font-size: 582%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-582 {
+    font-size: 582%;
+  }
+}
 .fsize-583 {
   font-size: 583%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-583 {
+    font-size: 583%;
+  }
+}
 .fsize-584 {
   font-size: 584%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-584 {
+    font-size: 584%;
+  }
+}
 .fsize-585 {
   font-size: 585%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-585 {
+    font-size: 585%;
+  }
+}
 .fsize-586 {
   font-size: 586%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-586 {
+    font-size: 586%;
+  }
+}
 .fsize-587 {
   font-size: 587%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-587 {
+    font-size: 587%;
+  }
+}
 .fsize-588 {
   font-size: 588%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-588 {
+    font-size: 588%;
+  }
+}
 .fsize-589 {
   font-size: 589%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-589 {
+    font-size: 589%;
+  }
+}
 .fsize-590 {
   font-size: 590%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-590 {
+    font-size: 590%;
+  }
+}
 .fsize-591 {
   font-size: 591%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-591 {
+    font-size: 591%;
+  }
+}
 .fsize-592 {
   font-size: 592%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-592 {
+    font-size: 592%;
+  }
+}
 .fsize-593 {
   font-size: 593%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-593 {
+    font-size: 593%;
+  }
+}
 .fsize-594 {
   font-size: 594%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-594 {
+    font-size: 594%;
+  }
+}
 .fsize-595 {
   font-size: 595%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-595 {
+    font-size: 595%;
+  }
+}
 .fsize-596 {
   font-size: 596%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-596 {
+    font-size: 596%;
+  }
+}
 .fsize-597 {
   font-size: 597%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-597 {
+    font-size: 597%;
+  }
+}
 .fsize-598 {
   font-size: 598%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-598 {
+    font-size: 598%;
+  }
+}
 .fsize-599 {
   font-size: 599%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-599 {
+    font-size: 599%;
+  }
+}
 .fsize-600 {
   font-size: 600%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-600 {
+    font-size: 600%;
+  }
+}
 .fsize-601 {
   font-size: 601%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-601 {
+    font-size: 601%;
+  }
+}
 .fsize-602 {
   font-size: 602%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-602 {
+    font-size: 602%;
+  }
+}
 .fsize-603 {
   font-size: 603%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-603 {
+    font-size: 603%;
+  }
+}
 .fsize-604 {
   font-size: 604%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-604 {
+    font-size: 604%;
+  }
+}
 .fsize-605 {
   font-size: 605%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-605 {
+    font-size: 605%;
+  }
+}
 .fsize-606 {
   font-size: 606%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-606 {
+    font-size: 606%;
+  }
+}
 .fsize-607 {
   font-size: 607%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-607 {
+    font-size: 607%;
+  }
+}
 .fsize-608 {
   font-size: 608%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-608 {
+    font-size: 608%;
+  }
+}
 .fsize-609 {
   font-size: 609%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-609 {
+    font-size: 609%;
+  }
+}
 .fsize-610 {
   font-size: 610%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-610 {
+    font-size: 610%;
+  }
+}
 .fsize-611 {
   font-size: 611%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-611 {
+    font-size: 611%;
+  }
+}
 .fsize-612 {
   font-size: 612%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-612 {
+    font-size: 612%;
+  }
+}
 .fsize-613 {
   font-size: 613%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-613 {
+    font-size: 613%;
+  }
+}
 .fsize-614 {
   font-size: 614%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-614 {
+    font-size: 614%;
+  }
+}
 .fsize-615 {
   font-size: 615%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-615 {
+    font-size: 615%;
+  }
+}
 .fsize-616 {
   font-size: 616%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-616 {
+    font-size: 616%;
+  }
+}
 .fsize-617 {
   font-size: 617%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-617 {
+    font-size: 617%;
+  }
+}
 .fsize-618 {
   font-size: 618%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-618 {
+    font-size: 618%;
+  }
+}
 .fsize-619 {
   font-size: 619%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-619 {
+    font-size: 619%;
+  }
+}
 .fsize-620 {
   font-size: 620%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-620 {
+    font-size: 620%;
+  }
+}
 .fsize-621 {
   font-size: 621%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-621 {
+    font-size: 621%;
+  }
+}
 .fsize-622 {
   font-size: 622%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-622 {
+    font-size: 622%;
+  }
+}
 .fsize-623 {
   font-size: 623%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-623 {
+    font-size: 623%;
+  }
+}
 .fsize-624 {
   font-size: 624%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-624 {
+    font-size: 624%;
+  }
+}
 .fsize-625 {
   font-size: 625%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-625 {
+    font-size: 625%;
+  }
+}
 .fsize-626 {
   font-size: 626%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-626 {
+    font-size: 626%;
+  }
+}
 .fsize-627 {
   font-size: 627%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-627 {
+    font-size: 627%;
+  }
+}
 .fsize-628 {
   font-size: 628%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-628 {
+    font-size: 628%;
+  }
+}
 .fsize-629 {
   font-size: 629%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-629 {
+    font-size: 629%;
+  }
+}
 .fsize-630 {
   font-size: 630%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-630 {
+    font-size: 630%;
+  }
+}
 .fsize-631 {
   font-size: 631%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-631 {
+    font-size: 631%;
+  }
+}
 .fsize-632 {
   font-size: 632%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-632 {
+    font-size: 632%;
+  }
+}
 .fsize-633 {
   font-size: 633%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-633 {
+    font-size: 633%;
+  }
+}
 .fsize-634 {
   font-size: 634%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-634 {
+    font-size: 634%;
+  }
+}
 .fsize-635 {
   font-size: 635%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-635 {
+    font-size: 635%;
+  }
+}
 .fsize-636 {
   font-size: 636%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-636 {
+    font-size: 636%;
+  }
+}
 .fsize-637 {
   font-size: 637%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-637 {
+    font-size: 637%;
+  }
+}
 .fsize-638 {
   font-size: 638%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-638 {
+    font-size: 638%;
+  }
+}
 .fsize-639 {
   font-size: 639%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-639 {
+    font-size: 639%;
+  }
+}
 .fsize-640 {
   font-size: 640%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-640 {
+    font-size: 640%;
+  }
+}
 .fsize-641 {
   font-size: 641%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-641 {
+    font-size: 641%;
+  }
+}
 .fsize-642 {
   font-size: 642%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-642 {
+    font-size: 642%;
+  }
+}
 .fsize-643 {
   font-size: 643%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-643 {
+    font-size: 643%;
+  }
+}
 .fsize-644 {
   font-size: 644%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-644 {
+    font-size: 644%;
+  }
+}
 .fsize-645 {
   font-size: 645%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-645 {
+    font-size: 645%;
+  }
+}
 .fsize-646 {
   font-size: 646%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-646 {
+    font-size: 646%;
+  }
+}
 .fsize-647 {
   font-size: 647%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-647 {
+    font-size: 647%;
+  }
+}
 .fsize-648 {
   font-size: 648%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-648 {
+    font-size: 648%;
+  }
+}
 .fsize-649 {
   font-size: 649%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-649 {
+    font-size: 649%;
+  }
+}
 .fsize-650 {
   font-size: 650%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-650 {
+    font-size: 650%;
+  }
+}
 .fsize-651 {
   font-size: 651%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-651 {
+    font-size: 651%;
+  }
+}
 .fsize-652 {
   font-size: 652%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-652 {
+    font-size: 652%;
+  }
+}
 .fsize-653 {
   font-size: 653%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-653 {
+    font-size: 653%;
+  }
+}
 .fsize-654 {
   font-size: 654%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-654 {
+    font-size: 654%;
+  }
+}
 .fsize-655 {
   font-size: 655%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-655 {
+    font-size: 655%;
+  }
+}
 .fsize-656 {
   font-size: 656%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-656 {
+    font-size: 656%;
+  }
+}
 .fsize-657 {
   font-size: 657%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-657 {
+    font-size: 657%;
+  }
+}
 .fsize-658 {
   font-size: 658%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-658 {
+    font-size: 658%;
+  }
+}
 .fsize-659 {
   font-size: 659%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-659 {
+    font-size: 659%;
+  }
+}
 .fsize-660 {
   font-size: 660%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-660 {
+    font-size: 660%;
+  }
+}
 .fsize-661 {
   font-size: 661%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-661 {
+    font-size: 661%;
+  }
+}
 .fsize-662 {
   font-size: 662%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-662 {
+    font-size: 662%;
+  }
+}
 .fsize-663 {
   font-size: 663%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-663 {
+    font-size: 663%;
+  }
+}
 .fsize-664 {
   font-size: 664%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-664 {
+    font-size: 664%;
+  }
+}
 .fsize-665 {
   font-size: 665%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-665 {
+    font-size: 665%;
+  }
+}
 .fsize-666 {
   font-size: 666%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-666 {
+    font-size: 666%;
+  }
+}
 .fsize-667 {
   font-size: 667%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-667 {
+    font-size: 667%;
+  }
+}
 .fsize-668 {
   font-size: 668%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-668 {
+    font-size: 668%;
+  }
+}
 .fsize-669 {
   font-size: 669%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-669 {
+    font-size: 669%;
+  }
+}
 .fsize-670 {
   font-size: 670%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-670 {
+    font-size: 670%;
+  }
+}
 .fsize-671 {
   font-size: 671%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-671 {
+    font-size: 671%;
+  }
+}
 .fsize-672 {
   font-size: 672%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-672 {
+    font-size: 672%;
+  }
+}
 .fsize-673 {
   font-size: 673%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-673 {
+    font-size: 673%;
+  }
+}
 .fsize-674 {
   font-size: 674%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-674 {
+    font-size: 674%;
+  }
+}
 .fsize-675 {
   font-size: 675%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-675 {
+    font-size: 675%;
+  }
+}
 .fsize-676 {
   font-size: 676%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-676 {
+    font-size: 676%;
+  }
+}
 .fsize-677 {
   font-size: 677%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-677 {
+    font-size: 677%;
+  }
+}
 .fsize-678 {
   font-size: 678%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-678 {
+    font-size: 678%;
+  }
+}
 .fsize-679 {
   font-size: 679%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-679 {
+    font-size: 679%;
+  }
+}
 .fsize-680 {
   font-size: 680%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-680 {
+    font-size: 680%;
+  }
+}
 .fsize-681 {
   font-size: 681%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-681 {
+    font-size: 681%;
+  }
+}
 .fsize-682 {
   font-size: 682%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-682 {
+    font-size: 682%;
+  }
+}
 .fsize-683 {
   font-size: 683%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-683 {
+    font-size: 683%;
+  }
+}
 .fsize-684 {
   font-size: 684%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-684 {
+    font-size: 684%;
+  }
+}
 .fsize-685 {
   font-size: 685%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-685 {
+    font-size: 685%;
+  }
+}
 .fsize-686 {
   font-size: 686%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-686 {
+    font-size: 686%;
+  }
+}
 .fsize-687 {
   font-size: 687%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-687 {
+    font-size: 687%;
+  }
+}
 .fsize-688 {
   font-size: 688%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-688 {
+    font-size: 688%;
+  }
+}
 .fsize-689 {
   font-size: 689%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-689 {
+    font-size: 689%;
+  }
+}
 .fsize-690 {
   font-size: 690%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-690 {
+    font-size: 690%;
+  }
+}
 .fsize-691 {
   font-size: 691%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-691 {
+    font-size: 691%;
+  }
+}
 .fsize-692 {
   font-size: 692%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-692 {
+    font-size: 692%;
+  }
+}
 .fsize-693 {
   font-size: 693%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-693 {
+    font-size: 693%;
+  }
+}
 .fsize-694 {
   font-size: 694%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-694 {
+    font-size: 694%;
+  }
+}
 .fsize-695 {
   font-size: 695%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-695 {
+    font-size: 695%;
+  }
+}
 .fsize-696 {
   font-size: 696%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-696 {
+    font-size: 696%;
+  }
+}
 .fsize-697 {
   font-size: 697%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-697 {
+    font-size: 697%;
+  }
+}
 .fsize-698 {
   font-size: 698%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-698 {
+    font-size: 698%;
+  }
+}
 .fsize-699 {
   font-size: 699%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-699 {
+    font-size: 699%;
+  }
+}
 .fsize-700 {
   font-size: 700%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-700 {
+    font-size: 700%;
+  }
+}
 .fsize-701 {
   font-size: 701%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-701 {
+    font-size: 701%;
+  }
+}
 .fsize-702 {
   font-size: 702%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-702 {
+    font-size: 702%;
+  }
+}
 .fsize-703 {
   font-size: 703%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-703 {
+    font-size: 703%;
+  }
+}
 .fsize-704 {
   font-size: 704%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-704 {
+    font-size: 704%;
+  }
+}
 .fsize-705 {
   font-size: 705%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-705 {
+    font-size: 705%;
+  }
+}
 .fsize-706 {
   font-size: 706%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-706 {
+    font-size: 706%;
+  }
+}
 .fsize-707 {
   font-size: 707%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-707 {
+    font-size: 707%;
+  }
+}
 .fsize-708 {
   font-size: 708%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-708 {
+    font-size: 708%;
+  }
+}
 .fsize-709 {
   font-size: 709%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-709 {
+    font-size: 709%;
+  }
+}
 .fsize-710 {
   font-size: 710%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-710 {
+    font-size: 710%;
+  }
+}
 .fsize-711 {
   font-size: 711%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-711 {
+    font-size: 711%;
+  }
+}
 .fsize-712 {
   font-size: 712%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-712 {
+    font-size: 712%;
+  }
+}
 .fsize-713 {
   font-size: 713%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-713 {
+    font-size: 713%;
+  }
+}
 .fsize-714 {
   font-size: 714%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-714 {
+    font-size: 714%;
+  }
+}
 .fsize-715 {
   font-size: 715%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-715 {
+    font-size: 715%;
+  }
+}
 .fsize-716 {
   font-size: 716%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-716 {
+    font-size: 716%;
+  }
+}
 .fsize-717 {
   font-size: 717%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-717 {
+    font-size: 717%;
+  }
+}
 .fsize-718 {
   font-size: 718%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-718 {
+    font-size: 718%;
+  }
+}
 .fsize-719 {
   font-size: 719%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-719 {
+    font-size: 719%;
+  }
+}
 .fsize-720 {
   font-size: 720%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-720 {
+    font-size: 720%;
+  }
+}
 .fsize-721 {
   font-size: 721%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-721 {
+    font-size: 721%;
+  }
+}
 .fsize-722 {
   font-size: 722%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-722 {
+    font-size: 722%;
+  }
+}
 .fsize-723 {
   font-size: 723%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-723 {
+    font-size: 723%;
+  }
+}
 .fsize-724 {
   font-size: 724%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-724 {
+    font-size: 724%;
+  }
+}
 .fsize-725 {
   font-size: 725%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-725 {
+    font-size: 725%;
+  }
+}
 .fsize-726 {
   font-size: 726%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-726 {
+    font-size: 726%;
+  }
+}
 .fsize-727 {
   font-size: 727%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-727 {
+    font-size: 727%;
+  }
+}
 .fsize-728 {
   font-size: 728%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-728 {
+    font-size: 728%;
+  }
+}
 .fsize-729 {
   font-size: 729%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-729 {
+    font-size: 729%;
+  }
+}
 .fsize-730 {
   font-size: 730%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-730 {
+    font-size: 730%;
+  }
+}
 .fsize-731 {
   font-size: 731%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-731 {
+    font-size: 731%;
+  }
+}
 .fsize-732 {
   font-size: 732%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-732 {
+    font-size: 732%;
+  }
+}
 .fsize-733 {
   font-size: 733%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-733 {
+    font-size: 733%;
+  }
+}
 .fsize-734 {
   font-size: 734%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-734 {
+    font-size: 734%;
+  }
+}
 .fsize-735 {
   font-size: 735%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-735 {
+    font-size: 735%;
+  }
+}
 .fsize-736 {
   font-size: 736%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-736 {
+    font-size: 736%;
+  }
+}
 .fsize-737 {
   font-size: 737%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-737 {
+    font-size: 737%;
+  }
+}
 .fsize-738 {
   font-size: 738%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-738 {
+    font-size: 738%;
+  }
+}
 .fsize-739 {
   font-size: 739%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-739 {
+    font-size: 739%;
+  }
+}
 .fsize-740 {
   font-size: 740%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-740 {
+    font-size: 740%;
+  }
+}
 .fsize-741 {
   font-size: 741%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-741 {
+    font-size: 741%;
+  }
+}
 .fsize-742 {
   font-size: 742%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-742 {
+    font-size: 742%;
+  }
+}
 .fsize-743 {
   font-size: 743%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-743 {
+    font-size: 743%;
+  }
+}
 .fsize-744 {
   font-size: 744%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-744 {
+    font-size: 744%;
+  }
+}
 .fsize-745 {
   font-size: 745%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-745 {
+    font-size: 745%;
+  }
+}
 .fsize-746 {
   font-size: 746%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-746 {
+    font-size: 746%;
+  }
+}
 .fsize-747 {
   font-size: 747%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-747 {
+    font-size: 747%;
+  }
+}
 .fsize-748 {
   font-size: 748%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-748 {
+    font-size: 748%;
+  }
+}
 .fsize-749 {
   font-size: 749%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-749 {
+    font-size: 749%;
+  }
+}
 .fsize-750 {
   font-size: 750%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-750 {
+    font-size: 750%;
+  }
+}
 .fsize-751 {
   font-size: 751%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-751 {
+    font-size: 751%;
+  }
+}
 .fsize-752 {
   font-size: 752%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-752 {
+    font-size: 752%;
+  }
+}
 .fsize-753 {
   font-size: 753%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-753 {
+    font-size: 753%;
+  }
+}
 .fsize-754 {
   font-size: 754%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-754 {
+    font-size: 754%;
+  }
+}
 .fsize-755 {
   font-size: 755%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-755 {
+    font-size: 755%;
+  }
+}
 .fsize-756 {
   font-size: 756%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-756 {
+    font-size: 756%;
+  }
+}
 .fsize-757 {
   font-size: 757%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-757 {
+    font-size: 757%;
+  }
+}
 .fsize-758 {
   font-size: 758%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-758 {
+    font-size: 758%;
+  }
+}
 .fsize-759 {
   font-size: 759%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-759 {
+    font-size: 759%;
+  }
+}
 .fsize-760 {
   font-size: 760%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-760 {
+    font-size: 760%;
+  }
+}
 .fsize-761 {
   font-size: 761%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-761 {
+    font-size: 761%;
+  }
+}
 .fsize-762 {
   font-size: 762%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-762 {
+    font-size: 762%;
+  }
+}
 .fsize-763 {
   font-size: 763%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-763 {
+    font-size: 763%;
+  }
+}
 .fsize-764 {
   font-size: 764%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-764 {
+    font-size: 764%;
+  }
+}
 .fsize-765 {
   font-size: 765%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-765 {
+    font-size: 765%;
+  }
+}
 .fsize-766 {
   font-size: 766%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-766 {
+    font-size: 766%;
+  }
+}
 .fsize-767 {
   font-size: 767%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-767 {
+    font-size: 767%;
+  }
+}
 .fsize-768 {
   font-size: 768%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-768 {
+    font-size: 768%;
+  }
+}
 .fsize-769 {
   font-size: 769%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-769 {
+    font-size: 769%;
+  }
+}
 .fsize-770 {
   font-size: 770%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-770 {
+    font-size: 770%;
+  }
+}
 .fsize-771 {
   font-size: 771%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-771 {
+    font-size: 771%;
+  }
+}
 .fsize-772 {
   font-size: 772%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-772 {
+    font-size: 772%;
+  }
+}
 .fsize-773 {
   font-size: 773%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-773 {
+    font-size: 773%;
+  }
+}
 .fsize-774 {
   font-size: 774%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-774 {
+    font-size: 774%;
+  }
+}
 .fsize-775 {
   font-size: 775%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-775 {
+    font-size: 775%;
+  }
+}
 .fsize-776 {
   font-size: 776%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-776 {
+    font-size: 776%;
+  }
+}
 .fsize-777 {
   font-size: 777%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-777 {
+    font-size: 777%;
+  }
+}
 .fsize-778 {
   font-size: 778%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-778 {
+    font-size: 778%;
+  }
+}
 .fsize-779 {
   font-size: 779%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-779 {
+    font-size: 779%;
+  }
+}
 .fsize-780 {
   font-size: 780%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-780 {
+    font-size: 780%;
+  }
+}
 .fsize-781 {
   font-size: 781%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-781 {
+    font-size: 781%;
+  }
+}
 .fsize-782 {
   font-size: 782%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-782 {
+    font-size: 782%;
+  }
+}
 .fsize-783 {
   font-size: 783%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-783 {
+    font-size: 783%;
+  }
+}
 .fsize-784 {
   font-size: 784%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-784 {
+    font-size: 784%;
+  }
+}
 .fsize-785 {
   font-size: 785%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-785 {
+    font-size: 785%;
+  }
+}
 .fsize-786 {
   font-size: 786%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-786 {
+    font-size: 786%;
+  }
+}
 .fsize-787 {
   font-size: 787%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-787 {
+    font-size: 787%;
+  }
+}
 .fsize-788 {
   font-size: 788%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-788 {
+    font-size: 788%;
+  }
+}
 .fsize-789 {
   font-size: 789%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-789 {
+    font-size: 789%;
+  }
+}
 .fsize-790 {
   font-size: 790%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-790 {
+    font-size: 790%;
+  }
+}
 .fsize-791 {
   font-size: 791%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-791 {
+    font-size: 791%;
+  }
+}
 .fsize-792 {
   font-size: 792%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-792 {
+    font-size: 792%;
+  }
+}
 .fsize-793 {
   font-size: 793%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-793 {
+    font-size: 793%;
+  }
+}
 .fsize-794 {
   font-size: 794%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-794 {
+    font-size: 794%;
+  }
+}
 .fsize-795 {
   font-size: 795%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-795 {
+    font-size: 795%;
+  }
+}
 .fsize-796 {
   font-size: 796%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-796 {
+    font-size: 796%;
+  }
+}
 .fsize-797 {
   font-size: 797%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-797 {
+    font-size: 797%;
+  }
+}
 .fsize-798 {
   font-size: 798%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-798 {
+    font-size: 798%;
+  }
+}
 .fsize-799 {
   font-size: 799%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-799 {
+    font-size: 799%;
+  }
+}
 .fsize-800 {
   font-size: 800%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-800 {
+    font-size: 800%;
+  }
+}
 .fsize-801 {
   font-size: 801%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-801 {
+    font-size: 801%;
+  }
+}
 .fsize-802 {
   font-size: 802%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-802 {
+    font-size: 802%;
+  }
+}
 .fsize-803 {
   font-size: 803%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-803 {
+    font-size: 803%;
+  }
+}
 .fsize-804 {
   font-size: 804%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-804 {
+    font-size: 804%;
+  }
+}
 .fsize-805 {
   font-size: 805%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-805 {
+    font-size: 805%;
+  }
+}
 .fsize-806 {
   font-size: 806%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-806 {
+    font-size: 806%;
+  }
+}
 .fsize-807 {
   font-size: 807%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-807 {
+    font-size: 807%;
+  }
+}
 .fsize-808 {
   font-size: 808%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-808 {
+    font-size: 808%;
+  }
+}
 .fsize-809 {
   font-size: 809%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-809 {
+    font-size: 809%;
+  }
+}
 .fsize-810 {
   font-size: 810%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-810 {
+    font-size: 810%;
+  }
+}
 .fsize-811 {
   font-size: 811%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-811 {
+    font-size: 811%;
+  }
+}
 .fsize-812 {
   font-size: 812%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-812 {
+    font-size: 812%;
+  }
+}
 .fsize-813 {
   font-size: 813%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-813 {
+    font-size: 813%;
+  }
+}
 .fsize-814 {
   font-size: 814%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-814 {
+    font-size: 814%;
+  }
+}
 .fsize-815 {
   font-size: 815%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-815 {
+    font-size: 815%;
+  }
+}
 .fsize-816 {
   font-size: 816%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-816 {
+    font-size: 816%;
+  }
+}
 .fsize-817 {
   font-size: 817%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-817 {
+    font-size: 817%;
+  }
+}
 .fsize-818 {
   font-size: 818%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-818 {
+    font-size: 818%;
+  }
+}
 .fsize-819 {
   font-size: 819%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-819 {
+    font-size: 819%;
+  }
+}
 .fsize-820 {
   font-size: 820%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-820 {
+    font-size: 820%;
+  }
+}
 .fsize-821 {
   font-size: 821%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-821 {
+    font-size: 821%;
+  }
+}
 .fsize-822 {
   font-size: 822%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-822 {
+    font-size: 822%;
+  }
+}
 .fsize-823 {
   font-size: 823%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-823 {
+    font-size: 823%;
+  }
+}
 .fsize-824 {
   font-size: 824%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-824 {
+    font-size: 824%;
+  }
+}
 .fsize-825 {
   font-size: 825%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-825 {
+    font-size: 825%;
+  }
+}
 .fsize-826 {
   font-size: 826%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-826 {
+    font-size: 826%;
+  }
+}
 .fsize-827 {
   font-size: 827%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-827 {
+    font-size: 827%;
+  }
+}
 .fsize-828 {
   font-size: 828%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-828 {
+    font-size: 828%;
+  }
+}
 .fsize-829 {
   font-size: 829%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-829 {
+    font-size: 829%;
+  }
+}
 .fsize-830 {
   font-size: 830%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-830 {
+    font-size: 830%;
+  }
+}
 .fsize-831 {
   font-size: 831%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-831 {
+    font-size: 831%;
+  }
+}
 .fsize-832 {
   font-size: 832%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-832 {
+    font-size: 832%;
+  }
+}
 .fsize-833 {
   font-size: 833%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-833 {
+    font-size: 833%;
+  }
+}
 .fsize-834 {
   font-size: 834%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-834 {
+    font-size: 834%;
+  }
+}
 .fsize-835 {
   font-size: 835%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-835 {
+    font-size: 835%;
+  }
+}
 .fsize-836 {
   font-size: 836%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-836 {
+    font-size: 836%;
+  }
+}
 .fsize-837 {
   font-size: 837%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-837 {
+    font-size: 837%;
+  }
+}
 .fsize-838 {
   font-size: 838%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-838 {
+    font-size: 838%;
+  }
+}
 .fsize-839 {
   font-size: 839%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-839 {
+    font-size: 839%;
+  }
+}
 .fsize-840 {
   font-size: 840%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-840 {
+    font-size: 840%;
+  }
+}
 .fsize-841 {
   font-size: 841%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-841 {
+    font-size: 841%;
+  }
+}
 .fsize-842 {
   font-size: 842%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-842 {
+    font-size: 842%;
+  }
+}
 .fsize-843 {
   font-size: 843%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-843 {
+    font-size: 843%;
+  }
+}
 .fsize-844 {
   font-size: 844%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-844 {
+    font-size: 844%;
+  }
+}
 .fsize-845 {
   font-size: 845%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-845 {
+    font-size: 845%;
+  }
+}
 .fsize-846 {
   font-size: 846%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-846 {
+    font-size: 846%;
+  }
+}
 .fsize-847 {
   font-size: 847%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-847 {
+    font-size: 847%;
+  }
+}
 .fsize-848 {
   font-size: 848%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-848 {
+    font-size: 848%;
+  }
+}
 .fsize-849 {
   font-size: 849%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-849 {
+    font-size: 849%;
+  }
+}
 .fsize-850 {
   font-size: 850%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-850 {
+    font-size: 850%;
+  }
+}
 .fsize-851 {
   font-size: 851%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-851 {
+    font-size: 851%;
+  }
+}
 .fsize-852 {
   font-size: 852%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-852 {
+    font-size: 852%;
+  }
+}
 .fsize-853 {
   font-size: 853%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-853 {
+    font-size: 853%;
+  }
+}
 .fsize-854 {
   font-size: 854%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-854 {
+    font-size: 854%;
+  }
+}
 .fsize-855 {
   font-size: 855%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-855 {
+    font-size: 855%;
+  }
+}
 .fsize-856 {
   font-size: 856%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-856 {
+    font-size: 856%;
+  }
+}
 .fsize-857 {
   font-size: 857%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-857 {
+    font-size: 857%;
+  }
+}
 .fsize-858 {
   font-size: 858%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-858 {
+    font-size: 858%;
+  }
+}
 .fsize-859 {
   font-size: 859%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-859 {
+    font-size: 859%;
+  }
+}
 .fsize-860 {
   font-size: 860%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-860 {
+    font-size: 860%;
+  }
+}
 .fsize-861 {
   font-size: 861%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-861 {
+    font-size: 861%;
+  }
+}
 .fsize-862 {
   font-size: 862%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-862 {
+    font-size: 862%;
+  }
+}
 .fsize-863 {
   font-size: 863%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-863 {
+    font-size: 863%;
+  }
+}
 .fsize-864 {
   font-size: 864%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-864 {
+    font-size: 864%;
+  }
+}
 .fsize-865 {
   font-size: 865%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-865 {
+    font-size: 865%;
+  }
+}
 .fsize-866 {
   font-size: 866%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-866 {
+    font-size: 866%;
+  }
+}
 .fsize-867 {
   font-size: 867%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-867 {
+    font-size: 867%;
+  }
+}
 .fsize-868 {
   font-size: 868%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-868 {
+    font-size: 868%;
+  }
+}
 .fsize-869 {
   font-size: 869%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-869 {
+    font-size: 869%;
+  }
+}
 .fsize-870 {
   font-size: 870%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-870 {
+    font-size: 870%;
+  }
+}
 .fsize-871 {
   font-size: 871%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-871 {
+    font-size: 871%;
+  }
+}
 .fsize-872 {
   font-size: 872%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-872 {
+    font-size: 872%;
+  }
+}
 .fsize-873 {
   font-size: 873%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-873 {
+    font-size: 873%;
+  }
+}
 .fsize-874 {
   font-size: 874%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-874 {
+    font-size: 874%;
+  }
+}
 .fsize-875 {
   font-size: 875%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-875 {
+    font-size: 875%;
+  }
+}
 .fsize-876 {
   font-size: 876%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-876 {
+    font-size: 876%;
+  }
+}
 .fsize-877 {
   font-size: 877%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-877 {
+    font-size: 877%;
+  }
+}
 .fsize-878 {
   font-size: 878%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-878 {
+    font-size: 878%;
+  }
+}
 .fsize-879 {
   font-size: 879%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-879 {
+    font-size: 879%;
+  }
+}
 .fsize-880 {
   font-size: 880%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-880 {
+    font-size: 880%;
+  }
+}
 .fsize-881 {
   font-size: 881%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-881 {
+    font-size: 881%;
+  }
+}
 .fsize-882 {
   font-size: 882%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-882 {
+    font-size: 882%;
+  }
+}
 .fsize-883 {
   font-size: 883%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-883 {
+    font-size: 883%;
+  }
+}
 .fsize-884 {
   font-size: 884%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-884 {
+    font-size: 884%;
+  }
+}
 .fsize-885 {
   font-size: 885%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-885 {
+    font-size: 885%;
+  }
+}
 .fsize-886 {
   font-size: 886%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-886 {
+    font-size: 886%;
+  }
+}
 .fsize-887 {
   font-size: 887%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-887 {
+    font-size: 887%;
+  }
+}
 .fsize-888 {
   font-size: 888%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-888 {
+    font-size: 888%;
+  }
+}
 .fsize-889 {
   font-size: 889%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-889 {
+    font-size: 889%;
+  }
+}
 .fsize-890 {
   font-size: 890%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-890 {
+    font-size: 890%;
+  }
+}
 .fsize-891 {
   font-size: 891%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-891 {
+    font-size: 891%;
+  }
+}
 .fsize-892 {
   font-size: 892%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-892 {
+    font-size: 892%;
+  }
+}
 .fsize-893 {
   font-size: 893%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-893 {
+    font-size: 893%;
+  }
+}
 .fsize-894 {
   font-size: 894%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-894 {
+    font-size: 894%;
+  }
+}
 .fsize-895 {
   font-size: 895%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-895 {
+    font-size: 895%;
+  }
+}
 .fsize-896 {
   font-size: 896%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-896 {
+    font-size: 896%;
+  }
+}
 .fsize-897 {
   font-size: 897%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-897 {
+    font-size: 897%;
+  }
+}
 .fsize-898 {
   font-size: 898%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-898 {
+    font-size: 898%;
+  }
+}
 .fsize-899 {
   font-size: 899%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-899 {
+    font-size: 899%;
+  }
+}
 .fsize-900 {
   font-size: 900%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-900 {
+    font-size: 900%;
+  }
+}
 .fsize-901 {
   font-size: 901%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-901 {
+    font-size: 901%;
+  }
+}
 .fsize-902 {
   font-size: 902%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-902 {
+    font-size: 902%;
+  }
+}
 .fsize-903 {
   font-size: 903%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-903 {
+    font-size: 903%;
+  }
+}
 .fsize-904 {
   font-size: 904%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-904 {
+    font-size: 904%;
+  }
+}
 .fsize-905 {
   font-size: 905%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-905 {
+    font-size: 905%;
+  }
+}
 .fsize-906 {
   font-size: 906%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-906 {
+    font-size: 906%;
+  }
+}
 .fsize-907 {
   font-size: 907%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-907 {
+    font-size: 907%;
+  }
+}
 .fsize-908 {
   font-size: 908%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-908 {
+    font-size: 908%;
+  }
+}
 .fsize-909 {
   font-size: 909%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-909 {
+    font-size: 909%;
+  }
+}
 .fsize-910 {
   font-size: 910%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-910 {
+    font-size: 910%;
+  }
+}
 .fsize-911 {
   font-size: 911%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-911 {
+    font-size: 911%;
+  }
+}
 .fsize-912 {
   font-size: 912%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-912 {
+    font-size: 912%;
+  }
+}
 .fsize-913 {
   font-size: 913%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-913 {
+    font-size: 913%;
+  }
+}
 .fsize-914 {
   font-size: 914%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-914 {
+    font-size: 914%;
+  }
+}
 .fsize-915 {
   font-size: 915%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-915 {
+    font-size: 915%;
+  }
+}
 .fsize-916 {
   font-size: 916%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-916 {
+    font-size: 916%;
+  }
+}
 .fsize-917 {
   font-size: 917%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-917 {
+    font-size: 917%;
+  }
+}
 .fsize-918 {
   font-size: 918%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-918 {
+    font-size: 918%;
+  }
+}
 .fsize-919 {
   font-size: 919%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-919 {
+    font-size: 919%;
+  }
+}
 .fsize-920 {
   font-size: 920%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-920 {
+    font-size: 920%;
+  }
+}
 .fsize-921 {
   font-size: 921%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-921 {
+    font-size: 921%;
+  }
+}
 .fsize-922 {
   font-size: 922%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-922 {
+    font-size: 922%;
+  }
+}
 .fsize-923 {
   font-size: 923%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-923 {
+    font-size: 923%;
+  }
+}
 .fsize-924 {
   font-size: 924%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-924 {
+    font-size: 924%;
+  }
+}
 .fsize-925 {
   font-size: 925%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-925 {
+    font-size: 925%;
+  }
+}
 .fsize-926 {
   font-size: 926%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-926 {
+    font-size: 926%;
+  }
+}
 .fsize-927 {
   font-size: 927%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-927 {
+    font-size: 927%;
+  }
+}
 .fsize-928 {
   font-size: 928%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-928 {
+    font-size: 928%;
+  }
+}
 .fsize-929 {
   font-size: 929%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-929 {
+    font-size: 929%;
+  }
+}
 .fsize-930 {
   font-size: 930%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-930 {
+    font-size: 930%;
+  }
+}
 .fsize-931 {
   font-size: 931%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-931 {
+    font-size: 931%;
+  }
+}
 .fsize-932 {
   font-size: 932%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-932 {
+    font-size: 932%;
+  }
+}
 .fsize-933 {
   font-size: 933%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-933 {
+    font-size: 933%;
+  }
+}
 .fsize-934 {
   font-size: 934%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-934 {
+    font-size: 934%;
+  }
+}
 .fsize-935 {
   font-size: 935%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-935 {
+    font-size: 935%;
+  }
+}
 .fsize-936 {
   font-size: 936%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-936 {
+    font-size: 936%;
+  }
+}
 .fsize-937 {
   font-size: 937%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-937 {
+    font-size: 937%;
+  }
+}
 .fsize-938 {
   font-size: 938%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-938 {
+    font-size: 938%;
+  }
+}
 .fsize-939 {
   font-size: 939%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-939 {
+    font-size: 939%;
+  }
+}
 .fsize-940 {
   font-size: 940%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-940 {
+    font-size: 940%;
+  }
+}
 .fsize-941 {
   font-size: 941%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-941 {
+    font-size: 941%;
+  }
+}
 .fsize-942 {
   font-size: 942%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-942 {
+    font-size: 942%;
+  }
+}
 .fsize-943 {
   font-size: 943%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-943 {
+    font-size: 943%;
+  }
+}
 .fsize-944 {
   font-size: 944%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-944 {
+    font-size: 944%;
+  }
+}
 .fsize-945 {
   font-size: 945%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-945 {
+    font-size: 945%;
+  }
+}
 .fsize-946 {
   font-size: 946%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-946 {
+    font-size: 946%;
+  }
+}
 .fsize-947 {
   font-size: 947%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-947 {
+    font-size: 947%;
+  }
+}
 .fsize-948 {
   font-size: 948%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-948 {
+    font-size: 948%;
+  }
+}
 .fsize-949 {
   font-size: 949%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-949 {
+    font-size: 949%;
+  }
+}
 .fsize-950 {
   font-size: 950%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-950 {
+    font-size: 950%;
+  }
+}
 .fsize-951 {
   font-size: 951%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-951 {
+    font-size: 951%;
+  }
+}
 .fsize-952 {
   font-size: 952%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-952 {
+    font-size: 952%;
+  }
+}
 .fsize-953 {
   font-size: 953%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-953 {
+    font-size: 953%;
+  }
+}
 .fsize-954 {
   font-size: 954%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-954 {
+    font-size: 954%;
+  }
+}
 .fsize-955 {
   font-size: 955%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-955 {
+    font-size: 955%;
+  }
+}
 .fsize-956 {
   font-size: 956%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-956 {
+    font-size: 956%;
+  }
+}
 .fsize-957 {
   font-size: 957%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-957 {
+    font-size: 957%;
+  }
+}
 .fsize-958 {
   font-size: 958%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-958 {
+    font-size: 958%;
+  }
+}
 .fsize-959 {
   font-size: 959%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-959 {
+    font-size: 959%;
+  }
+}
 .fsize-960 {
   font-size: 960%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-960 {
+    font-size: 960%;
+  }
+}
 .fsize-961 {
   font-size: 961%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-961 {
+    font-size: 961%;
+  }
+}
 .fsize-962 {
   font-size: 962%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-962 {
+    font-size: 962%;
+  }
+}
 .fsize-963 {
   font-size: 963%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-963 {
+    font-size: 963%;
+  }
+}
 .fsize-964 {
   font-size: 964%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-964 {
+    font-size: 964%;
+  }
+}
 .fsize-965 {
   font-size: 965%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-965 {
+    font-size: 965%;
+  }
+}
 .fsize-966 {
   font-size: 966%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-966 {
+    font-size: 966%;
+  }
+}
 .fsize-967 {
   font-size: 967%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-967 {
+    font-size: 967%;
+  }
+}
 .fsize-968 {
   font-size: 968%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-968 {
+    font-size: 968%;
+  }
+}
 .fsize-969 {
   font-size: 969%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-969 {
+    font-size: 969%;
+  }
+}
 .fsize-970 {
   font-size: 970%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-970 {
+    font-size: 970%;
+  }
+}
 .fsize-971 {
   font-size: 971%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-971 {
+    font-size: 971%;
+  }
+}
 .fsize-972 {
   font-size: 972%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-972 {
+    font-size: 972%;
+  }
+}
 .fsize-973 {
   font-size: 973%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-973 {
+    font-size: 973%;
+  }
+}
 .fsize-974 {
   font-size: 974%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-974 {
+    font-size: 974%;
+  }
+}
 .fsize-975 {
   font-size: 975%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-975 {
+    font-size: 975%;
+  }
+}
 .fsize-976 {
   font-size: 976%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-976 {
+    font-size: 976%;
+  }
+}
 .fsize-977 {
   font-size: 977%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-977 {
+    font-size: 977%;
+  }
+}
 .fsize-978 {
   font-size: 978%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-978 {
+    font-size: 978%;
+  }
+}
 .fsize-979 {
   font-size: 979%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-979 {
+    font-size: 979%;
+  }
+}
 .fsize-980 {
   font-size: 980%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-980 {
+    font-size: 980%;
+  }
+}
 .fsize-981 {
   font-size: 981%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-981 {
+    font-size: 981%;
+  }
+}
 .fsize-982 {
   font-size: 982%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-982 {
+    font-size: 982%;
+  }
+}
 .fsize-983 {
   font-size: 983%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-983 {
+    font-size: 983%;
+  }
+}
 .fsize-984 {
   font-size: 984%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-984 {
+    font-size: 984%;
+  }
+}
 .fsize-985 {
   font-size: 985%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-985 {
+    font-size: 985%;
+  }
+}
 .fsize-986 {
   font-size: 986%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-986 {
+    font-size: 986%;
+  }
+}
 .fsize-987 {
   font-size: 987%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-987 {
+    font-size: 987%;
+  }
+}
 .fsize-988 {
   font-size: 988%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-988 {
+    font-size: 988%;
+  }
+}
 .fsize-989 {
   font-size: 989%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-989 {
+    font-size: 989%;
+  }
+}
 .fsize-990 {
   font-size: 990%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-990 {
+    font-size: 990%;
+  }
+}
 .fsize-991 {
   font-size: 991%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-991 {
+    font-size: 991%;
+  }
+}
 .fsize-992 {
   font-size: 992%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-992 {
+    font-size: 992%;
+  }
+}
 .fsize-993 {
   font-size: 993%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-993 {
+    font-size: 993%;
+  }
+}
 .fsize-994 {
   font-size: 994%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-994 {
+    font-size: 994%;
+  }
+}
 .fsize-995 {
   font-size: 995%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-995 {
+    font-size: 995%;
+  }
+}
 .fsize-996 {
   font-size: 996%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-996 {
+    font-size: 996%;
+  }
+}
 .fsize-997 {
   font-size: 997%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-997 {
+    font-size: 997%;
+  }
+}
 .fsize-998 {
   font-size: 998%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-998 {
+    font-size: 998%;
+  }
+}
 .fsize-999 {
   font-size: 999%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-999 {
+    font-size: 999%;
+  }
+}
 .fsize-1000 {
   font-size: 1000%;
 }
 
+@media screen and (max-width: 576px) {
+  .sm-fsize-1000 {
+    font-size: 1000%;
+  }
+}
 .no-deco a {
   text-decoration: none;
   color: currentColor;
@@ -8012,9 +14761,25 @@ h6 {
   text-align: center;
 }
 
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
 @media screen and (max-width: 576px) {
   .sm-text-center {
     text-align: center;
+  }
+
+  .sm-text-left {
+    text-align: left;
+  }
+
+  .sm-text-right {
+    text-align: right;
   }
 }
 h1,

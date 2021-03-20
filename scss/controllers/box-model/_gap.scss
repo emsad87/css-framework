@@ -1,3 +1,5 @@
+@use "../../design/breakpoints";
+
 // GAP FROM 5px TO 50px WITH 5px INCREMENT - NAMED gap-5, gap-10, gap-15 etc...
 $min-gap: 5;
 $max-gap: 50;
@@ -7,6 +9,17 @@ $increment: 5;
 @while $min-gap <= $max-gap {
   .gap-#{$min-gap} {
     gap: #{$min-gap}#{$unit};
+  }
+
+  @media screen and (max-width: map-get(breakpoints.$breakpoints, "sm")) {
+    .sm-gap-#{$min-gap} {
+      gap: #{$min-gap}#{$unit};
+    }
+  }
+  @media screen and (min-width: map-get(breakpoints.$breakpoints, "md")) {
+    .md-gap-#{$min-gap} {
+      gap: #{$min-gap}#{$unit};
+    }
   }
 
   $min-gap: $min-gap + $increment;

@@ -1,6 +1,6 @@
 // PADDING FROM 5px TO 50px WITH 5px INCREMENT - NAMED p-5, p-10-top, p-15 etc...
 $min-padding: 5;
-$max-padding: 50;
+$max-padding: 100;
 $unit: "px";
 $increment: 5;
 
@@ -23,7 +23,10 @@ $increment: 5;
     &-side {
       padding: 0 #{$min-padding}#{$unit};
     }
-    &-top-bottom {
+    &-x {
+      padding: 0 #{$min-padding}#{$unit};
+    }
+    &-y {
       padding: #{$min-padding}#{$unit} 0;
     }
   }

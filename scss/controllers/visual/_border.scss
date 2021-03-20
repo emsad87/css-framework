@@ -27,14 +27,24 @@ $increment: 1;
     }
     &-left {
       border-style: solid;
-      border-width: 0 0 0#{$min-border}#{$unit};
+      border-width: 0 0 0 #{$min-border}#{$unit};
+      border-color: currentColor;
+    }
+    &-x {
+      border-style: solid;
+      border-width: 0 #{$min-border}#{$unit} 0 #{$min-border}#{$unit};
+      border-color: currentColor;
+    }
+    &-y {
+      border-style: solid;
+      border-width: #{$min-border}#{$unit} 0 #{$min-border}#{$unit} 0;
       border-color: currentColor;
     }
   }
   $min-border: $min-border + $increment;
 }
 
-@each $name, $color in colors.$theme-colors {
+@each $name, $color in colors.$colors {
   .b-#{$name} {
     border-color: $color;
   }

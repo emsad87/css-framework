@@ -48,6 +48,11 @@ $increment: 1;
   .fsize-#{$min-font} {
     font-size: #{$min-font}#{$unit};
   }
+  @media screen and (max-width: map-get(breakpoints.$breakpoints, "sm")) {
+    .sm-fsize-#{$min-font} {
+      font-size: #{$min-font}#{$unit};
+    }
+  }
 
   $min-font: $min-font + $increment;
 }
@@ -66,17 +71,30 @@ $increment: 1;
   color: currentColor;
 }
 
+// Text align
 .text-center {
   text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
 }
 
 @media screen and (max-width: map-get(breakpoints.$breakpoints, "sm")) {
   .sm-text-center {
     text-align: center;
   }
+  .sm-text-left {
+    text-align: left;
+  }
+  .sm-text-right {
+    text-align: right;
+  }
 }
 
-// Settin margin-bottom to all "H" and "p" elements
+// Settin margin-bottom to all "h" and "p" elements
 h1,
 h2,
 h3,

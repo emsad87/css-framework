@@ -6,20 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>CSS Framework</title>
+    <title>INT CSS Framework</title>
 
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="c-white fsize-120 overX-hidden">
 
-    <nav class="fixed w-100 z-99 p-15-top-bottom bg-steel shadow-sharp no-deco">
+    <nav class="fixed w-100 z-99 p-15-y no-deco bg-steel shadow-sharp">
 
         <div class="container-fluid j-center md-j-between a-center">
-            <div class="row j-between sm-text-center a-center w-80">
+            <div class="row j-between a-center w-80 sm-text-center">
                 <div class="navbar__toggle" id="js-navbar-toggle"></div>
-                <a class="col-md-4 col-12 fsize-150" href="#home">CSS Framework</a>
-                <ul class="col-md-4 col-12 none md-flex md-f-row f-col list-none a-center gap-15 p-15-top" id="js-menu">
+                <a class="col-md-4 col-12 fsize-150" href="#home">INT.css</a>
+                <ul class="col-md-4 col-12 none md-flex md-f-row f-col a-center gap-15 list-none" id="js-menu">
                     <li>
                         <a href="./index.html" class="navbar__link">Home</a>
                     </li>
@@ -31,7 +31,7 @@
                     </li>
                     <li>
                         <a href="https://github.com/emsad87/css-framework"
-                            class="flex center m-auto gap-15 btn btn-secondary r-5 shadow-sharp">
+                            class="btn btn-secondary flex center gap-15 m-auto r-5 shadow-sharp">
                             <svg style="fill: currentColor;" width="32px" height="32px" viewBox="0 0 32 32"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd"
@@ -46,21 +46,21 @@
 
     </nav>
 
-    <div class="full p-35-top-bottom container-fluid center shadow-sharp">
-        <section class="row w-80 j-between">
-            <div class="hero__bg"><img src="https://source.unsplash.com/collection/53285157" alt=""></div>
+    <div class="container-fluid full center p-35-y shadow-sharp">
+        <div class="hero__bg"><img src="https://source.unsplash.com/collection/53285157" alt=""></div>
+        <section class="row j-between w-80">
             <article class="col-md-7 col-12">
-                <h1>CSS Framework</h1>
+                <h1>INT CSS Framework</h1>
                 <p>A utility-first CSS framework packed with classes like flex, p-4, text-center and w-80 that can be
                     composed to
                     build any design, directly in your markup.</p>
             </article>
-            <aside class="col-md-4 bg-steel p-25 r-5 shadow-sharp col-12">
-                CSS Framework is a free, open source framework that provides ready-to-use utility classes and frontend
+            <aside class="col-12 col-md-4 bg-steel p-25 r-5 shadow-sharp">
+                INT is a free, open source CSS framework that provides ready-to-use utility classes and frontend
                 components that you
                 can easily combine to
                 build responsive web interfaces.
-                <div class="no-deco block r-5 btn btn-secondary m-15 shadow-sharp">
+                <div class="btn btn-secondary block m-15 no-deco r-5 shadow-sharp">
                     <a href="https://github.com/emsad87/css-framework">GET IT
                         NOW</a>
                 </div>
@@ -68,11 +68,11 @@
         </section>
     </div>
 
-    <main class="bg-steel p-50-top-bottom gap-50 shadow-sharp flex f-col a-center">
+    <main class="flex f-col a-center gap-50 p-50-y bg-steel shadow-sharp shadow-sharp">
         <section class="w-80">
-            <h2>About CSS Framework</h2>
+            <h2>About INT</h2>
             <p>
-                CSS Framework is a free, open source framework that provides ready-to-use utility classes and frontend
+                INT is a free, open source CSS framework that provides ready-to-use utility classes and frontend
                 components that you
                 can easily combine to
                 build responsive web interfaces.
@@ -92,25 +92,29 @@
             <p>
                 Like in this example
             </p>
-            <p class="fsize-70">
-                ( Here we add "positon: absolute", "justify-content: center", "align-items:
-                center", "padding 15px:" and "background-color: #4863a0;" to the div element)
+            <p class="fsize-80">
+                ( Here we add "position: absolute; width: 50%; padding: 15px; background-color: #4863a0;" )
             </p>
+
             <textarea name="code" class="code bg-night">
 
-            <div class="absolute center w-50 p-15 bg-steel">
+            <div class="absolute w-50 p-15 bg-steel">
                 <h2 class="c-red">Title</h2>
                 <p class="bg-night p-10 c-white">Text text text...</p>
             </div>
             </textarea>
-            <a href="./docs.html" class="btn btn-secondary a-no-deco m-15-bottom w-100">DOCS</a>
+            <div class="flex a-center j-between gap-15 w-100">
+                <a href="./docs.html" class="btn btn-secondary w-50 a-no-deco r-5 shadow-sharp">DOCS</a>
+                <a class="btn btn-secondary w-50 a-no-deco r-5 shadow-sharp"
+                    href="https://github.com/emsad87/css-framework">Download</a>
+            </div>
         </section>
         <section class="container-fluid w-80">
             <h2 class="m-auto">Creator</h2>
-            <div class="row center p-15-top-bottom">
-                <img class="col-sm-5 r50 m-auto col-12" src="./img/emsad/emsad.jpg" alt="">
+            <div class="row center p-15-y bg-secondary r-5 shadow-sharp">
+                <img class="col-sm-4 r50 m-auto col-12" src="./img/emsad/emsad.jpg" alt="">
 
-                <article class="col-md-7 col-12">
+                <article class="col-12 col-md-7">
                     <p>
                         Hi !
                     </p>
@@ -153,16 +157,22 @@
 
     </main>
 
-    <footer class="container-fluid center no-deco bg-night p-15">
-        <div class="row j-between w-80">
-            <div>
-                <p>Build by: <a href="https://emsad87.github.io/">Emsad Ahmetašević</a></p>
+    <footer class="container-fluid center p-25-y no-deco bg-secondary">
+        <div class="row center sm-gap-15 w-80">
+            <div class="col-sm-4">
+                <a href="https://github.com/emsad87/css-framework">
+                    <svg style="fill: currentColor;" width="32px" height="32px" viewBox="0 0 32 32"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M 16 4 C 9.371094 4 4 9.371094 4 16 C 4 21.300781 7.4375 25.800781 12.207031 27.386719 C 12.808594 27.496094 13.027344 27.128906 13.027344 26.808594 C 13.027344 26.523438 13.015625 25.769531 13.011719 24.769531 C 9.671875 25.492188 8.96875 23.160156 8.96875 23.160156 C 8.421875 21.773438 7.636719 21.402344 7.636719 21.402344 C 6.546875 20.660156 7.71875 20.675781 7.71875 20.675781 C 8.921875 20.761719 9.554688 21.910156 9.554688 21.910156 C 10.625 23.746094 12.363281 23.214844 13.046875 22.910156 C 13.15625 22.132813 13.46875 21.605469 13.808594 21.304688 C 11.144531 21.003906 8.34375 19.972656 8.34375 15.375 C 8.34375 14.0625 8.8125 12.992188 9.578125 12.152344 C 9.457031 11.851563 9.042969 10.628906 9.695313 8.976563 C 9.695313 8.976563 10.703125 8.65625 12.996094 10.207031 C 13.953125 9.941406 14.980469 9.808594 16 9.804688 C 17.019531 9.808594 18.046875 9.941406 19.003906 10.207031 C 21.296875 8.65625 22.300781 8.976563 22.300781 8.976563 C 22.957031 10.628906 22.546875 11.851563 22.421875 12.152344 C 23.191406 12.992188 23.652344 14.0625 23.652344 15.375 C 23.652344 19.984375 20.847656 20.996094 18.175781 21.296875 C 18.605469 21.664063 18.988281 22.398438 18.988281 23.515625 C 18.988281 25.121094 18.976563 26.414063 18.976563 26.808594 C 18.976563 27.128906 19.191406 27.503906 19.800781 27.386719 C 24.566406 25.796875 28 21.300781 28 16 C 28 9.371094 22.628906 4 16 4 Z" />
+                    </svg>
+                </a>
             </div>
-            <div>
-                <p>Copyright 2021 - <a href="https://mintbean.io/">A. Emsad</a></p>
+            <div class="col-sm-4 text-center">
+                Copyright 2021 - <a href="https://emsad87.github.io/">A. Emsad</a>
             </div>
-            <div>
-                <p6>Build for: <a href="https://mintbean.io/">Mintbean</a></p6>
+            <div class="col-sm-4 text-right">
+                Build for: <a href="https://mintbean.io/">Mintbean</a>
             </div>
         </div>
     </footer>

@@ -1,6 +1,6 @@
 // MARGIN FROM 5px TO 50px WITH 5px INCREMENT - NAMED m-5, m-10-top, m-15 etc...
 $min-margin: 5;
-$max-margin: 50;
+$max-margin: 100;
 $unit: "px";
 $increment: 5;
 
@@ -20,10 +20,10 @@ $increment: 5;
     &-left {
       margin: 0 0 0 #{$min-margin}#{$unit};
     }
-    &-sides {
+    &-x {
       margin: 0 #{$min-margin}#{$unit};
     }
-    &-top-bottom {
+    &-y {
       margin: #{$min-margin}#{$unit} 0;
     }
   }

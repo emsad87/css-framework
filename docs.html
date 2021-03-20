@@ -6,20 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>CSS Framework</title>
+    <title>INT CSS Framework</title>
 
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="c-white fsize-120 overX-hidden">
 
-    <nav class="fixed w-100 z-99 p-15-top-bottom bg-steel shadow-sharp no-deco">
+    <nav class="fixed w-100 z-99 p-15-y no-deco bg-steel shadow-sharp">
 
         <div class="container-fluid j-center md-j-between a-center">
-            <div class="row j-between sm-text-center a-center w-80">
+            <div class="row j-between a-center w-80 sm-text-center">
                 <div class="navbar__toggle" id="js-navbar-toggle"></div>
-                <a class="col-md-4 col-12 fsize-150" href="#home">CSS Framework</a>
-                <ul class="col-md-4 col-12 none md-flex md-f-row f-col list-none a-center gap-15 p-15-top" id="js-menu">
+                <a class="col-md-4 col-12 fsize-150" href="#home">INT.css</a>
+                <ul class="col-md-4 col-12 none md-flex md-f-row f-col a-center gap-15 list-none" id="js-menu">
                     <li>
                         <a href="./index.html" class="navbar__link">Home</a>
                     </li>
@@ -31,7 +31,7 @@
                     </li>
                     <li>
                         <a href="https://github.com/emsad87/css-framework"
-                            class="flex center m-auto gap-15 btn btn-secondary r-5 shadow-sharp">
+                            class="btn btn-secondary flex center gap-15 m-auto r-5 shadow-sharp">
                             <svg style="fill: currentColor;" width="32px" height="32px" viewBox="0 0 32 32"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd"
@@ -46,40 +46,403 @@
 
     </nav>
 
-    <div class="full p-35-top-bottom container-fluid center shadow-sharp">
-        <section class="row w-80 j-between">
-            <div class="hero__bg"><img src="https://source.unsplash.com/collection/53285157" alt=""></div>
-            <article class="col-md-7 col-12">
-                <h1>CSS Framework</h1>
-                <p>A utility-first CSS framework packed with classes like flex, p-4, text-center and w-80 that can be
-                    composed to
-                    build any design, directly in your markup.</p>
+    <div class="container-fluid vh-50 center p-35-y shadow-sharp">
+        <div class="hero__bg"><img src="https://source.unsplash.com/collection/53285157" alt=""></div>
+        <section class="row center w-80">
+            <article class="col-12 col-sm-6">
+                <h1 class="sm-fsize-140">INT Documentation</h1>
             </article>
-            <aside class="col-md-4 flex f-col gap-15 center bg-steel p-25 r-5 shadow-sharp col-12">
-                DOCS PAGE COMING SOON
-                <a href="https://github.com/emsad87/css-framework"
-                    class="flex center m-auto gap-15 btn btn-secondary r-5 shadow-sharp">
+        </section>
+    </div>
+
+    <main class="flex f-col a-center gap-50 p-50-y bg-steel shadow-sharp shadow-sharp">
+        <section class="w-80">
+            <h2>Getting started</h2>
+            <p>
+                To use INT CSS Framework download the css file from
+                <a class="c-white" href="https://github.com/emsad87/css-framework">github</a> and refer to it in the
+                head element of your html file.
+            </p>
+
+            <textarea name="code" class="code bg-night">
+
+            <head>
+
+                <link rel="stylesheet" href="./css/style.css">
+
+            </head>
+            </textarea>
+
+        </section>
+        <section class="w-80">
+            <h2>How to use it</h2>
+            <p>
+                Just add utility classes to your html element.
+            </p>
+            <p>
+                Like in this example
+            </p>
+            <p class="fsize-80">
+                ( Here we add "position: absolute; width: 50%; padding: 15px; background-color: #4863a0;" )
+            </p>
+
+            <textarea name="code" class="code bg-night">
+
+            <div class="absolute w-50 p-15 bg-steel">
+                <h2 class="c-red">Title</h2>
+                <p class="bg-night p-10 c-white">Text text text...</p>
+            </div>
+            </textarea>
+        </section>
+        <section class="w-80">
+            <h2>Positioning</h2>
+
+            <article class="m-15-bottom p-15 bg-secondary r-5 shadow-sharp over-auto">
+                <table class="fsize-90">
+                    <h3>Position</h3>
+                    <tr>
+                        <th>INT Class</th>
+                        <th>CSS Property and value</th>
+                    </tr>
+                    <tr>
+                        <td>relative</td>
+                        <td>position: relative</td>
+                    </tr>
+                    <tr>
+                        <td>absolute</td>
+                        <td>position: absolute</td>
+                    </tr>
+                    <tr>
+                        <td>fixed</td>
+                        <td>position: fixed</td>
+                    </tr>
+                    <tr>
+                        <td>sticky</td>
+                        <td>position: sticky</td>
+                    </tr>
+                </table>
+                <p>
+                    Example use of position classes
+                </p>
+                <p class="fsize-80">
+                    ( Here we add "position: absolute;")
+                </p>
+                <textarea name="code" class="code bg-night">
+
+                <div class="absolute">
+                    <h2>Title</h2>
+                    <p>Text text text...</p>
+                </div>
+                </textarea>
+            </article>
+
+            <article class="m-15-bottom p-15 bg-secondary r-5 shadow-sharp over-auto">
+                <table class="fsize-90">
+                    <h3>Top - Right - Bottom - Left</h3>
+                    <tr>
+                        <th>INT Class</th>
+                        <th>CSS Property and value</th>
+                        <th>Range</th>
+                    </tr>
+                    <tr>
+                        <td>top-0</td>
+                        <td>top: 0%</td>
+                        <td>from 0% to 50% ( top-0, top-2, top-3, ... , top-50 )</td>
+                    </tr>
+                    <tr>
+                        <td>right-0</td>
+                        <td>right: 0%</td>
+                        <td>from 0% to 50% ( right-0, right-2, right-3, ... , right-50 )</td>
+                    </tr>
+                    <tr>
+                        <td>bottom-0</td>
+                        <td>bottom: 0%</td>
+                        <td>from 0% to 50% ( bottom-0, bottom-2, bottom-3, ... , bottom-50 )</td>
+                    </tr>
+                    <tr>
+                        <td>left-0</td>
+                        <td>left: 0%</td>
+                        <td>from 0% to 50% ( left-0, left-2, left-3, ... , left-50 )</td>
+                    </tr>
+                    <tr>
+                        <td>absolute-center</td>
+                        <td>
+                            <ul class="list-none list-nop">
+                                <li>position: absolute;</li>
+                                <li>top: 50%;</li>
+                                <li>left: 50%;</li>
+                                <li>transform: translate(-50%,
+                                    -50%);</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+                <p>
+                    Example use of Top - Right - Bottom - Left classes
+                </p>
+                <p class="fsize-80">
+                    ( Here we add "position: absolute; top: 50%; left: 50%;")
+                </p>
+                <textarea name="code" class="code bg-night">
+
+                <div class="absolute top-50 left-50">
+                    <h2>Title</h2>
+                    <p>Text text text...</p>
+                </div>
+                </textarea>
+            </article>
+
+            <article class="m-15-bottom p-15 bg-secondary r-5 shadow-sharp over-auto">
+                <table class="fsize-90">
+                    <h3>z-index</h3>
+                    <tr>
+                        <th>INT Class</th>
+                        <th>CSS Property and value</th>
+                        <th>Range</th>
+                    </tr>
+                    <tr>
+                        <td>z-0</td>
+                        <td>z-index: 0</td>
+                        <td>From -1 to 99 ( z--1, z-0, z-1, ... , z-99 )</td>
+                    </tr>
+                </table>
+                <p>
+                    Example use of z-index classes
+                </p>
+                <p class="fsize-80">
+                    ( Here we add "z-index: 99")
+                </p>
+                <textarea name="code" class="code bg-night">
+
+                <div class="z-99">
+                    <h2>Title</h2>
+                    <p>Text text text...</p>
+                </div>
+                </textarea>
+            </article>
+        </section>
+        <section class="w-80">
+            <h2>Display</h2>
+            <article class="m-15-bottom p-15 bg-secondary r-5 shadow-sharp over-auto">
+                <table class="fsize-90">
+                    <tr>
+                        <th>INT Class</th>
+                        <th>CSS Property and value</th>
+                    </tr>
+                    <tr>
+                        <td>none</td>
+                        <td>display: none</td>
+                    </tr>
+                    <tr>
+                        <td>inline</td>
+                        <td>display: inline</td>
+                    </tr>
+                    <tr>
+                        <td>block</td>
+                        <td>display: block</td>
+                    </tr>
+                    <tr>
+                        <td>inline-block</td>
+                        <td>display: inline-block</td>
+                    </tr>
+                    <tr>
+                        <td>flex</td>
+                        <td>display: flex</td>
+                    </tr>
+                    <tr>
+                        <td>grid</td>
+                        <td>display: grid</td>
+                    </tr>
+                </table>
+                <p>
+                    Example use of display classes
+                </p>
+                <p class="fsize-80">
+                    ( Here we add "display: inline-block")
+                </p>
+                <textarea name="code" class="code bg-night">
+
+                <div class="inline-block">
+                    <h2>Title</h2>
+                    <p>Text text text...</p>
+                </div>
+                </textarea>
+            </article>
+        </section>
+        <section class="w-80">
+            <h2>Width & Height</h2>
+            <article class="m-15-bottom p-15 bg-secondary r-5 shadow-sharp over-auto">
+                <table class="fsize-90">
+                    <tr>
+                        <th>INT Class</th>
+                        <th>CSS Property and value</th>
+                        <th>Range</th>
+                    </tr>
+                    <tr>
+                        <td>w-1</td>
+                        <td>width: 1%</td>
+                        <td>from 1% to 100% ( w-1, w-2, w-3, ... , w-100 )</td>
+                    </tr>
+                    <tr>
+                        <td>h-1</td>
+                        <td>height: 1%</td>
+                        <td>from 1% to 100%( h-1, h-2, h-3, ... , h-100 )</td>
+                    </tr>
+                    <tr>
+                        <td>vw-1</td>
+                        <td>width: 1vw</td>
+                        <td>from 1vw to 100vw( vw-1, vw-2, vw-3, ... , vw-100 )</td>
+                    </tr>
+                    <tr>
+                        <td>vh-1</td>
+                        <td>min-height: 1vh</td>
+                        <td>from 1vh to 100vh( vh-1, vh-2, vh-3, ... , vh-100 )</td>
+                    </tr>
+                    <tr>
+                        <td>full</td>
+                        <td>
+                            <ul class="list-none list-nop">
+                                <li>width: 100%;</li>
+                                <li>height: 100vh;</li>
+                            </ul>
+                        </td>
+                        <td>from 1vh to 100vh( vh-1, vh-2, vh-3, ... , vh-100 )</td>
+                    </tr>
+                </table>
+                <p>
+                    Example use of width & height classes
+                </p>
+                <p class="fsize-80">
+                    ( Here we add "width: 100%; min-height: 50vh;")
+                </p>
+                <textarea name="code" class="code bg-night">
+
+                <div class="w-100 vh-50">
+                    <h2>Title</h2>
+                    <p>Text text text...</p>
+                </div>
+                </textarea>
+            </article>
+        </section>
+        <section class="w-80">
+            <h2>Margin & Padding</h2>
+            <article class="m-15-bottom p-15 bg-secondary r-5 shadow-sharp over-auto">
+                <table class="fsize-90">
+                    <tr>
+                        <th>INT Class</th>
+                        <th>CSS Property and value</th>
+                        <th>Range</th>
+                    </tr>
+                    <tr>
+                        <td>m-1</td>
+                        <td>margin: 1px</td>
+                        <td>from 1px to 100px ( m-1, m-2, m-3, ... , m-100 )</td>
+                    </tr>
+                    <tr>
+                        <td>m-1-top</td>
+                        <td>margin: 1px 0 0 0</td>
+                        <td>from 1px to 100px ( m-1-top, m-2-top, m-3-top, ... , m-100-top )</td>
+                    </tr>
+                    <tr>
+                        <td>m-1-right</td>
+                        <td>margin: 0 1px 0 0</td>
+                        <td>from 1px to 100px ( m-1-right, m-2-right, m-3-right, ... , m-100-right )</td>
+                    </tr>
+                    <tr>
+                        <td>m-1-bottom</td>
+                        <td>margin: 0 0 1px 0</td>
+                        <td>from 1px to 100px ( m-1-bottom, m-2-bottom, m-3-bottom, ... , m-100-bottom )</td>
+                    </tr>
+                    <tr>
+                        <td>m-1-left</td>
+                        <td>margin: 0 0 0 1px</td>
+                        <td>from 1px to 100px ( m-1-left, m-2-left, m-3-left, ... , m-100-left )</td>
+                    </tr>
+                    <tr>
+                        <td>m-1-x</td>
+                        <td>margin: 0 1px</td>
+                        <td>from 1px to 100px ( m-1-x, m-2-x, m-3-x, ... , m-100-x )</td>
+                    </tr>
+                    <tr>
+                        <td>m-1-y</td>
+                        <td>margin: 1px 0</td>
+                        <td>from 1px to 100px ( m-1-y, m-2-y, m-3-y, ... , m-100-y )</td>
+                    </tr>
+                    <tr>
+                        <td>m-auto</td>
+                        <td>margin: 0 auto</td>
+                    </tr>
+                    <tr>
+                        <td>p-1</td>
+                        <td>padding: 1px</td>
+                        <td>from 1px to 100px ( p-1, p-2, p-3, ... , p-100 )</td>
+                    </tr>
+                    <tr>
+                        <td>p-1-top</td>
+                        <td>padding: 1px 0 0 0</td>
+                        <td>from 1px to 100px ( p-1-top, p-2-top, p-3-top, ... , p-100-top )</td>
+                    </tr>
+                    <tr>
+                        <td>p-1-right</td>
+                        <td>padding: 0 1px 0 0</td>
+                        <td>from 1px to 100px ( p-1-right, p-2-right, p-3-right, ... , p-100-right )</td>
+                    </tr>
+                    <tr>
+                        <td>p-1-bottom</td>
+                        <td>padding: 0 0 1px 0</td>
+                        <td>from 1px to 100px ( p-1-bottom, p-2-bottom, p-3-bottom, ... , p-100-bottom )</td>
+                    </tr>
+                    <tr>
+                        <td>p-1-left</td>
+                        <td>padding: 0 0 0 1px</td>
+                        <td>from 1px to 100px ( p-1-left, p-2-left, p-3-left, ... , p-100-left )</td>
+                    </tr>
+                    <tr>
+                        <td>p-1-x</td>
+                        <td>padding: 0 1px</td>
+                        <td>from 1px to 100px ( p-1-x, p-2-x, p-3-x, ... , p-100-x )</td>
+                    </tr>
+                    <tr>
+                        <td>p-1-y</td>
+                        <td>padding: 1px 0</td>
+                        <td>from 1px to 100px ( p-1-y, p-2-y, p-3-y, ... , p-100-y )</td>
+                    </tr>
+                </table>
+                <p>
+                    Example use of width & height classes
+                </p>
+                <p class="fsize-80">
+                    ( Here we add "width: 100%; min-height: 50vh;")
+                </p>
+                <textarea name="code" class="code bg-night">
+
+                <div class="m-25 p-15-y">
+                    <h2>Title</h2>
+                    <p>Text text text...</p>
+                </div>
+                </textarea>
+            </article>
+        </section>
+        <h2 class="sm-fsize-120">More coming soon...</h2>
+        <p>(there is more in the code)</p>
+    </main>
+
+    <footer class="container-fluid center p-25-y no-deco bg-secondary">
+        <div class="row center sm-gap-15 w-80">
+            <div class="col-sm-4">
+                <a href="https://github.com/emsad87/css-framework">
                     <svg style="fill: currentColor;" width="32px" height="32px" viewBox="0 0 32 32"
                         xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd"
                             d="M 16 4 C 9.371094 4 4 9.371094 4 16 C 4 21.300781 7.4375 25.800781 12.207031 27.386719 C 12.808594 27.496094 13.027344 27.128906 13.027344 26.808594 C 13.027344 26.523438 13.015625 25.769531 13.011719 24.769531 C 9.671875 25.492188 8.96875 23.160156 8.96875 23.160156 C 8.421875 21.773438 7.636719 21.402344 7.636719 21.402344 C 6.546875 20.660156 7.71875 20.675781 7.71875 20.675781 C 8.921875 20.761719 9.554688 21.910156 9.554688 21.910156 C 10.625 23.746094 12.363281 23.214844 13.046875 22.910156 C 13.15625 22.132813 13.46875 21.605469 13.808594 21.304688 C 11.144531 21.003906 8.34375 19.972656 8.34375 15.375 C 8.34375 14.0625 8.8125 12.992188 9.578125 12.152344 C 9.457031 11.851563 9.042969 10.628906 9.695313 8.976563 C 9.695313 8.976563 10.703125 8.65625 12.996094 10.207031 C 13.953125 9.941406 14.980469 9.808594 16 9.804688 C 17.019531 9.808594 18.046875 9.941406 19.003906 10.207031 C 21.296875 8.65625 22.300781 8.976563 22.300781 8.976563 C 22.957031 10.628906 22.546875 11.851563 22.421875 12.152344 C 23.191406 12.992188 23.652344 14.0625 23.652344 15.375 C 23.652344 19.984375 20.847656 20.996094 18.175781 21.296875 C 18.605469 21.664063 18.988281 22.398438 18.988281 23.515625 C 18.988281 25.121094 18.976563 26.414063 18.976563 26.808594 C 18.976563 27.128906 19.191406 27.503906 19.800781 27.386719 C 24.566406 25.796875 28 21.300781 28 16 C 28 9.371094 22.628906 4 16 4 Z" />
                     </svg>
-                    Github
                 </a>
-            </aside>
-        </section>
-    </div>
-
-    <footer class="container-fluid center no-deco bg-night p-15">
-        <div class="row j-between w-80">
-            <div>
-                <p>Build by: <a href="https://emsad87.github.io/">Emsad Ahmetašević</a></p>
             </div>
-            <div>
-                <p>Copyright 2021 - <a href="https://mintbean.io/">A. Emsad</a></p>
+            <div class="col-sm-4 text-center">
+                Copyright 2021 - <a href="https://emsad87.github.io/">A. Emsad</a>
             </div>
-            <div>
-                <p6>Build for: <a href="https://mintbean.io/">Mintbean</a></p6>
+            <div class="col-sm-4 text-right">
+                Build for: <a href="https://mintbean.io/">Mintbean</a>
             </div>
         </div>
     </footer>

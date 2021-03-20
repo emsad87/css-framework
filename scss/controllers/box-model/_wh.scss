@@ -8,6 +8,9 @@ $increment: 1;
   .w-#{$min-width} {
     width: #{$min-width}#{$unit};
   }
+  .vw-#{$min-width} {
+    min-height: #{$min-width}vw;
+  }
 
   $min-width: $min-width + $increment;
 }
@@ -20,6 +23,9 @@ $increment: 1;
 @while $min-height <= $max-height {
   .h-#{$min-height} {
     height: #{$min-height}#{$unit};
+  }
+  .vh-#{$min-height} {
+    min-height: #{$min-height}vh;
   }
 
   $min-height: $min-height + $increment;
