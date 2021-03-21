@@ -83,16 +83,24 @@
                 Like in this example
             </p>
             <p class="fsize-80">
-                ( Here we add "position: absolute; width: 50%; padding: 15px; background-color: #4863a0;" )
+                ( Here we add "position: absolute; width: 90%; padding: 15px; background-color: indigo; color: red;
+                background-color: black; padding: 10px; color: white;" )
             </p>
-
+            Code:
             <textarea name="code" class="code bg-night">
 
-            <div class="absolute w-50 p-15 bg-steel">
+            <div class="relative w-90 m-auto p-15 bg-indigo">
                 <h2 class="c-red">Title</h2>
                 <p class="bg-night p-10 c-white">Text text text...</p>
             </div>
             </textarea>
+            Result:
+            <div class="relative w-100 h-100 p-15 r-5 bg-info">
+                <div class="relative w-90 m-auto p-15 bg-indigo">
+                    <h2 class="c-red">Title</h2>
+                    <p class="bg-night p-10 c-white">Text text text...</p>
+                </div>
+            </div>
         </section>
         <section class="w-80">
             <h2>Positioning</h2>
@@ -127,13 +135,20 @@
                 <p class="fsize-80">
                     ( Here we add "position: absolute;")
                 </p>
+                Code:
                 <textarea name="code" class="code bg-night">
 
-                <div class="absolute">
-                    <h2>Title</h2>
-                    <p>Text text text...</p>
+                <div class="absolute ...">
+                    <p>Absolute element</p>
                 </div>
                 </textarea>
+                Result:
+                <div class="relative p-100 w-100 h-100 r-5 bg-info">
+                    <div class="absolute bottom-10 left-10 bg-indigo p-15 r-5">
+                        <p class="m-0">Absolute element</p>
+                    </div>
+                </div>
+
             </article>
 
             <article class="m-15-bottom p-15 bg-secondary r-5 shadow-sharp over-auto">
@@ -181,15 +196,21 @@
                     Example use of Top - Right - Bottom - Left classes
                 </p>
                 <p class="fsize-80">
-                    ( Here we add "position: absolute; top: 50%; left: 50%;")
+                    ( Here we add "position: absolute; top: 20%; left: 30%;")
                 </p>
+                Code:
                 <textarea name="code" class="code bg-night">
 
-                <div class="absolute top-50 left-50">
-                    <h2>Title</h2>
-                    <p>Text text text...</p>
+                <div class="absolute top-20 left-30 ...">
+                    <p>Absolute element</p>
                 </div>
                 </textarea>
+                Result:
+                <div class="relative p-100 w-100 h-100 r-5 bg-info">
+                    <div class="absolute top-20 left-30 bg-indigo p-15 r-5">
+                        <p class="m-0">Absolute element</p>
+                    </div>
+                </div>
             </article>
 
             <article class="m-15-bottom p-15 bg-secondary r-5 shadow-sharp over-auto">
@@ -210,15 +231,33 @@
                     Example use of z-index classes
                 </p>
                 <p class="fsize-80">
-                    ( Here we add "z-index: 99")
+                    ( Here we add "z-index: 3, z-index: 2, z-index: 1")
                 </p>
+                Code:
                 <textarea name="code" class="code bg-night">
 
-                <div class="z-99">
-                    <h2>Title</h2>
-                    <p>Text text text...</p>
+                <div class="z-3 ...">
+                    <p>3</p>
+                </div>
+                <div class="z-2 ...">
+                    <p>2</p>
+                </div>
+                <div class="z-1 ...">
+                    <p>1</p>
                 </div>
                 </textarea>
+                Result:
+                <div class="relative p-100 w-100 h-100 r-5 bg-info">
+                    <div class="absolute top-50 left-45 z-3 inline-block bg-indigo p-25 r-5">
+                        <p class="m-0">3</p>
+                    </div>
+                    <div class="absolute top-25 left-43 z-2 inline-block bg-blue p-25 r-5">
+                        <p class="m-0">2</p>
+                    </div>
+                    <div class="absolute top-7 left-50 z-1 inline-block bg-magenta p-25 r-5">
+                        <p class="m-0">1</p>
+                    </div>
+                </div>
             </article>
         </section>
         <section class="w-80">
@@ -260,13 +299,26 @@
                 <p class="fsize-80">
                     ( Here we add "display: inline-block")
                 </p>
+                Code:
                 <textarea name="code" class="code bg-night">
 
-                <div class="inline-block">
-                    <h2>Title</h2>
-                    <p>Text text text...</p>
+                <div class="inline-block ...">
+                    <p>1</p>
+                </div>
+                <div class="inline-block ...">
+                    <p>2</p>
                 </div>
                 </textarea>
+                Result:
+                <div class="relative p-15 w-100 vh-10 r-5 bg-info">
+                    <div class="inline-block bg-indigo p-15 r-5">
+                        <p class="m-0">1</p>
+                    </div>
+                    <div class="inline-block bg-blue p-15 r-5">
+                        <p class="m-0">2</p>
+                    </div>
+                </div>
+
             </article>
         </section>
         <section class="w-80">
@@ -313,15 +365,23 @@
                     Example use of width & height classes
                 </p>
                 <p class="fsize-80">
-                    ( Here we add "width: 100%; min-height: 50vh;")
+                    ( Here we add "width: 90%; min-height: 10vh;")
                 </p>
+                Code:
                 <textarea name="code" class="code bg-night">
 
-                <div class="w-100 vh-50">
+                <div class="w-90 vh-10 ...">
                     <h2>Title</h2>
-                    <p>Text text text...</p>
+                    <p>Text...</p>
                 </div>
                 </textarea>
+                Result:
+                <div class="relative p-15 w-100 vh-10 r-5 bg-info">
+                    <div class="w-90 vh-10 bg-indigo p-15 r-5">
+                        <h2>Title</h2>
+                        <p class="m-0">Text...</p>
+                    </div>
+                </div>
             </article>
         </section>
         <section class="w-80">
@@ -412,15 +472,23 @@
                     Example use of width & height classes
                 </p>
                 <p class="fsize-80">
-                    ( Here we add "width: 100%; min-height: 50vh;")
+                    ( Here we add "margin: 0 auto; padding: 15px;")
                 </p>
+                Code:
                 <textarea name="code" class="code bg-night">
 
-                <div class="m-25 p-15-y">
+                <div class="m-auto p-15 ...">
                     <h2>Title</h2>
-                    <p>Text text text...</p>
+                    <p>Text...</p>
                 </div>
                 </textarea>
+                Result:
+                <div class="relative p-15 w-100 vh-10 r-5 bg-info">
+                    <div class="w-90 vh-10 bg-indigo m-auto p-15 r-5">
+                        <h2>Title</h2>
+                        <p class="m-0">Text...</p>
+                    </div>
+                </div>
             </article>
         </section>
         <h2 class="sm-fsize-120">More coming soon...</h2>

@@ -1196,16 +1196,20 @@ th {
     padding: 0px 1rem;
   }
 }
+.static {
+  position: static;
+}
+
+.relative {
+  position: relative;
+}
+
 .absolute {
   position: absolute;
 }
 
 .fixed {
   position: fixed;
-}
-
-.relative {
-  position: relative;
 }
 
 .sticky {
@@ -1232,6 +1236,86 @@ th {
   transform: translateX(-0%);
 }
 
+.top-1 {
+  top: 1%;
+  transform: translateY(-1%);
+}
+
+.right-1 {
+  right: 1%;
+  transform: translateX(1%);
+}
+
+.bottom-1 {
+  bottom: 1%;
+  transform: translateY(1%);
+}
+
+.left-1 {
+  left: 1%;
+  transform: translateX(-1%);
+}
+
+.top-2 {
+  top: 2%;
+  transform: translateY(-2%);
+}
+
+.right-2 {
+  right: 2%;
+  transform: translateX(2%);
+}
+
+.bottom-2 {
+  bottom: 2%;
+  transform: translateY(2%);
+}
+
+.left-2 {
+  left: 2%;
+  transform: translateX(-2%);
+}
+
+.top-3 {
+  top: 3%;
+  transform: translateY(-3%);
+}
+
+.right-3 {
+  right: 3%;
+  transform: translateX(3%);
+}
+
+.bottom-3 {
+  bottom: 3%;
+  transform: translateY(3%);
+}
+
+.left-3 {
+  left: 3%;
+  transform: translateX(-3%);
+}
+
+.top-4 {
+  top: 4%;
+  transform: translateY(-4%);
+}
+
+.right-4 {
+  right: 4%;
+  transform: translateX(4%);
+}
+
+.bottom-4 {
+  bottom: 4%;
+  transform: translateY(4%);
+}
+
+.left-4 {
+  left: 4%;
+  transform: translateX(-4%);
+}
+
 .top-5 {
   top: 5%;
   transform: translateY(-5%);
@@ -1250,6 +1334,86 @@ th {
 .left-5 {
   left: 5%;
   transform: translateX(-5%);
+}
+
+.top-6 {
+  top: 6%;
+  transform: translateY(-6%);
+}
+
+.right-6 {
+  right: 6%;
+  transform: translateX(6%);
+}
+
+.bottom-6 {
+  bottom: 6%;
+  transform: translateY(6%);
+}
+
+.left-6 {
+  left: 6%;
+  transform: translateX(-6%);
+}
+
+.top-7 {
+  top: 7%;
+  transform: translateY(-7%);
+}
+
+.right-7 {
+  right: 7%;
+  transform: translateX(7%);
+}
+
+.bottom-7 {
+  bottom: 7%;
+  transform: translateY(7%);
+}
+
+.left-7 {
+  left: 7%;
+  transform: translateX(-7%);
+}
+
+.top-8 {
+  top: 8%;
+  transform: translateY(-8%);
+}
+
+.right-8 {
+  right: 8%;
+  transform: translateX(8%);
+}
+
+.bottom-8 {
+  bottom: 8%;
+  transform: translateY(8%);
+}
+
+.left-8 {
+  left: 8%;
+  transform: translateX(-8%);
+}
+
+.top-9 {
+  top: 9%;
+  transform: translateY(-9%);
+}
+
+.right-9 {
+  right: 9%;
+  transform: translateX(9%);
+}
+
+.bottom-9 {
+  bottom: 9%;
+  transform: translateY(9%);
+}
+
+.left-9 {
+  left: 9%;
+  transform: translateX(-9%);
 }
 
 .top-10 {
@@ -1272,6 +1436,86 @@ th {
   transform: translateX(-10%);
 }
 
+.top-11 {
+  top: 11%;
+  transform: translateY(-11%);
+}
+
+.right-11 {
+  right: 11%;
+  transform: translateX(11%);
+}
+
+.bottom-11 {
+  bottom: 11%;
+  transform: translateY(11%);
+}
+
+.left-11 {
+  left: 11%;
+  transform: translateX(-11%);
+}
+
+.top-12 {
+  top: 12%;
+  transform: translateY(-12%);
+}
+
+.right-12 {
+  right: 12%;
+  transform: translateX(12%);
+}
+
+.bottom-12 {
+  bottom: 12%;
+  transform: translateY(12%);
+}
+
+.left-12 {
+  left: 12%;
+  transform: translateX(-12%);
+}
+
+.top-13 {
+  top: 13%;
+  transform: translateY(-13%);
+}
+
+.right-13 {
+  right: 13%;
+  transform: translateX(13%);
+}
+
+.bottom-13 {
+  bottom: 13%;
+  transform: translateY(13%);
+}
+
+.left-13 {
+  left: 13%;
+  transform: translateX(-13%);
+}
+
+.top-14 {
+  top: 14%;
+  transform: translateY(-14%);
+}
+
+.right-14 {
+  right: 14%;
+  transform: translateX(14%);
+}
+
+.bottom-14 {
+  bottom: 14%;
+  transform: translateY(14%);
+}
+
+.left-14 {
+  left: 14%;
+  transform: translateX(-14%);
+}
+
 .top-15 {
   top: 15%;
   transform: translateY(-15%);
@@ -1290,6 +1534,86 @@ th {
 .left-15 {
   left: 15%;
   transform: translateX(-15%);
+}
+
+.top-16 {
+  top: 16%;
+  transform: translateY(-16%);
+}
+
+.right-16 {
+  right: 16%;
+  transform: translateX(16%);
+}
+
+.bottom-16 {
+  bottom: 16%;
+  transform: translateY(16%);
+}
+
+.left-16 {
+  left: 16%;
+  transform: translateX(-16%);
+}
+
+.top-17 {
+  top: 17%;
+  transform: translateY(-17%);
+}
+
+.right-17 {
+  right: 17%;
+  transform: translateX(17%);
+}
+
+.bottom-17 {
+  bottom: 17%;
+  transform: translateY(17%);
+}
+
+.left-17 {
+  left: 17%;
+  transform: translateX(-17%);
+}
+
+.top-18 {
+  top: 18%;
+  transform: translateY(-18%);
+}
+
+.right-18 {
+  right: 18%;
+  transform: translateX(18%);
+}
+
+.bottom-18 {
+  bottom: 18%;
+  transform: translateY(18%);
+}
+
+.left-18 {
+  left: 18%;
+  transform: translateX(-18%);
+}
+
+.top-19 {
+  top: 19%;
+  transform: translateY(-19%);
+}
+
+.right-19 {
+  right: 19%;
+  transform: translateX(19%);
+}
+
+.bottom-19 {
+  bottom: 19%;
+  transform: translateY(19%);
+}
+
+.left-19 {
+  left: 19%;
+  transform: translateX(-19%);
 }
 
 .top-20 {
@@ -1312,6 +1636,86 @@ th {
   transform: translateX(-20%);
 }
 
+.top-21 {
+  top: 21%;
+  transform: translateY(-21%);
+}
+
+.right-21 {
+  right: 21%;
+  transform: translateX(21%);
+}
+
+.bottom-21 {
+  bottom: 21%;
+  transform: translateY(21%);
+}
+
+.left-21 {
+  left: 21%;
+  transform: translateX(-21%);
+}
+
+.top-22 {
+  top: 22%;
+  transform: translateY(-22%);
+}
+
+.right-22 {
+  right: 22%;
+  transform: translateX(22%);
+}
+
+.bottom-22 {
+  bottom: 22%;
+  transform: translateY(22%);
+}
+
+.left-22 {
+  left: 22%;
+  transform: translateX(-22%);
+}
+
+.top-23 {
+  top: 23%;
+  transform: translateY(-23%);
+}
+
+.right-23 {
+  right: 23%;
+  transform: translateX(23%);
+}
+
+.bottom-23 {
+  bottom: 23%;
+  transform: translateY(23%);
+}
+
+.left-23 {
+  left: 23%;
+  transform: translateX(-23%);
+}
+
+.top-24 {
+  top: 24%;
+  transform: translateY(-24%);
+}
+
+.right-24 {
+  right: 24%;
+  transform: translateX(24%);
+}
+
+.bottom-24 {
+  bottom: 24%;
+  transform: translateY(24%);
+}
+
+.left-24 {
+  left: 24%;
+  transform: translateX(-24%);
+}
+
 .top-25 {
   top: 25%;
   transform: translateY(-25%);
@@ -1330,6 +1734,86 @@ th {
 .left-25 {
   left: 25%;
   transform: translateX(-25%);
+}
+
+.top-26 {
+  top: 26%;
+  transform: translateY(-26%);
+}
+
+.right-26 {
+  right: 26%;
+  transform: translateX(26%);
+}
+
+.bottom-26 {
+  bottom: 26%;
+  transform: translateY(26%);
+}
+
+.left-26 {
+  left: 26%;
+  transform: translateX(-26%);
+}
+
+.top-27 {
+  top: 27%;
+  transform: translateY(-27%);
+}
+
+.right-27 {
+  right: 27%;
+  transform: translateX(27%);
+}
+
+.bottom-27 {
+  bottom: 27%;
+  transform: translateY(27%);
+}
+
+.left-27 {
+  left: 27%;
+  transform: translateX(-27%);
+}
+
+.top-28 {
+  top: 28%;
+  transform: translateY(-28%);
+}
+
+.right-28 {
+  right: 28%;
+  transform: translateX(28%);
+}
+
+.bottom-28 {
+  bottom: 28%;
+  transform: translateY(28%);
+}
+
+.left-28 {
+  left: 28%;
+  transform: translateX(-28%);
+}
+
+.top-29 {
+  top: 29%;
+  transform: translateY(-29%);
+}
+
+.right-29 {
+  right: 29%;
+  transform: translateX(29%);
+}
+
+.bottom-29 {
+  bottom: 29%;
+  transform: translateY(29%);
+}
+
+.left-29 {
+  left: 29%;
+  transform: translateX(-29%);
 }
 
 .top-30 {
@@ -1352,6 +1836,86 @@ th {
   transform: translateX(-30%);
 }
 
+.top-31 {
+  top: 31%;
+  transform: translateY(-31%);
+}
+
+.right-31 {
+  right: 31%;
+  transform: translateX(31%);
+}
+
+.bottom-31 {
+  bottom: 31%;
+  transform: translateY(31%);
+}
+
+.left-31 {
+  left: 31%;
+  transform: translateX(-31%);
+}
+
+.top-32 {
+  top: 32%;
+  transform: translateY(-32%);
+}
+
+.right-32 {
+  right: 32%;
+  transform: translateX(32%);
+}
+
+.bottom-32 {
+  bottom: 32%;
+  transform: translateY(32%);
+}
+
+.left-32 {
+  left: 32%;
+  transform: translateX(-32%);
+}
+
+.top-33 {
+  top: 33%;
+  transform: translateY(-33%);
+}
+
+.right-33 {
+  right: 33%;
+  transform: translateX(33%);
+}
+
+.bottom-33 {
+  bottom: 33%;
+  transform: translateY(33%);
+}
+
+.left-33 {
+  left: 33%;
+  transform: translateX(-33%);
+}
+
+.top-34 {
+  top: 34%;
+  transform: translateY(-34%);
+}
+
+.right-34 {
+  right: 34%;
+  transform: translateX(34%);
+}
+
+.bottom-34 {
+  bottom: 34%;
+  transform: translateY(34%);
+}
+
+.left-34 {
+  left: 34%;
+  transform: translateX(-34%);
+}
+
 .top-35 {
   top: 35%;
   transform: translateY(-35%);
@@ -1370,6 +1934,86 @@ th {
 .left-35 {
   left: 35%;
   transform: translateX(-35%);
+}
+
+.top-36 {
+  top: 36%;
+  transform: translateY(-36%);
+}
+
+.right-36 {
+  right: 36%;
+  transform: translateX(36%);
+}
+
+.bottom-36 {
+  bottom: 36%;
+  transform: translateY(36%);
+}
+
+.left-36 {
+  left: 36%;
+  transform: translateX(-36%);
+}
+
+.top-37 {
+  top: 37%;
+  transform: translateY(-37%);
+}
+
+.right-37 {
+  right: 37%;
+  transform: translateX(37%);
+}
+
+.bottom-37 {
+  bottom: 37%;
+  transform: translateY(37%);
+}
+
+.left-37 {
+  left: 37%;
+  transform: translateX(-37%);
+}
+
+.top-38 {
+  top: 38%;
+  transform: translateY(-38%);
+}
+
+.right-38 {
+  right: 38%;
+  transform: translateX(38%);
+}
+
+.bottom-38 {
+  bottom: 38%;
+  transform: translateY(38%);
+}
+
+.left-38 {
+  left: 38%;
+  transform: translateX(-38%);
+}
+
+.top-39 {
+  top: 39%;
+  transform: translateY(-39%);
+}
+
+.right-39 {
+  right: 39%;
+  transform: translateX(39%);
+}
+
+.bottom-39 {
+  bottom: 39%;
+  transform: translateY(39%);
+}
+
+.left-39 {
+  left: 39%;
+  transform: translateX(-39%);
 }
 
 .top-40 {
@@ -1392,6 +2036,86 @@ th {
   transform: translateX(-40%);
 }
 
+.top-41 {
+  top: 41%;
+  transform: translateY(-41%);
+}
+
+.right-41 {
+  right: 41%;
+  transform: translateX(41%);
+}
+
+.bottom-41 {
+  bottom: 41%;
+  transform: translateY(41%);
+}
+
+.left-41 {
+  left: 41%;
+  transform: translateX(-41%);
+}
+
+.top-42 {
+  top: 42%;
+  transform: translateY(-42%);
+}
+
+.right-42 {
+  right: 42%;
+  transform: translateX(42%);
+}
+
+.bottom-42 {
+  bottom: 42%;
+  transform: translateY(42%);
+}
+
+.left-42 {
+  left: 42%;
+  transform: translateX(-42%);
+}
+
+.top-43 {
+  top: 43%;
+  transform: translateY(-43%);
+}
+
+.right-43 {
+  right: 43%;
+  transform: translateX(43%);
+}
+
+.bottom-43 {
+  bottom: 43%;
+  transform: translateY(43%);
+}
+
+.left-43 {
+  left: 43%;
+  transform: translateX(-43%);
+}
+
+.top-44 {
+  top: 44%;
+  transform: translateY(-44%);
+}
+
+.right-44 {
+  right: 44%;
+  transform: translateX(44%);
+}
+
+.bottom-44 {
+  bottom: 44%;
+  transform: translateY(44%);
+}
+
+.left-44 {
+  left: 44%;
+  transform: translateX(-44%);
+}
+
 .top-45 {
   top: 45%;
   transform: translateY(-45%);
@@ -1410,6 +2134,86 @@ th {
 .left-45 {
   left: 45%;
   transform: translateX(-45%);
+}
+
+.top-46 {
+  top: 46%;
+  transform: translateY(-46%);
+}
+
+.right-46 {
+  right: 46%;
+  transform: translateX(46%);
+}
+
+.bottom-46 {
+  bottom: 46%;
+  transform: translateY(46%);
+}
+
+.left-46 {
+  left: 46%;
+  transform: translateX(-46%);
+}
+
+.top-47 {
+  top: 47%;
+  transform: translateY(-47%);
+}
+
+.right-47 {
+  right: 47%;
+  transform: translateX(47%);
+}
+
+.bottom-47 {
+  bottom: 47%;
+  transform: translateY(47%);
+}
+
+.left-47 {
+  left: 47%;
+  transform: translateX(-47%);
+}
+
+.top-48 {
+  top: 48%;
+  transform: translateY(-48%);
+}
+
+.right-48 {
+  right: 48%;
+  transform: translateX(48%);
+}
+
+.bottom-48 {
+  bottom: 48%;
+  transform: translateY(48%);
+}
+
+.left-48 {
+  left: 48%;
+  transform: translateX(-48%);
+}
+
+.top-49 {
+  top: 49%;
+  transform: translateY(-49%);
+}
+
+.right-49 {
+  right: 49%;
+  transform: translateX(49%);
+}
+
+.bottom-49 {
+  bottom: 49%;
+  transform: translateY(49%);
+}
+
+.left-49 {
+  left: 49%;
+  transform: translateX(-49%);
 }
 
 .top-50 {
@@ -4071,6 +4875,10 @@ th {
   margin: 0 auto;
 }
 
+.m-0 {
+  margin: 0;
+}
+
 .p-5 {
   padding: 5px;
 }
@@ -4569,6 +5377,10 @@ th {
 }
 .p-100-y {
   padding: 100px 0;
+}
+
+.p-0 {
+  padding: 0;
 }
 
 .gap-5 {

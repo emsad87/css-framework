@@ -1,7 +1,8 @@
 $position: (
+  "static": static,
+  "relative": relative,
   "absolute": absolute,
   "fixed": fixed,
-  "relative": relative,
   "sticky": sticky,
 );
 
@@ -15,7 +16,7 @@ $position: (
 $min-position: 0;
 $max-position: 50;
 $unit: "%";
-$increment: 5;
+$increment: 1;
 
 @while $min-position <= $max-position {
   .top-#{$min-position} {

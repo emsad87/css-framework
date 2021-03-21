@@ -33,3 +33,7 @@ $increment: 5;
 
   $min-padding: $min-padding + $increment;
 }
+
+.p-0 {
+  padding: 0;
+}
