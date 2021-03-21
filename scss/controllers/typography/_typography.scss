@@ -22,22 +22,6 @@ h6 {
   font-size: 1.25rem;
 }
 
-// List style
-$list-style: (
-  "none": none,
-  "square": square,
-  "circle": circle,
-  "disc": disc,
-  "decimal": decimal,
-  "georgian": georgian,
-);
-
-@each $name, $list-style in $list-style {
-  .list-#{$name} {
-    list-style: #{$list-style};
-  }
-}
-
 // Font size in percentage
 $min-font: 1;
 $max-font: 1000;
@@ -55,20 +39,6 @@ $increment: 1;
   }
 
   $min-font: $min-font + $increment;
-}
-
-// Setting child anchor text decoration to none and color to parent current color
-.no-deco {
-  a {
-    text-decoration: none;
-    color: currentColor;
-  }
-}
-
-// Setting anchor element text decoration to none and color to parent current color
-.a-no-deco {
-  text-decoration: none;
-  color: currentColor;
 }
 
 // Text align
@@ -103,4 +73,34 @@ h5,
 h6,
 p {
   margin-bottom: 1rem;
+}
+
+// List style
+$list-style: (
+  "none": none,
+  "square": square,
+  "circle": circle,
+  "disc": disc,
+  "decimal": decimal,
+  "georgian": georgian,
+);
+
+@each $name, $list-style in $list-style {
+  .list-#{$name} {
+    list-style: #{$list-style};
+  }
+}
+
+// Setting child anchor text decoration to none and color to parent current color
+.no-deco {
+  a {
+    text-decoration: none;
+    color: currentColor;
+  }
+}
+
+// Setting anchor element text decoration to none and color to parent current color
+.a-no-deco {
+  text-decoration: none;
+  color: currentColor;
 }

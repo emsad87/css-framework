@@ -9,16 +9,16 @@ $increment: 5;
     border-radius: #{$min-radius}#{$unit};
 
     &-top {
-      border-radius: #{$min-radius}#{$unit} 0 0 0;
+      border-radius: #{$min-radius}#{$unit} #{$min-radius}#{$unit} 0 0;
     }
     &-bottom {
-      border-radius: 0 #{$min-radius}#{$unit} 0 0;
+      border-radius: 0 0 #{$min-radius}#{$unit} #{$min-radius}#{$unit};
     }
     &-x {
-      border-radius: 0 0 #{$min-radius}#{$unit} 0;
+      border-radius: #{$min-radius}#{$unit} 0 #{$min-radius}#{$unit} 0;
     }
     &-y {
-      border-radius: 0 0 0 #{$min-radius}#{$unit};
+      border-radius: 0 #{$min-radius}#{$unit} 0 #{$min-radius}#{$unit};
     }
   }
   $min-radius: $min-radius + $increment;

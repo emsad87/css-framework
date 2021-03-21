@@ -6303,160 +6303,160 @@ th {
   border-radius: 5px;
 }
 .r-5-top {
-  border-radius: 5px 0 0 0;
+  border-radius: 5px 5px 0 0;
 }
 .r-5-bottom {
-  border-radius: 0 5px 0 0;
+  border-radius: 0 0 5px 5px;
 }
 .r-5-x {
-  border-radius: 0 0 5px 0;
+  border-radius: 5px 0 5px 0;
 }
 .r-5-y {
-  border-radius: 0 0 0 5px;
+  border-radius: 0 5px 0 5px;
 }
 
 .r-10 {
   border-radius: 10px;
 }
 .r-10-top {
-  border-radius: 10px 0 0 0;
+  border-radius: 10px 10px 0 0;
 }
 .r-10-bottom {
-  border-radius: 0 10px 0 0;
+  border-radius: 0 0 10px 10px;
 }
 .r-10-x {
-  border-radius: 0 0 10px 0;
+  border-radius: 10px 0 10px 0;
 }
 .r-10-y {
-  border-radius: 0 0 0 10px;
+  border-radius: 0 10px 0 10px;
 }
 
 .r-15 {
   border-radius: 15px;
 }
 .r-15-top {
-  border-radius: 15px 0 0 0;
+  border-radius: 15px 15px 0 0;
 }
 .r-15-bottom {
-  border-radius: 0 15px 0 0;
+  border-radius: 0 0 15px 15px;
 }
 .r-15-x {
-  border-radius: 0 0 15px 0;
+  border-radius: 15px 0 15px 0;
 }
 .r-15-y {
-  border-radius: 0 0 0 15px;
+  border-radius: 0 15px 0 15px;
 }
 
 .r-20 {
   border-radius: 20px;
 }
 .r-20-top {
-  border-radius: 20px 0 0 0;
+  border-radius: 20px 20px 0 0;
 }
 .r-20-bottom {
-  border-radius: 0 20px 0 0;
+  border-radius: 0 0 20px 20px;
 }
 .r-20-x {
-  border-radius: 0 0 20px 0;
+  border-radius: 20px 0 20px 0;
 }
 .r-20-y {
-  border-radius: 0 0 0 20px;
+  border-radius: 0 20px 0 20px;
 }
 
 .r-25 {
   border-radius: 25px;
 }
 .r-25-top {
-  border-radius: 25px 0 0 0;
+  border-radius: 25px 25px 0 0;
 }
 .r-25-bottom {
-  border-radius: 0 25px 0 0;
+  border-radius: 0 0 25px 25px;
 }
 .r-25-x {
-  border-radius: 0 0 25px 0;
+  border-radius: 25px 0 25px 0;
 }
 .r-25-y {
-  border-radius: 0 0 0 25px;
+  border-radius: 0 25px 0 25px;
 }
 
 .r-30 {
   border-radius: 30px;
 }
 .r-30-top {
-  border-radius: 30px 0 0 0;
+  border-radius: 30px 30px 0 0;
 }
 .r-30-bottom {
-  border-radius: 0 30px 0 0;
+  border-radius: 0 0 30px 30px;
 }
 .r-30-x {
-  border-radius: 0 0 30px 0;
+  border-radius: 30px 0 30px 0;
 }
 .r-30-y {
-  border-radius: 0 0 0 30px;
+  border-radius: 0 30px 0 30px;
 }
 
 .r-35 {
   border-radius: 35px;
 }
 .r-35-top {
-  border-radius: 35px 0 0 0;
+  border-radius: 35px 35px 0 0;
 }
 .r-35-bottom {
-  border-radius: 0 35px 0 0;
+  border-radius: 0 0 35px 35px;
 }
 .r-35-x {
-  border-radius: 0 0 35px 0;
+  border-radius: 35px 0 35px 0;
 }
 .r-35-y {
-  border-radius: 0 0 0 35px;
+  border-radius: 0 35px 0 35px;
 }
 
 .r-40 {
   border-radius: 40px;
 }
 .r-40-top {
-  border-radius: 40px 0 0 0;
+  border-radius: 40px 40px 0 0;
 }
 .r-40-bottom {
-  border-radius: 0 40px 0 0;
+  border-radius: 0 0 40px 40px;
 }
 .r-40-x {
-  border-radius: 0 0 40px 0;
+  border-radius: 40px 0 40px 0;
 }
 .r-40-y {
-  border-radius: 0 0 0 40px;
+  border-radius: 0 40px 0 40px;
 }
 
 .r-45 {
   border-radius: 45px;
 }
 .r-45-top {
-  border-radius: 45px 0 0 0;
+  border-radius: 45px 45px 0 0;
 }
 .r-45-bottom {
-  border-radius: 0 45px 0 0;
+  border-radius: 0 0 45px 45px;
 }
 .r-45-x {
-  border-radius: 0 0 45px 0;
+  border-radius: 45px 0 45px 0;
 }
 .r-45-y {
-  border-radius: 0 0 0 45px;
+  border-radius: 0 45px 0 45px;
 }
 
 .r-50 {
   border-radius: 50px;
 }
 .r-50-top {
-  border-radius: 50px 0 0 0;
+  border-radius: 50px 50px 0 0;
 }
 .r-50-bottom {
-  border-radius: 0 50px 0 0;
+  border-radius: 0 0 50px 50px;
 }
 .r-50-x {
-  border-radius: 0 0 50px 0;
+  border-radius: 50px 0 50px 0;
 }
 .r-50-y {
-  border-radius: 0 0 0 50px;
+  border-radius: 0 50px 0 50px;
 }
 
 .r50 {
@@ -6533,30 +6533,6 @@ h5 {
 
 h6 {
   font-size: 1.25rem;
-}
-
-.list-none {
-  list-style: none;
-}
-
-.list-square {
-  list-style: square;
-}
-
-.list-circle {
-  list-style: circle;
-}
-
-.list-disc {
-  list-style: disc;
-}
-
-.list-decimal {
-  list-style: decimal;
-}
-
-.list-georgian {
-  list-style: georgian;
 }
 
 .fsize-1 {
@@ -15559,16 +15535,6 @@ h6 {
     font-size: 1000%;
   }
 }
-.no-deco a {
-  text-decoration: none;
-  color: currentColor;
-}
-
-.a-no-deco {
-  text-decoration: none;
-  color: currentColor;
-}
-
 .text-center {
   text-align: center;
 }
@@ -15602,4 +15568,38 @@ h5,
 h6,
 p {
   margin-bottom: 1rem;
+}
+
+.list-none {
+  list-style: none;
+}
+
+.list-square {
+  list-style: square;
+}
+
+.list-circle {
+  list-style: circle;
+}
+
+.list-disc {
+  list-style: disc;
+}
+
+.list-decimal {
+  list-style: decimal;
+}
+
+.list-georgian {
+  list-style: georgian;
+}
+
+.no-deco a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.a-no-deco {
+  text-decoration: none;
+  color: currentColor;
 }

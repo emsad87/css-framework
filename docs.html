@@ -404,6 +404,7 @@
         <section class="w-80">
             <h2>Margin & Padding</h2>
             <article class="m-15-bottom p-15 bg-secondary r-5 shadow-sharp over-auto">
+                <h3>Margin</h3>
                 <table class="fsize-90">
                     <tr>
                         <th>INT Class</th>
@@ -448,6 +449,15 @@
                     <tr>
                         <td>m-auto</td>
                         <td>margin: 0 auto</td>
+                        <td></td>
+                    </tr>
+                </table>
+                <h3>Padding</h3>
+                <table class="fsize-90">
+                    <tr>
+                        <th>INT Class</th>
+                        <th>CSS Property and value</th>
+                        <th>Range</th>
                     </tr>
                     <tr>
                         <td>p-1</td>
@@ -508,8 +518,573 @@
                 </div>
             </article>
         </section>
+
+        <section class="w-80">
+            <h2>Typography</h2>
+            <article class="m-15-bottom p-15 bg-secondary r-5 shadow-sharp over-auto">
+                <h3>Font size</h3>
+                <table class="fsize-90">
+                    <tr>
+                        <th>INT Class</th>
+                        <th>CSS Property and value</th>
+                        <th>Range</th>
+                    </tr>
+                    <tr>
+                        <td>fsize-1</td>
+                        <td>font-size: 1%;</td>
+                        <td>from 1% to 1000% ( fsize-1, fsize-2, fsize-3, ... , fsize-1000 )</td>
+                    </tr>
+                    <tr>
+                        <td>sm-fsize-1</td>
+                        <td>
+                            <ul class="list-none list-nop">
+                                <li>@media screen and (max-width: 576px) {</li>
+                                <li> .sm-fsize-1 {</li>
+                                <li> font-size: 1%;</li>
+                                <li>}</li>
+                            </ul>
+                        </td>
+                        <td>from 1% to 1000% ( sm-fsize-1, sm-fsize-2, ... , sm-fsize-1000 )</td>
+                    </tr>
+                </table>
+                <h3>Color</h3>
+                <table class="fsize-90">
+                    <tr>
+                        <th>INT Class</th>
+                        <th>CSS Property and value</th>
+                        <th>Range</th>
+                    </tr>
+                    <tr>
+                        <td>c-cc</td>
+                        <td>color: currentColor;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>c-black</td>
+                        <td>color: #000000;</td>
+                        <td>
+                            <ul class="list-none list-nop">
+                                <li>c-black : #000000</li>
+                                <li>c-white : #ffffff</li>
+                                <li>c-indigo : #4b0082</li>
+                                <li>c-purple : #8e35ef</li>
+                                <li>c-pearl : #fdeef4</li>
+                                <li>c-crimson : #e238ec</li>
+                                <li>c-magenta : #ff00ff</li>
+                                <li>c-red : #ff0000</li>
+                                <li>c-wood : #966f33</li>
+                                <li>c-orange : #f88017</li>
+                                <li>c-blue : #0000ff</li>
+                                <li>c-green : #00ff00</li>
+                                <li>c-yellow : #ffff00</li>
+                                <li>c-steel : #4863a0</li>
+                                <li>c-night : #0c090a</li>
+                                <li>c-primary : #626ed4</li>
+                                <li>c-secondary : #343549</li>
+                                <li>c-success : #2aa39a</li>
+                                <li>c-danger : #ec4561</li>
+                                <li>c-warning : #f8b425</li>
+                                <li>c-info : #38a5f8</li>
+                                <li>c-light : #f8f8fa</li>
+                                <li>c-dark : #575c62</li>
+                                <li>c-muted : #edecf1</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+                <h3>Text aling</h3>
+                <table class="fsize-90">
+                    <tr>
+                        <th>INT Class</th>
+                        <th>CSS Property and value</th>
+                    </tr>
+                    <tr>
+                        <td>text-center</td>
+                        <td>text-align: center;</td>
+                    </tr>
+                    <tr>
+                        <td>sm-text-center</td>
+                        <td>
+                            <ul class="list-none list-nop">
+                                <li>@media screen and (max-width: 576px) {</li>
+                                <li> text-align: center;</li>
+                                <li>}</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>text-left</td>
+                        <td>text-align: left;</td>
+                    </tr>
+                    <tr>
+                        <td>sm-text-left</td>
+                        <td>
+                            <ul class="list-none list-nop">
+                                <li>@media screen and (max-width: 576px) {</li>
+                                <li> text-align: left;</li>
+                                <li>}</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>text-right</td>
+                        <td>text-align: right;</td>
+                    </tr>
+                    <tr>
+                        <td>sm-text-right</td>
+                        <td>
+                            <ul class="list-none list-nop">
+                                <li>@media screen and (max-width: 576px) {</li>
+                                <li> text-align: right;</li>
+                                <li>}</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+                <h3>List</h3>
+                <table class="fsize-90">
+                    <tr>
+                        <th>INT Class</th>
+                        <th>CSS Property and value</th>
+                        <th>Range</th>
+                    </tr>
+                    <tr>
+                        <td>list-none</td>
+                        <td>list-style: none;</td>
+                        <td>
+                            <ul class="list-none list-nop">
+                                <li>none : none</li>
+                                <li>square : square</li>
+                                <li>circle : circle</li>
+                                <li>disc : disc</li>
+                                <li>decimal : decimal</li>
+                                <li>georgian : georgian</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+                <h3>Anchor</h3>
+                <table class="fsize-90">
+                    <tr>
+                        <th>INT Class</th>
+                        <th>CSS Property and value</th>
+                    </tr>
+                    <tr>
+                        <td>no-deco</td>
+                        <td>
+                            <ul class="list-none list-nop">
+                                <li>.no-deco a {</li>
+                                <li> text-decoration: none;</li>
+                                <li> color: currentColor;</li>
+                                <li>}</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>INT Class</th>
+                        <th>CSS Property and value</th>
+                    </tr>
+                    <tr>
+                        <td>a-no-deco</td>
+                        <td>
+                            <ul class="list-none list-nop">
+                                <li> text-decoration: none;</li>
+                                <li> color: currentColor;</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+                <p>
+                    Example use of Typography classes
+                </p>
+                <p class="fsize-80">
+                    ( Here we add "list-style: none; font-size: 120%; font-size: 80%; color: #ff00ff; color: #ff0000;
+                    text-center")
+                </p>
+                Code:
+                <textarea name="code" class="code bg-night">
+
+                <ul class="list-none">
+                    <li class="fsize-120 sm-fsize-80 c-magenta">List item1</li>
+                    <li class="c-red">List item2</li>
+                </ul>
+                </textarea>
+                Result:
+                <div class="relative p-15 w-100 vh-10 r-5 bg-info">
+                    <div class="bg-indigo m-auto p-15 r-5">
+                        <ul class="list-none">
+                            <li class="fsize-120 sm-fsize-80 c-magenta">List item1</li>
+                            <li class="c-red">List item2</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="w-80">
+            <h2>Visual</h2>
+            <article class="m-15-bottom p-15 bg-secondary r-5 shadow-sharp over-auto">
+                <h3>Background</h3>
+                <table class="fsize-90">
+                    <tr>
+                        <th>INT Class</th>
+                        <th>CSS Property and value</th>
+                        <th>Range</th>
+                    </tr>
+                    <tr>
+                        <td>bg-black</td>
+                        <td>background-color: #000000;</td>
+                        <td>
+                            <ul class="list-none list-nop">
+                                <li>bg-black : #000000</li>
+                                <li>bg-white : #ffffff</li>
+                                <li>bg-indigo : #4b0082</li>
+                                <li>bg-purple : #8e35ef</li>
+                                <li>bg-pearl : #fdeef4</li>
+                                <li>bg-crimson : #e238ec</li>
+                                <li>bg-magenta : #ff00ff</li>
+                                <li>bg-red : #ff0000</li>
+                                <li>bg-wood : #966f33</li>
+                                <li>bg-orange : #f88017</li>
+                                <li>bg-blue : #0000ff</li>
+                                <li>bg-green : #00ff00</li>
+                                <li>bg-yellow : #ffff00</li>
+                                <li>bg-steel : #4863a0</li>
+                                <li>bg-night : #0c090a</li>
+                                <li>bg-primary : #626ed4</li>
+                                <li>bg-secondary : #343549</li>
+                                <li>bg-success : #2aa39a</li>
+                                <li>bg-danger : #ec4561</li>
+                                <li>bg-warning : #f8b425</li>
+                                <li>bg-info : #38a5f8</li>
+                                <li>bg-light : #f8f8fa</li>
+                                <li>bg-dark : #575c62</li>
+                                <li>bg-muted : #edecf1</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+                <h3>Border</h3>
+                <table class="fsize-90">
+                    <tr>
+                        <th>INT Class</th>
+                        <th>CSS Property and value</th>
+                        <th>Range</th>
+                    </tr>
+                    <tr>
+                        <td>b-1</td>
+                        <td>border: 1px solid currentColor;</td>
+                        <td>from 1px to 20px ( b-1, b-2, b-3, ... , b-20 )</td>
+                    </tr>
+                    <tr>
+                        <td>b-1-top</td>
+                        <td>
+                            <ul class="list-none list-nop">
+                                <li>border-style: solid;</li>
+                                <li>border-width: 1px 0 0 0;</li>
+                                <li>border-color: currentColor;</li>
+                            </ul>
+                        </td>
+                        <td>from 1px to 20px ( b-1-top, b-2-top, ... , b-20-top )</td>
+                    </tr>
+                    <tr>
+                        <td>b-1-right</td>
+                        <td>
+                            <ul class="list-none list-nop">
+                                <li>border-style: solid;</li>
+                                <li>border-width: 0 1px 0 0;</li>
+                                <li>border-color: currentColor;</li>
+                            </ul>
+                        </td>
+                        <td>from 1px to 20px ( b-1-right, b-2-right, ... , b-20-right )</td>
+                    </tr>
+                    <tr>
+                        <td>b-1-bottom</td>
+                        <td>
+                            <ul class="list-none list-nop">
+                                <li>border-style: solid;</li>
+                                <li>border-width: 0 0 1px 0;</li>
+                                <li>border-color: currentColor;</li>
+                            </ul>
+                        </td>
+                        <td>from 1px to 20px ( b-1-bottom, b-2-bottom, ... , b-20-bottom )</td>
+                    </tr>
+                    <tr>
+                        <td>b-1-left</td>
+                        <td>
+                            <ul class="list-none list-nop">
+                                <li>border-style: solid;</li>
+                                <li>border-width: 0 0 0 1px;</li>
+                                <li>border-color: currentColor;</li>
+                            </ul>
+                        </td>
+                        <td>from 1px to 20px ( b-1-left, b-2-left, ... , b-20-left )</td>
+                    </tr>
+                    <tr>
+                        <td>b-1-x</td>
+                        <td>
+                            <ul class="list-none list-nop">
+                                <li>border-style: solid;</li>
+                                <li>border-width: 0 1px 0 1px;</li>
+                                <li>border-color: currentColor;</li>
+                            </ul>
+                        </td>
+                        <td>from 1px to 20px ( b-1-x, b-2-x, b-3-x, ... , b-20-x )</td>
+                    </tr>
+                    <tr>
+                        <td>b-1-y</td>
+                        <td>
+                            <ul class="list-none list-nop">
+                                <li>border-style: solid;</li>
+                                <li>border-width: 1px 0 1px 0;</li>
+                                <li>border-color: currentColor;</li>
+                            </ul>
+                        </td>
+                        <td>from 1px to 20px ( b-1-y, b-2-y,b-3-y, ... , b-20-y )</td>
+                    </tr>
+                    <tr>
+                        <td>b-black</td>
+                        <td>bordfer-color: #000000;</td>
+                        <td>
+                            <ul class="list-none list-nop">
+                                <li>bg-black : #000000</li>
+                                <li>bg-white : #ffffff</li>
+                                <li>bg-indigo : #4b0082</li>
+                                <li>bg-purple : #8e35ef</li>
+                                <li>bg-pearl : #fdeef4</li>
+                                <li>bg-crimson : #e238ec</li>
+                                <li>bg-magenta : #ff00ff</li>
+                                <li>bg-red : #ff0000</li>
+                                <li>bg-wood : #966f33</li>
+                                <li>bg-orange : #f88017</li>
+                                <li>bg-blue : #0000ff</li>
+                                <li>bg-green : #00ff00</li>
+                                <li>bg-yellow : #ffff00</li>
+                                <li>bg-steel : #4863a0</li>
+                                <li>bg-night : #0c090a</li>
+                                <li>bg-primary : #626ed4</li>
+                                <li>bg-secondary : #343549</li>
+                                <li>bg-success : #2aa39a</li>
+                                <li>bg-danger : #ec4561</li>
+                                <li>bg-warning : #f8b425</li>
+                                <li>bg-info : #38a5f8</li>
+                                <li>bg-light : #f8f8fa</li>
+                                <li>bg-dark : #575c62</li>
+                                <li>bg-muted : #edecf1</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+                <h3>Radius</h3>
+                <table class="fsize-90">
+                    <tr>
+                        <th>INT Class</th>
+                        <th>CSS Property and value</th>
+                        <th>Range</th>
+                    </tr>
+                    <tr>
+                        <td>r-5</td>
+                        <td>border: 5px solid currentColor;</td>
+                        <td>from 5px to 50px ( r-5, r-10, r-15, ... , r-50 )</td>
+                    </tr>
+                    <tr>
+                        <td>r-5-top</td>
+                        <td>border-radius: 5px 5px 0 0;</td>
+                        <td>from 5px to 50px ( r-5, r-10, r-15, ... , r-50 )</td>
+                    </tr>
+                    <tr>
+                        <td>r-1-bottom</td>
+                        <td>border-radius: 0 0 5px 5px;</td>
+                        <td>from 5px to 50px ( r-5, r-10, r-15, ... , r-50 )</td>
+                    </tr>
+                    <tr>
+                        <td>r-1-x</td>
+                        <td>border-radius: 5px 0 5px 0;</td>
+                        <td>from 5px to 50px ( r-5-x, r-10-x, r-15-x, ... , r-50-x )</td>
+                    </tr>
+                    <tr>
+                        <td>r-1-y</td>
+                        <td>border-radius: 0 5px 0 5px;</td>
+                        <td>from 5px to 50px ( r-5-y, r-10-y, r-15-y, ... , r-50-y )</td>
+                    </tr>
+                    <tr>
+                        <td>r50</td>
+                        <td>border-radius: 50%;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>r100</td>
+                        <td>border-radius: 100%;</td>
+                        <td></td>
+                    </tr>
+                </table>
+                <h3>Shadow</h3>
+                <table class="fsize-90">
+                    <tr>
+                        <th>INT Class</th>
+                        <th>CSS Property and value</th>
+                    </tr>
+                    <tr>
+                        <td>shadow</td>
+                        <td>box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);</td>
+                    </tr>
+                    <tr>
+                        <td>shadow-2</td>
+                        <td>box-shadow:
+                            <ul class="list-none list-nop">
+                                <li>0 1px 1px rgba(0, 0, 0, 0.15),</li>
+                                <li>0 2px 2px rgba(0, 0, 0, 0.15);</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>shadow-3</td>
+                        <td>box-shadow:
+                            <ul class="list-none list-nop">
+                                <li>0 1px 1px rgba(0, 0, 0, 0.15),</li>
+                                <li>0 2px 2px rgba(0, 0, 0, 0.15),</li>
+                                <li>0 4px 4px rgba(0, 0, 0, 0.15);</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>shadow-4</td>
+                        <td>box-shadow:
+                            <ul class="list-none list-nop">
+                                <li>0 1px 1px rgba(0, 0, 0, 0.15),</li>
+                                <li>0 2px 2px rgba(0, 0, 0, 0.15),</li>
+                                <li>0 4px 4px rgba(0, 0, 0, 0.15),</li>
+                                <li>0 8px 8px rgba(0, 0, 0, 0.15);</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>shadow-5</td>
+                        <td>box-shadow:
+                            <ul class="list-none list-nop">
+                                <li>0 1px 1px rgba(0, 0, 0, 0.12),</li>
+                                <li>0 2px 2px rgba(0, 0, 0, 0.12),</li>
+                                <li>0 4px 4px rgba(0, 0, 0, 0.12),</li>
+                                <li>0 8px 8px rgba(0, 0, 0, 0.12),</li>
+                                <li>0 16px 16px rgba(0, 0, 0, 0.12);</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>shadow-6</td>
+                        <td>box-shadow:
+                            <ul class="list-none list-nop">
+                                <li>0 1px 1px rgba(0, 0, 0, 0.11),</li>
+                                <li>0 2px 2px rgba(0, 0, 0, 0.11),</li>
+                                <li>0 4px 4px rgba(0, 0, 0, 0.11),</li>
+                                <li>0 8px 8px rgba(0, 0, 0, 0.11),</li>
+                                <li>0 16px 16px rgba(0, 0, 0, 0.11),</li>
+                                <li>0 32px 32px rgba(0, 0, 0, 0.11);</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>shadow-sharp</td>
+                        <td>box-shadow:
+                            <ul class="list-none list-nop">
+                                <li>0 1px 1px rgba(0, 0, 0, 0.25),</li>
+                                <li>0 2px 2px rgba(0, 0, 0, 0.2),</li>
+                                <li>0 4px 4px rgba(0, 0, 0, 0.15),</li>
+                                <li>0 8px 8px rgba(0, 0, 0, 0.1),</li>
+                                <li>0 16px 16px rgba(0, 0, 0, 0.05);</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>shadow-diffuse</td>
+                        <td>box-shadow:
+                            <ul class="list-none list-nop">
+                                <li>0 1px 1px rgba(0, 0, 0, 0.08),</li>
+                                <li>0 2px 2px rgba(0, 0, 0, 0.12),</li>
+                                <li>0 4px 4px rgba(0, 0, 0, 0.16),</li>
+                                <li>0 8px 8px rgba(0, 0, 0, 0.2);</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>shadow-dreamy</td>
+                        <td>box-shadow:
+                            <ul class="list-none list-nop">
+                                <li>0 1px 2px rgba(0, 0, 0, 0.07),</li>
+                                <li>0 2px 4px rgba(0, 0, 0, 0.07),</li>
+                                <li>0 4px 8px rgba(0, 0, 0, 0.07),</li>
+                                <li>0 8px 16px rgba(0, 0, 0, 0.07),</li>
+                                <li>0 16px 32px rgba(0, 0, 0, 0.07),</li>
+                                <li>0 32px 64px rgba(0, 0, 0, 0.07);</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>shadow-shorter</td>
+                        <td>box-shadow:
+                            <ul class="list-none list-nop">
+                                <li>0 1px 1px rgba(0, 0, 0, 0.11),</li>
+                                <li>0 2px 2px rgba(0, 0, 0, 0.11),</li>
+                                <li>0 4px 4px rgba(0, 0, 0, 0.11),</li>
+                                <li>0 6px 8px rgba(0, 0, 0, 0.11),</li>
+                                <li>0 8px 16px rgba(0, 0, 0, 0.11);</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>shadow-longer</td>
+                        <td>box-shadow:
+                            <ul class="list-none list-nop">
+                                <li>0 2px 1px rgba(0, 0, 0, 0.09),</li>
+                                <li>0 4px 2px rgba(0, 0, 0, 0.09),</li>
+                                <li>0 8px 4px rgba(0, 0, 0, 0.09),</li>
+                                <li>0 16px 8px rgba(0, 0, 0, 0.09),</li>
+                                <li>0 32px 16px rgba(0, 0, 0, 0.09);</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+                <h3>Animation</h3>
+                <table class="fsize-90">
+                    <tr>
+                        <th>INT Class</th>
+                        <th>CSS Property and value</th>
+                    </tr>
+                    <tr>
+                        <td>animation-spin</td>
+                        <td>animation: spin 0.7s linear infinite;</td>
+                    </tr>
+                    <tr>
+                        <td>animation-shake</td>
+                        <td>animation: shake 0.7s linear infinite;</td>
+                    </tr>
+                </table>
+                <p>
+                    Example use of Visual classes
+                </p>
+                <p class="fsize-80">
+                    ( Here we add "background-color: #4b0082; border: 5px solid #ff00ff; border-radius: 15px;
+                    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2); animation: shake 0.7s linear infinite;")
+                </p>
+                Code:
+                <textarea name="code" class="code bg-night">
+
+                <div class="bg-indigo b-5 b-magenta r-15 shadow animation-shake ...">
+                    <h2>Title</h2>
+                    <p>Text text text....</p>
+                </div>
+                </textarea>
+                Result:
+                <div class="relative p-15 w-100 vh-10 r-5 bg-info">
+                    <div class="bg-indigo b-5 b-magenta m-auto p-15 r-15 shadow-6 animation-shake">
+                        <h2>Title</h2>
+                        <p>Text text text....</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
         <h2 class="sm-fsize-120">More coming soon...</h2>
-        <p>(there is more in the code)</p>
     </main>
 
     <footer class="container-fluid center p-25-y no-deco bg-secondary">
