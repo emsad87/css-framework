@@ -23,7 +23,7 @@ $align: (
   }
   @media screen and (min-width: map-get(breakpoints.$breakpoints, "md")) {
     .md-j-#{$justify} {
-      flex-direction: #{$value};
+      justify-content: #{$value};
     }
   }
 }
@@ -34,7 +34,7 @@ $align: (
   }
   @media screen and (min-width: map-get(breakpoints.$breakpoints, "md")) {
     .md-a-#{$align} {
-      flex-direction: #{$value};
+      align-items: #{$value};
     }
   }
 }

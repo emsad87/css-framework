@@ -4324,7 +4324,7 @@ th {
 
 @media screen and (min-width: 768px) {
   .md-j-start {
-    flex-direction: flex-start;
+    justify-content: flex-start;
   }
 }
 .j-end {
@@ -4333,7 +4333,7 @@ th {
 
 @media screen and (min-width: 768px) {
   .md-j-end {
-    flex-direction: flex-end;
+    justify-content: flex-end;
   }
 }
 .j-center {
@@ -4342,7 +4342,7 @@ th {
 
 @media screen and (min-width: 768px) {
   .md-j-center {
-    flex-direction: center;
+    justify-content: center;
   }
 }
 .j-between {
@@ -4351,7 +4351,7 @@ th {
 
 @media screen and (min-width: 768px) {
   .md-j-between {
-    flex-direction: space-between;
+    justify-content: space-between;
   }
 }
 .j-around {
@@ -4360,7 +4360,7 @@ th {
 
 @media screen and (min-width: 768px) {
   .md-j-around {
-    flex-direction: space-around;
+    justify-content: space-around;
   }
 }
 .j-evenly {
@@ -4369,7 +4369,7 @@ th {
 
 @media screen and (min-width: 768px) {
   .md-j-evenly {
-    flex-direction: space-evenly;
+    justify-content: space-evenly;
   }
 }
 .a-center {
@@ -4378,7 +4378,7 @@ th {
 
 @media screen and (min-width: 768px) {
   .md-a-center {
-    flex-direction: center;
+    align-items: center;
   }
 }
 .a-start {
@@ -4387,7 +4387,7 @@ th {
 
 @media screen and (min-width: 768px) {
   .md-a-start {
-    flex-direction: flex-start;
+    align-items: flex-start;
   }
 }
 .a-end {
@@ -4396,7 +4396,7 @@ th {
 
 @media screen and (min-width: 768px) {
   .md-a-end {
-    flex-direction: flex-end;
+    align-items: flex-end;
   }
 }
 .a-bl {
@@ -4405,7 +4405,7 @@ th {
 
 @media screen and (min-width: 768px) {
   .md-a-bl {
-    flex-direction: baseline;
+    align-items: baseline;
   }
 }
 .center {
